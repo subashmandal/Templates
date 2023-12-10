@@ -1,0 +1,25 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(10, 34, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    padding: 0;
+}
+
+.thank-you-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

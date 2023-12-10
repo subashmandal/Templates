@@ -1,0 +1,74 @@
+# Options +FollowSymLinks
+# RewriteEngine On
+
+# RewriteBase /
+
+# RewriteCond %{HTTP_HOST} ^www.wooble.org
+# RewriteRule (.*) http://wooble.org/$1 [R=301,L]
+
+# RewriteRule ^([aA-zZ])$ profile.php?id=$1
+# RewriteCond %{HTTP_HOST} ^(^.*)\.wooble.org
+# RewriteRule (.*) profile.php?id=%1
+
+
+RewriteEngine On
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.wooble\.org$ [NC]
+RewriteRule ^(.*)$ https://wooble.org/$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^([a-zA-Z0-9_-]+)$ profile.php/index.php/?id=$1
+
+RewriteRule    ^blog/([A-Za-z0-9-]+)/?$    blog/?title=$1    [NC,L]
+RewriteRule    ^work/([A-Za-z0-9-]+)/?$    work/?title=$1    [NC,L]
+RewriteRule    ^resume/([A-Za-z0-9-]+)/?$    resume/?id=$1    [NC,L]
+RewriteRule    ^my_resume/([A-Za-z0-9-]+)/?$    my_resume/?id=$1    [NC,L]
+RewriteRule    ^video_resume/([A-Za-z0-9-]+)/?$    video_resume/?id=$1    [NC,L]
+RewriteRule    ^featured-articles/([A-Za-z0-9-]+)/?$    featured-articles/?id=$1    [NC,L]
+RewriteRule    ^blogs/([A-Za-z0-9-]+)/?$    blogs/?id=$1    [NC,L]
+RewriteRule    ^my_blog/([A-Za-z0-9-]+)/?$    my_blog/?title=$1    [NC,L]
+RewriteRule    ^about/([A-Za-z0-9-]+)/?$    about/?id=$1    [NC,L]
+RewriteRule    ^gallery/([A-Za-z0-9-]+)/?$    gallery/?id=$1    [NC,L]
+RewriteRule    ^works/([A-Za-z0-9-]+)/?$    works/?id=$1    [NC,L]
+RewriteRule    ^wooble-events/([A-Za-z0-9-]+)/?$    events/?id=$1    [NC,L]
+RewriteRule    ^wooble-blogs/([A-Za-z0-9-]+)/?$    wooble-blogs/?id=$1    [NC,L]
+
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:6dSZIyJ2fT
+ErrorDocument 404 /404.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE 6dSZIyJ2fT:ERRORPAGEID
+
+
+
+
+
+# RewriteEngine on
+# RewriteCond %{HTTPS} off
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+# RewriteCond %{HTTP_HOST} ^wooble.me$ [OR]
+# RewriteCond %{HTTP_HOST} ^www.wooble.me$
+# RewriteRule (.*)$ https://wooble.org [R=301]
+# RewriteCond %{HTTP_HOST}\./blogs ^((?!www\.)[^.]+)\.wooble\.org\./blogs$
+# RewriteRule blogs/ blogs/index.php?user=%1
+# RewriteCond %{HTTP_HOST}\./resume ^((?!www\.)[^.]+)\.wooble\.org\./resume$
+# RewriteRule resume/ resume/index.php?user=%1
+# RewriteCond %{HTTP_HOST}\./gallery ^((?!www\.)[^.]+)\.wooble\.org\./gallery$
+# RewriteRule gallery/ gallery/index.php?user=%1
+# RewriteCond %{HTTP_HOST}\./about ^((?!www\.)[^.]+)\.wooble\.org\./about$
+# RewriteRule about/ about/index.php?user=%1
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^blog/(.*)$ blog/?title=$1 [NC,NE]
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$
+# RewriteRule ^(.*)$ http://%1%{REQUEST_URI}
+# RewriteCond %{HTTP_HOST} ^((?!www\.)[^.]+)\.wooble\.org$
+# RewriteRule ^$ profile/index.php?user=%1
+
+
+
+
+

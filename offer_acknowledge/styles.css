@@ -1,0 +1,71 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: rgb(10,34,98);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Thank You Section */
+.thank-you {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.thank-you h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.thank-you p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.thank-you a {
+    display: inline-block;
+    background-color: rgb(10,34,98);
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.thank-you a:hover {
+    background-color: #f7f7f7;
+    color: rgb(10,34,98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .thank-you h2 {
+        font-size: 30px;
+    }
+
+    .thank-you p {
+        font-size: 20px;
+    }
+
+    .thank-you a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+

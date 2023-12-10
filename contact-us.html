@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wooble - Unify your work with Digital Portfolio</title>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://wooble.org"
+            },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About Us",
+                "item": "https://wooble.org/about-us"
+            },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Contact",
+                "item": "https://wooble.org/conact"
+            }]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.wooble.org",
+            "logo": "https://wooble.org/img/wooble_logo.png"
+        }
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Either you are a Photographer, Videographer, Researcher showcase your work through Digital portfolio. Make it yourself and you can manage it by yourself">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="keywords" content="Digital Portfolio, Portfolio for Photographers, Build Portfolio"/>
+    <meta name="robots" content="all">
+    <link rel="author" href="https://wooble.org">
+    <link rel="publisher" href="https://wooble.org">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="canonical" href="https://wooble.org">
+
+    <meta property="og:url" content="https://wooble.org/">
+    <meta property="og:title" content="Wooble - Unify your work with Digital Portfolio">
+    <meta property="og:image" content="https://wooble.org/img/template1.png"/>
+    <meta property="og:image:alt" content="Portfolio example for Different creative professionals"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Either you are a Photographer, Videographer, Researcher showcase your work through Digital portfolio. Make it yourself and you can manage it by yourself"/>
+    <!-- ubuntu fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <style>
+
+
+        @keyframes sf-fly-by-1 {
+            from {
+                transform: translateZ(-600px);
+                opacity: 0.5;
+            }
+            to {
+                transform: translateZ(0);
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes sf-fly-by-2 {
+            from {
+                transform: translateZ(-1200px);
+                opacity: 0.5;
+            }
+            to {
+                transform: translateZ(-600px);
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes sf-fly-by-3 {
+            from {
+                transform: translateZ(-1800px);
+                opacity: 0.5;
+            }
+            to {
+                transform: translateZ(-1200px);
+                opacity: 0.5;
+            }
+        }
+
+        .star-field {
+
+            top: 100vh;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            perspective: 200vh;
+            -webkit-perspective: 200vh;
+            z-index: 1;
+        }
+
+        .star-field .layer {
+            box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc, -91px -235px #d4d4d4, 491px -460px #f7f7f7, 892px -128px #f7f7f7, 758px -277px #ededed, 596px 378px #cccccc, 647px 423px whitesmoke, 183px 389px #c7c7c7,
+            524px -237px #f0f0f0, 679px -535px #e3e3e3, 158px 399px #ededed, 157px 249px #ededed, 81px -450px #ebebeb, 719px -360px #c2c2c2, -499px 473px #e8e8e8, -158px -349px #d4d4d4, 870px -134px #cfcfcf, 446px 404px #c2c2c2,
+            440px 490px #d4d4d4, 414px 507px #e6e6e6, -12px 246px #fcfcfc, -384px 369px #e3e3e3, 641px -413px #fcfcfc, 822px 516px #dbdbdb, 449px 132px #c2c2c2, 727px 146px #f7f7f7, -315px -488px #e6e6e6, 952px -70px #e3e3e3,
+            -869px -29px #dbdbdb, 502px 80px #dedede, 764px 342px #e0e0e0, -150px -380px #dbdbdb, 654px -426px #e3e3e3, -325px -263px #c2c2c2, 755px -447px #c7c7c7, 729px -177px #c2c2c2, -682px -391px #e6e6e6, 554px -176px #ededed,
+            -85px -428px #d9d9d9, 714px 55px #e8e8e8, 359px -285px #cfcfcf, -362px -508px #dedede, 468px -265px #fcfcfc, 74px -500px #c7c7c7, -514px 383px #dbdbdb, 730px -92px #cfcfcf, -112px 287px #c9c9c9, -853px 79px #d6d6d6,
+            828px 475px #d6d6d6, -681px 13px #fafafa, -176px 209px #f0f0f0, 758px 457px #fafafa, -383px -454px #ededed, 813px 179px #d1d1d1, 608px 98px whitesmoke, -860px -65px #c4c4c4, -572px 272px #f7f7f7, 459px 533px #fcfcfc,
+            624px -481px #e6e6e6, 790px 477px #dedede, 731px -403px #ededed, 70px -534px #cccccc, -23px 510px #cfcfcf, -652px -237px whitesmoke, -690px 367px #d1d1d1, 810px 536px #d1d1d1, 774px 293px #c9c9c9, -362px 97px #c2c2c2,
+            563px 47px #dedede, 313px 475px #e0e0e0, 839px -491px #e3e3e3, -217px 377px #d4d4d4, -581px 239px #c2c2c2, -857px 72px #cccccc, -23px 340px #dedede, -837px 246px white, 170px -502px #cfcfcf, 822px -443px #e0e0e0, 795px 497px #e0e0e0,
+            -814px -337px #cfcfcf, 206px -339px #f2f2f2, -779px 108px #e6e6e6, 808px 2px #d4d4d4, 665px 41px #d4d4d4, -564px 64px #cccccc, -380px 74px #cfcfcf, -369px -60px #f7f7f7, 47px -495px #e3e3e3, -383px 368px #f7f7f7, 419px 288px #d1d1d1,
+            -598px -50px #c2c2c2, -833px 187px #c4c4c4, 378px 325px whitesmoke, -703px 375px #d6d6d6, 392px 520px #d9d9d9, -492px -60px #c4c4c4, 759px 288px #ebebeb, 98px -412px #c4c4c4, -911px -277px #c9c9c9;
+            transform-style: preserve-3d;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 4px;
+            width: 4px;
+            border-radius: 2px;
+            z-index: 100000;
+        }
+
+        .star-field .layer:nth-child(1) {
+            animation: sf-fly-by-1 5s linear infinite;
+        }
+
+        .star-field .layer:nth-child(2) {
+            animation: sf-fly-by-2 5s linear infinite;
+        }
+
+        .star-field .layer:nth-child(3) {
+            animation: sf-fly-by-3 5s linear infinite;
+        }
+        /* rocket bounce effect */
+        .bounce{
+            animation: bounce 0.5s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            0% {transform: translateY(-2px);transform: translateX(-12px);}
+            50% {transform: translateY(-2px);transform: translateX(-12px);}
+            100% {transform: translateY(-50px);transform: translateY(-100px);}
+        }
+        .scrollable-place {
+            height: 1000px;
+        }
+
+        .stop-scrolling {
+            height: 100%;
+            overflow: hidden;
+        }
+
+
+        .f_img{
+            margin-left: 20px;
+            margin-right: 20px;
+            filter: grayscale(100%);
+            padding-top: 5px;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        .f_img:hover{
+            filter: grayscale(0%)!important;
+        }
+
+        @media only screen and (max-width: 420px) {
+            .mobile_hide {
+                display: none!important ;
+            }
+        }
+
+
+
+        logo-slider {
+            --image-size: 100px;
+            border: 1px solid rgb(230,230,230);
+            padding: 20px;
+            overflow: hidden;
+            max-width: 100vw;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+        }
+        logo-slider:hover div {
+            animation-play-state: paused;
+        }
+        logo-slider div {
+            display: flex;
+            position: relative;
+            animation: marquee 32s linear infinite;
+            /*justify-content: space-around;*/
+        }
+        logo-slider img {
+            display: block;
+            min-width: var(--image-size);
+            height: var(--image-size);
+            /*margin: 0 1vw;*/
+        }
+        logo-slider:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        //background: linear-gradient(to right, white, rgba(255, 255, 255, 0) 80px, rgba(255, 255, 255, 0) calc(100% - 80px), white);
+        }
+        @media (max-width: 900px) {
+            logo-slider {
+                --image-size: 50px;
+                --image-size: min(max(50px, 10vw), 100px);
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="star-field">
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+</div>
+
+<!-- Start your project here-->
+<div style="background-image: url(img/galaxy_bg.webp); background-position: center; background-repeat: no-repeat; background-size: cover; max-width: 100vw; min-height: 100vh; overflow-y: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-0">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- logo with text start-->
+            <a class="navbar-brand" title="Wooble Homepage" href="https://wooble.org">
+                <img alt="Wooble Logo in white" title="Wooble" src="img/wooble_svg_logo.svg" alt="" class="src" style="width: 100px; height: 100px;" loading="lazy">
+                <small class="text-light me-lg-5" style="font-family: 'Ubuntu', sans-serif; font-size: 1.7em;">Wooble</small>
+            </a>
+            <!-- Toggle button -->
+            <button
+                style="color: white; "
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarCenteredExample"
+                aria-controls="navbarCenteredExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarCenteredExample"
+            >
+                <!-- Left links -->
+                <ul class="navbar-nav  mb-lg-0 justify-content-around ms-lg-5 ps-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" aria-current="page" href="https://wooble.org" title="Wooble Home" style="font-family: 'Ubuntu', sans-serif; font-size: 1.4rem;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="https://wooble.org/about-us" title="About Wooble and the team" style="font-family: 'Ubuntu', sans-serif; font-size: 1.4rem;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="https://wooble.org/contact" title="Contact us to know more" style="font-family: 'Ubuntu', sans-serif; font-size: 1.4rem;">Contact</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+
+                    </li>
+
+                </ul>
+                <span class="navbar-text" style="margin-left: 230px;">
+              <a class="nav-link text-light border text-center rounded-7" title="Wooble Portfolio Builder for registered users" href="https://wooble.org/app" style="font-family: 'Ubuntu', sans-serif; font-size: 1rem; ">Get Started</a>
+            </span>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Header code end -->
+
+    <div class="container pt-lg-2" style="min-height: 100vh; background-color: transparent;">
+
+        <!-- main code start -->
+        <div class="row mt-lg-2 pt-lg-2">
+            <div id="text_content_div" class="col-lg-6 " style="z-index: 9999; ">
+                <h1 class="text-white fw-bolder lh-sm" style="font-family: 'Ubuntu', sans-serif; font-size: 4rem; letter-spacing: 0.06em;">Let’s Sky <span style="color: #FFDC0D; font-size: 6rem;">Rocket</span><br> Your Digital <span style="color: #FFDC0D; font-size: 4rem;">Presence</span></h1>
+
+                <div class="row mt-2 pt-2">
+                    <div class="col-lg-12 ps-2">
+                        <table class="table table-borderless table-responsive">
+                            <tr class="mb-2">
+                                <td style="width: 20px"><i class="fas fa-check fa-2x me-3 mt-1" style="color: #F79E0E;"></i></td>
+                                <td><h2 style="font-size: 22px; display: inline; color: white">Creates a personal database of prior works</h2></td>
+                            </tr>
+                            <tr class="mb-2">
+                                <td style="width: 20px"><i class="fas fa-check fa-2x me-3 mt-1" style="color: #F79E0E;"></i></td>
+                                <td><h2 style="font-size: 22px; display: inline; color: white">Helps you document your accomplishments and results</h2></td>
+                            </tr>
+
+                            <tr class="mb-2">
+                                <td style="width: 20px"><i class="fas fa-check fa-2x me-3 mt-1" style="color: #F79E0E;"></i></td>
+                                <td><h2 style="font-size: 22px; display: inline; color: white">Sets you apart from other candidates for the job position</h2></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row mt-4 pt-4 mb-4">
+                    <div class="col-lg-6">
+                        <a class="nav-link text-light border text-center rounded-7" title="Wooble new user onboarding" href="https://app.wooble.org" style="font-family: 'Ubuntu', sans-serif; font-size: 1rem; background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(3,37,104,1) 100%); width: 200px">Try For Free</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rocket_div" class="col-lg-6 d-flex justify-content-center d-none d-lg-block">
+                <img  id="my_rocket" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="fade-out-up" data-mdb-animation-duration="3000" data-mdb-animation-start="onClick" data-mdb-animation-repeat="false"
+                      src="img/rocket.svg" alt="rocket" title="animated rocket" class="src pt-4 position-absolute img-fluid">
+            </div>
+        </div>
+        <!-- main code end -->
+
+        <!-- NEXT BUTTON START -->
+
+        <!--    <div class="position-absolute" style=" bottom: 20px; right: 20px; cursor: pointer;">-->
+        <!--      <i class="fas fa-arrow-right fa-2x  text-light text-center border border-1 p-2 rounded-circle"></i>-->
+        <!--    </div>-->
+
+        <!-- NEXT BUTTON END -->
+
+    </div>
+</div>
+
+<div class="row d-block d-sm-none m-0" style="background-color: rgb(21,41,69); width: 100vw!important;">
+    <img src="img/template1.png" title="portfolio example for Creative Professionals" alt="portfolio sample for Photographers, Videographers, Video Editors, Graphic Designers" class="src img-fluid my-5">
+    <img src="img/template2.png" title="Portfolio example for Researchers and Scientists" alt="Portfolio Samples for Professionals, faculties, researchers, scientists" class="src img-fluid my-5">
+    <img src="img/template3.png" title="Portfolio example for Founders and Public Figures" alt="Portfolio sample for speakers, founders, CEOs, CXOs" class="src img-fluid my-5">
+</div>
+
+<!-- template images -->
+<div class="d-flex justify-content-center align-items-center mobile_hide" id="section_2"  style="min-height: 100vh; background: rgb(7,6,11);
+background: linear-gradient(180deg, rgba(7,6,11,1) 12%, rgba(26,40,67,1) 57%);">
+    <img src="img/template1.png" title="Creative designer's portfolio samples to showcase their best works" alt="Portfolio example for Different creative professionals" class="src position-absolute inner img-fluid" id="template_container" width="40%">
+</div>
+
+
+
+
+
+
+<section class="d-none d-sm-block" style=" height:400vh; width: 100%; z-index: 1000; background-color: rgb(21,41,69) ">
+    <div  class="sticky-top">
+        <!-- <div>Hello World</div> -->
+    </div>
+</section>
+
+<logo-slider>
+
+    <div>
+        <img src="img/supporters/1.png" title="featured in Dharitri for Launch Event on July 23, 2022" alt="Dharitri" class="src f_img">
+        <img src="img/supporters/2.jpg" title="featured in FinShashta Annual Magazine on 19th Nov 2022" alt="X-Fin XIMB Finance Club" class="src f_img">
+        <img src="img/supporters/3.jpg" title="Founder featured on Newspaper and Online Portal" alt="dainik jagran" class="src f_img">
+        <img src="img/supporters/4.jpeg" title="featured in Sambad for Launch Event on July 23, 2022" alt="sambad odiya newspaper" class="src f_img">
+        <img src="img/supporters/5.jpeg" title="Presented During Talk Show at FED KIIT" alt="FED" class="src f_img">
+        <img src="img/supporters/6.png" title="Founder featured in Magazine as 15 Young entrepreneur in 2022 to look for" alt="Outlook India" class="src f_img">
+        <img src="img/supporters/7.png" title="DNUS recognition of Company" alt="dun & bradstreet" class="src f_img">
+        <img src="img/supporters/8.png" title="Presented Wooble at the Gitex Global 2022 at Dubai" alt="gitex global" class="src f_img">
+        <img src="img/supporters/9.jpeg" title="Featured in News 18 Odisa for the launch Even on 23r July 2022" alt="News 18 Odiya" class="src f_img">
+        <img src="img/supporters/10.png" title="Electronic Media coverage during Launch event in July 2022" alt="argus news" class="src f_img">
+        <img src="img/supporters/11.png" title="ISO 27001 certified company" alt="ISO certification" class="src f_img">
+    </div>
+
+    <div>
+        <img src="img/supporters/1.png" title="featured in Dharitri for Launch Event on July 23, 2022" alt="Dharitri" class="src f_img">
+        <img src="img/supporters/2.jpg" title="featured in FinShashta Annual Magazine on 19th Nov 2022" alt="X-Fin XIMB Finance Club" class="src f_img">
+        <img src="img/supporters/3.jpg" title="Founder featured on Newspaper and Online Portal" alt="dainik jagran" class="src f_img">
+        <img src="img/supporters/4.jpeg" title="featured in Sambad for Launch Event on July 23, 2022" alt="sambad odiya newspaper" class="src f_img">
+        <img src="img/supporters/5.jpeg" title="Presented During Talk Show at FED KIIT" alt="FED" class="src f_img">
+        <img src="img/supporters/6.png" title="Founder featured in Magazine as 15 Young entrepreneur in 2022 to look for" alt="Outlook India" class="src f_img">
+        <img src="img/supporters/7.png" title="DNUS recognition of Company" alt="dun & bradstreet" class="src f_img">
+        <img src="img/supporters/8.png" title="Presented Wooble at the Gitex Global 2022 at Dubai" alt="gitex global" class="src f_img">
+        <img src="img/supporters/9.jpeg" title="Featured in News 18 Odisa for the launch Even on 23r July 2022" alt="News 18 Odiya" class="src f_img">
+        <img src="img/supporters/10.png" title="Electronic Media coverage during Launch event in July 2022" alt="argus news" class="src f_img">
+        <img src="img/supporters/11.png" title="ISO 27001 certified company" alt="ISO certification" class="src f_img">
+    </div>
+
+</logo-slider>
+
+
+<!-- content section -->
+<div class="container-fluid">
+    <div class="container d-flex align-items-center" style="height: 90vh;">
+        <p class=" text-black fw-bold fs-1" style="font-family: 'Ubuntu', sans-serif;  width: 80%;">Wooble implies deliberate, planned, sustained efforts to establish and maintain your digital reflection. Digital portfolio that serves millions of people who wish to pursue their ambition with passion.
+
+            A digital platform for each individual's legit visual impression.</p>
+    </div>
+</div>
+
+<div class="container-fluid" style="background: black;">
+    <div class="container py-5" >
+        <video width="100%" height="100%" autoplay muted loop >
+            <source src="video/demo_video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+<!-- End your project here-->
+
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- image zoom script -->
+<script>
+    const inner = document.querySelector(".inner");
+    const section = document.querySelector("section");
+
+    window.onscroll = function() {
+        let value = window.pageYOffset / section.offsetTop + 1;
+        let value1 = window.pageYOffset / section.offsetTop - 1;
+        let value2 = window.pageYOffset / section.offsetTop + 0.3; // for opacity control
+        let value3 = window.pageYOffset / section.offsetTop + 0.1; //scale image
+
+        console.log("value="+value);
+        console.log("value1="+value1);
+        console.log("value2="+value2);
+
+
+        var section_2 = document.getElementById('section_2');
+        template_image = document.getElementById('template_container');
+
+        template_image.style.opacity= value2;
+
+        if(value>1){
+            section_2.classList.remove('sticky-top');
+        }
+        // if(value>2.05){
+        //   template_image.src="img/template3.png";
+        // }
+        if(value<2){
+            inner.style.transform = `scale(${value3})`;
+            //section_2.classList.add('sticky-top');
+            template_image.src="img/template1.png";
+        }
+
+        if(value>2){
+            inner.style.transform = `scale(${value3})`;
+            //section_2.classList.add('sticky-top');
+            template_image.src="img/template2.png";
+        }
+
+        if(value>2.7){
+            //inner.style.transform = `scale(${value})`;
+            //section_2.classList.add('sticky-top');
+            template_image.src="img/template3.png";
+        }
+        if(value<3.5){
+            section_2.classList.add('sticky-top');
+            //template_image.src="img/template1.png";
+        }
+
+
+
+
+
+    };
+
+</script>
+<!-- Rocket scripts -->
+<script type="text/javascript">
+    var audio = new Audio('img/mixkit-rocket-landing-whoosh-1721.wav');
+    const animateEl = document.getElementById('my_rocket');
+    const animate  = new mdb.Animate(animateEl, {
+        animation: 'fade-in',
+        onEnd: () => {
+            console.log("animation Ended");
+            animateEl.style.display="none"
+
+            document.getElementById('text_content_div').classList.remove("col-lg-6");
+            document.getElementById('text_content_div').classList.add("col-lg-12");
+        },
+        onStart: () => {
+            audio.play();
+        }
+    });
+    animate.init();
+
+    window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        //console.log('scroll detected');
+        rocket_div = document.getElementById('rocket_div');
+        animateEl.style.position = "absolute";
+        animateEl.style.bottom = value * 4 + "px";
+        var template_container = document.getElementById('template_container');
+        console.log(isInViewport(template_container));
+
+
+        // if(value>200){
+        //      animateEl.style.display="none"
+        //
+        //  document.getElementById('text_content_div').classList.remove("col-lg-6");
+        //  document.getElementById('text_content_div').classList.add("col-lg-12");
+        // }
+    });
+
+
+    function disableScroll() {
+        var div_special = document.getElementById("section_2");
+        div_special.classList.add("stop-scrolling");
+    }
+
+    function enableScroll() {
+        var div_special = document.getElementById("section_2");
+        document.body.classList.remove("stop-scrolling");
+    }
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function hide(){
+        var body=document.getElementById("section_2");
+        opacity =
+            Number(window.getComputedStyle(body).getPropertyValue("opacity"));
+        console.log("hide_div"+opacity);;
+        if(opacity>0){
+            opacity=opacity-0.1;
+            body.style.opacity=opacity
+        }
+
+    }
+
+    function show_div(){
+
+        var body=document.getElementById("section_2");
+        opacity =
+            Number(window.getComputedStyle(body).getPropertyValue("opacity"));
+        console.log("show_div"+opacity);;
+
+        if(opacity!=1){
+            opacity=opacity+0.1;
+            body.style.opacity=opacity
+        }
+
+    }
+
+
+    function random(min,max)
+    {
+        return Math.floor(Math.random()*(max-min+1)+min);
+    }
+
+    var initial = random(20, 50);
+    var count = initial;
+
+    setInterval(function() {
+        var variation = random(-5,5);
+
+        count += variation
+        console.log('You currently have ' + count + ' visitors')
+
+    }, 5000)
+
+</script>
+</body>
+</html>

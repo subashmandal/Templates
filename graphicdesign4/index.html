@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <style>
+         .br{
+         border:1px solid rgb(252, 10, 10);
+         }
+      </style>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>G4</title>
+      <!-- MDB icon -->
+      <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+      <!-- ubuntu fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+         />
+      <!-- Google Fonts Roboto -->
+      <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+         />
+      <!-- MDB -->
+      <link rel="stylesheet" href="../css/mdb.min.css" />
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+         .center{
+         display: grid;
+         place-content: center;
+         }
+         .bg{
+            background-size: cover; background-repeat: no-repeat; background-position: center;
+         }
+
+         .hua {
+  display: inline-block;
+  position: relative;
+}
+
+.hua:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hua:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* .slider input {
+	display: none;
+}
+.gallery {
+	display: flex;
+	position: relative;
+	min-height: 50vh;
+	overflow: hidden;
+}
+.gallery .item {
+	width: 50vh;
+	position: absolute;
+	top: 0;
+	box-sizing: border-box;
+	transition: transform 1s;
+	user-select: none;
+	cursor: pointer;
+} */
+
+/* #t-1:checked ~ label[for="t-1"],
+#t-2:checked ~ label[for="t-2"],
+#t-3:checked ~ label[for="t-3"],
+#t-4:checked ~ label[for="t-4"],
+#t-5:checked ~ label[for="t-5"] {
+	transform: scale(2);
+	background-color: #fff;
+} */
+/* #t-1:checked ~ label[for="t-2"],
+#t-2:checked ~ label[for="t-1"],
+#t-2:checked ~ label[for="t-3"],
+#t-3:checked ~ label[for="t-2"],
+#t-3:checked ~ label[for="t-4"],
+#t-4:checked ~ label[for="t-3"],
+#t-4:checked ~ label[for="t-5"],
+#t-5:checked ~ label[for="t-4"] {
+	transform: scale(1.5);
+} */
+/* #t-1:checked ~ .gallery label[for="t-3"],
+#t-2:checked ~ .gallery label[for="t-4"],
+#t-3:checked ~ .gallery label[for="t-5"],
+#t-4:checked ~ .gallery label[for="t-1"],
+#t-5:checked ~ .gallery label[for="t-2"] {
+	transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+	z-index: 2;
+}
+#t-1:checked ~ .gallery label[for="t-2"],
+#t-2:checked ~ .gallery label[for="t-3"],
+#t-3:checked ~ .gallery label[for="t-4"],
+#t-4:checked ~ .gallery label[for="t-5"],
+#t-5:checked ~ .gallery label[for="t-1"] {
+	transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+	z-index: 3;
+}
+#t-2:checked ~ .gallery label[for="t-1"],
+#t-3:checked ~ .gallery label[for="t-2"],
+#t-4:checked ~ .gallery label[for="t-3"],
+#t-5:checked ~ .gallery label[for="t-4"],
+#t-1:checked ~ .gallery label[for="t-5"] {
+	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+	z-index: 3;
+}
+#t-3:checked ~ .gallery label[for="t-1"],
+#t-4:checked ~ .gallery label[for="t-2"],
+#t-5:checked ~ .gallery label[for="t-3"],
+#t-2:checked ~ .gallery label[for="t-5"],
+#t-1:checked ~ .gallery label[for="t-4"] {
+	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+#t-1:checked ~ .gallery label[for="t-1"],
+#t-2:checked ~ .gallery label[for="t-2"],
+#t-3:checked ~ .gallery label[for="t-3"],
+#t-4:checked ~ .gallery label[for="t-4"],
+#t-5:checked ~ .gallery label[for="t-4"],
+#t-5:checked ~ .gallery label[for="t-5"] {
+	z-index: 4;
+} */
+      </style>
+   </head>
+   <body>
+      <!-- Start -->
+      <nav
+  id="sidenav-1"
+  class="sidenav"
+  data-mdb-right="true"
+  data-mdb-hidden="true"
+>
+  <ul class="sidenav-menu">
+    <li class="sidenav-item">
+      <a class="sidenav-link">
+        <i class="fas fa-home me-3 text-black"></i><span>Home</span></a
+      >
+    </li>
+    <li class="sidenav-item">
+        <a class="sidenav-link">
+            <i class="fab fa-readme me-3 text-black"></i><span>Blogs</span></a
+        >
+      </li>
+      <li class="sidenav-item">
+        <a class="sidenav-link">
+            <i class="fas fa-images me-3 text-black"></i><span>Gallery</span></a
+        >
+      </li>
+      <li class="sidenav-item">
+        <a class="sidenav-link">
+            <i class="fas fa-project-diagram me-3 text-black"></i><span>Works</span></a
+        >
+      </li>
+  
+  </ul>
+</nav>
+      <div id="smooth-wrapper">
+      <div id="smooth-content">
+      <div style="overflow-x: hidden;">
+  <div class="row" style="min-height: 100vh;">
+    <div class="col-lg-7 center" style="padding-left: 10vw; padding-right: 10vw;">
+      <p style="width: 2vw; color: #F2ACAC; font-size: 3vh; padding-left: 6vw;" class="position-absolute top-0 start-0 mt-3">Amy Catherine</p>
+      <p style="color: black; font-weight: bold; font-family: 'Lato', sans-serif; font-style:  Mixed; font-size: 5vh;">Amy Catherine</p>
+      <h2 class="text" style="color: black; font-family: 'Lato', sans-serif; font-style:  Mixed; font-size: 5vh;">Freelancer,</h2>
+      <h2 class="text2" style="color: black; font-family: 'Lato', sans-serif; font-style:  Mixed; font-size: 5vh;">Visual Designer</h2>
+      <p  style="color:rgba(102, 120, 131, 1); font-family: 'Lato', sans-serif; font-style:  Mixed;  font-weight: bold;">Hi, my name is Amy Catherine  and I'm a freelance Fullstack developer based in Sydney , Australia. I have over 10 years of experience in the design industry. I'm specialized in Front and  backend developement. You can check out my work below</p>
+      <a href="" style="color: rgba(102, 120, 131, 1);" >Scroll Down <span style="color: #F2ACAC;"><i class="fas fa-long-arrow-alt-down ps-2"></i></span></a>
+   </div>
+    <div class="col-lg-5" style="background-color: #F2ACAC;">
+    <!-- Toggler -->
+<button
+data-mdb-toggle="sidenav"
+data-mdb-target="#sidenav-1"
+class="btn shadow-0 position-absolute top-0 end-0 mt-3 me-5" style="z-index: 1;"
+aria-controls="#sidenav-1"
+aria-haspopup="true"
+>
+<i class="fas fa-bars fa-2x"></i>
+</button>
+<div class="position-relative" style="min-height: 100vh;"> 
+  <div class="position-absolute top-50 start-0 translate-middle"  >
+    <div class="position-relative" style="background-image: url(img/Group\ 24.svg); height: 50vh; width: 35vh;background-repeat: no-repeat; background-size: contain; ">
+      <div class="position-absolute top-0 end-0">
+      <img class="img-fluid" src="img/Rectangle 255.svg" style="height: 45vh;" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  -->
+</div>
+  </div>
+<!-- Toggler -->
+<div style="min-height: 50vh; background-color: #F2ACAC;">
+  <h1 style="color: #FFFFFF; padding-left: 10vw; padding-top: 5vh;">My <span style="color:  rgba(130, 4, 47, 1);">Blogs</span></h1>
+  <div class="row" style="min-height: 30vh;">
+     <div class="col-lg-1"></div>
+     <div class="col-lg text-light p-5" style="border-left: 9px solid #1669B4; overflow: hidden;">
+        <p class="shift" style="font-size: 3vh;">Blog name</p>
+        <p class="shift">I believe that great design should be intuitive and user-friendly for everyone, including those who don't consider themselves "designers." It's my job to ensure that your audience can interact with your brand in a way that makes sense for them, whether they're on a laptop or a phone.</p>
+     </div>
+     <div class="col-lg text-light p-5" style="border-left: 9px solid #67F5B1; overflow: hidden;">
+        <p class="shift" style="font-size: 3vh;">Blog name</p>
+        <p class="shift">I believe that great design should be intuitive and user-friendly for everyone, including those who don't consider themselves "designers." It's my job to ensure that your audience can interact with your brand in a way that makes sense for them, whether they're on a laptop or a phone.</p></div>
+     <div class="col-lg text-light p-5" style="border-left: 9px solid #DF5980; overflow: hidden;">
+        <p class="shift" style="font-size: 3vh;">Blog name</p>
+        <p class="shift">I believe that great design should be intuitive and user-friendly for everyone, including those who don't consider themselves "designers." It's my job to ensure that your audience can interact with your brand in a way that makes sense for them, whether they're on a laptop or a phone.</p></div>
+     <div class="col-lg-1"></div>
+  </div>
+  <div class="pb-4">
+     <a href="" style="text-decoration: underline; padding-left: 10vw; padding-top: 5vh; color: white;" >View All</a>
+  </div>
+
+</div>
+<div class="row" >
+  <div class="col-lg-4" style="background-color: #F2ACAC;">
+    <h1 style="color: #FFFFFF; padding-left: 10vw; padding-top: 5vh;"><span style="color:  rgba(130, 4, 47, 1);">My </span>Gallery</h1>
+  </div>
+  <div class="col-lg-8" style="min-height: 100vh;"> 
+      <!-- <div class="position-absolute top-50 start-50 translate-middle" >
+        <img src="img/Group 25.svg" alt="" srcset="">
+      </div> -->
+    <!-- <div class="slider">
+      <input type="radio" name="gallery" id="t-1">
+      <input type="radio" name="gallery" id="t-2">
+      <input type="radio" name="gallery" id="t-3" checked>
+      <input type="radio" name="gallery" id="t-4">
+      <input type="radio" name="gallery" id="t-5">
+      <div class="gallery" style="margin-top: 25vh; margin-left: -20vw; border-radius: 15px; width: 100% !important;">
+        <label class="item" for="t-1">
+         <div class="bg" style="background-image: url(https://i0.wp.com/www.flutterbeads.com/wp-content/uploads/2021/11/set-background-image-flutter-hero.jpeg?fit=1920%2C1280&ssl=1); height: 50vh; border-radius: 15px;"></div>
+        </label>
+        <label class="item" for="t-2">
+          <div class="bg" style="background-image: url(https://thumbs.dreamstime.com/b/matin-en-nature-49995626.jpg); height: 50vh; border-radius: 15px;"></div>
+        </label>
+        <label class="item" for="t-3">
+          <div class="bg" style="background-image: url(https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg); height: 50vh; border-radius: 15px;"></div>
+        </label>
+        <label class="item" for="t-4">
+          <div class="bg" style="background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg); height: 50vh; border-radius: 15px;"></div>
+        </label>
+        <label class="item" for="t-5">
+          <div class="bg" style="background-image: url(https://i0.wp.com/www.flutterbeads.com/wp-content/uploads/2022/01/add-image-in-flutter-hero.png?fit=2850%2C1801&ssl=1); height: 50vh; border-radius: 15px;"></div>
+        </label>
+      </div>
+     
+    </div> -->
+  
+
+  </div>
+</div>
+
+   </div>
+   
+</div></div>
+
+      <!-- End -->
+      <!-- MDB -->
+      <script type="text/javascript" src="../js/mdb.min.js"></script>
+      <script src='../gsap-shockingly-green/minified/gsap.min.js'></script>
+      <script src='../gsap-shockingly-green/minified/ScrollToPlugin.min.js'></script>
+      <script src='../gsap-shockingly-green/minified/SplitText.min.js'></script>
+      <script src='../gsap-shockingly-green/minified/ScrollTrigger.min.js'></script>
+      <script src='../gsap-shockingly-green/minified/MotionPathPlugin.min.js'></script>
+      <script src='../gsap-shockingly-green/minified/ScrollSmoother.min.js'></script>
+
+      <script>
+       
+      </script>
+
+      
+<script>
+         
+   let smoother = ScrollSmoother.create({ 
+   wrapper:"#smooth-wrapper",
+   content:"#smooth-content",
+   smooth:4,
+   smoothTouch:0.1,effects:true
+   })
+     
+</script>
+   </body>
+</html>

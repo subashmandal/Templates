@@ -1,0 +1,79 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.people-search {
+    padding: 50px;
+    text-align: center;
+}
+
+.people-search h2 {
+    margin-bottom: 30px;
+}
+
+.people-search form {
+    margin-bottom: 20px;
+}
+
+.people-search input[type="text"] {
+    padding: 10px;
+    width: 300px;
+}
+
+.people-search button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual search result card styling */
+.search-result-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}

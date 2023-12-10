@@ -1,0 +1,28 @@
+<!--Get the samples from https://www.adobe.com/go/pdfembedapi_samples-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adobe Document Services PDF Embed API Sample</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("adobe_dc_view_sdk.ready", function(){
+            var adobeDCView = new AdobeDC.View({clientId: "d91e04187acb479e82d480ff017c7ad7", divId: "adobe-dc-view"});
+            adobeDCView.previewFile({
+                content:{location: {url: "https://wooble.org/app/home/pdf_files/636df79c21da0-1668151196.pdf"}},
+                metaData:{fileName: "636df79c21da0-1668151196.pdf"}
+            }, {});
+        });
+    </script>
+
+
+
+
+</head>
+<body style="margin: 0px">
+<div id="adobe-dc-view"></div>
+</body>
+</html>

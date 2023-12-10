@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>Profile Image</title>
+      <!-- MDB icon -->
+      <link rel="icon" href="img/wooble-favicon.ico" type="image/x-icon" />
+      <!-- ubuntu fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+         />
+      <!-- Google Fonts Roboto -->
+      <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+         />
+      <!-- MDB -->
+      <link rel="stylesheet" href="../css/mdb.min.css" />
+      <style>
+        .avatar img{
+            cursor: pointer;
+        }
+        .avatar img:hover{
+            filter: opacity(0.7);
+        }
+        @media (max-width: 900px){
+            .user_input{
+                margin-top: 200px !important;
+            }
+        }
+        @media (max-width: 600px) {
+            .user_input{
+                margin-top: 0% !important;
+                min-height: 100% !important;
+            }
+            .user_image{
+                background: none !important;
+                min-height: 100% !important;
+                box-shadow: none !important;
+                border-left: none !important;
+            }
+            .user_image div{
+                margin-top: 10% !important;
+            }
+            .user_image img{
+                border: 3px solid black !important;
+                width: 100px !important;
+                height: 100px !important;
+            }
+            .user_image h1{
+                margin-top: 0px !important;
+            }
+        }
+      </style>
+   </head>
+   <body style="overflow-x: hidden !important;">
+      <!-- Start your project here-->
+      <div class="position-absolute">
+        <a href="../../" class="m-1 d-flex align-items-center" style="height: 64px;">
+            <img src="img/wooble logo 1.svg" alt="Wooble Logo" class="src " loading="lazy" style="width: 58px;">
+            <span class="fs-3 fw-bolder" style="font-family: 'Ubuntu', sans-serif; color:#002366;">Wooble</span>
+         </a>
+  </div>
+      <div class="container-fluid">
+      <div class="row flex-md-row flex-column-reverse">
+
+        <div class="col-lg-6 g-0 d-flex align-items-center" style="overflow:hidden !important; max-height: 100vh">
+            <div class="container" style="max-width:80%">
+                <div class="row">
+                    <div class="user_input" style="margin-top: 20%;" data-mdb-toggle="animation" data-mdb-animation="fade-in-left" data-mdb-animation-start="onLoad" data-mdb-animation-duration="1000">
+                        <div>
+                            <h1 class="fw-bold ms-4" style="color: #306FB2; font-style: italic; font-family: Ubuntu ">My</h1>
+                            <h1 class="opacity-55 ms-4 mb-4" style="color: #306FB2; font-family: Ubuntu ">Profile Picture</h1>
+
+                            <div class="row">
+                                <input style="visibility: hidden" id="profile_pic_space" type="file">
+                                <input style="visibility: hidden" id="camera_pic_space" type="file" name="click photo" accept="image/*" capture="camera" class="position-absolute"">
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-lg-6 col-12 mb-2">
+                                    <button onclick="click_camera_pic()" class="btn btn-block btn-lg shadow-3 rounded-0 text-start"> <img src="img/capture%20icon.png" width="30px"> <span style="color: rgb(0,64,134)">&nbsp;Take Photo</span></button>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-2">
+                                    <button onclick="click_profile_pic()" class="btn btn-block btn-lg shadow-3 text-start"> <img src="img/upload%20photo%20icon.png" width="30px"> <span style="color: rgb(0,64,134)"> &nbsp; Upload Photo </span> </button>
+                                </div>
+                            </div>
+
+
+                            <div class="opacity-55 fs-5 ms-4 pt-2 text-capitalize" style="color: #306FB2; font-family: Ubuntu ">or choose any avatar</div>
+                            <div class="row d-flex justify-content-center avatar my-4 mx-2">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/avatar image/avatar1.png" alt="avatar1" class="m-2 img-fluid" onclick="change(src)">
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/avatar image/avatar2.png" alt="avatar2" class="m-2 img-fluid" onclick="change(src)">
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/avatar image/avatar3.png" alt="avatar3" class="m-2 img-fluid" onclick="change(src)">
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/avatar image/avatar4.png" alt="avatar4" class="m-2 img-fluid" onclick="change(src)">
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/avatar image/avatar5.png" alt="avatar5" class="m-2 img-fluid" onclick="change(src)">
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/avatar image/avatar6.png" alt="avatar6" class="m-2 img-fluid" onclick="change(src)">
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/avatar image/avatar7.png" alt="avatar7" class="m-2 img-fluid" onclick="change(src)">
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/avatar image/avatar8.png" alt="avatar8" class="m-2 img-fluid" onclick="change(src)">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center  g-0 user_image" style="background: linear-gradient(90deg, #096296 0%, #012567 100%); min-height: 100vh; border-bottom-left-radius: 20px; border-top-left-radius: 20px; box-shadow: 0px 0px 25px black; border-left: 1px solid #0a47a9;" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="slide-in-right" data-mdb-animation-start="onLoad" data-mdb-animation-duration="1000">
+            <div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="img/avatar%20image/profile%20icon.png" alt="profile image" id="profile_img" class="m-5 p-1" style="border-radius: 50%; width:300px; height:300px; border: 3px solid white; background-color:whitesmoke;">
+                </div>
+                <h1 class="text-center fw-bolder" style="color: #76A9DF; font-family:Ubuntu">Subash Mandal</h1>
+                <h2 class="text-center fw-normal mb-5" style="color: #9ECDFF; font-family:Ubuntu">Developer</h2>
+            </div>
+        </div>
+      </div>
+      </div>
+      <!-- End your project here-->
+      <!-- MDB -->
+      <script type="text/javascript" src="../js/mdb.min.js"></script>
+      <!-- Custom scripts -->
+      <script type="text/javascript">
+        function change(src){
+            //console.log(src);
+            let profile_img = document.getElementById("profile_img");
+            src = src.substring(0,src.length-4);
+            //console.log(src);
+            src = src+'.svg';
+            profile_img.src = src;
+            //console.log(src);
+        }
+
+        function click_profile_pic(){
+                document.getElementById("profile_pic_space").click();
+        }
+
+        function click_camera_pic(){
+            document.getElementById("camera_pic_space").click();
+        }
+      </script>
+   </body>
+</html>

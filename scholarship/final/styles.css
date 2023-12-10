@@ -1,0 +1,132 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(10, 34, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.form-container {
+    background: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.header i {
+    font-size: 48px;
+    color: #1565c0;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #1565c0;
+    font-size: 16px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #1565c0;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background-color: #0d47a1;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #1565c0;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    .form-container {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+}
+
+/* Beauty Elements */
+.header i {
+    color: #1976d2;
+}
+
+.form-container {
+    background-color: #e3f2fd;
+}
+
+form input[type="submit"] {
+    background-color: #1976d2;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1565c0;
+}
+
+form h1,
+form h2 {
+    color: #1976d2;
+}
+
+form textarea {
+    background-color: #bbdefb;
+    transition: background 0.3s ease;
+}
+
+form textarea:focus {
+    background-color: #90caf9;
+}

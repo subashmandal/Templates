@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Standard 1</title>
+    <!-- Wooble icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+   <!-- Google Fonts poppins -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+   <!-- Google Fonts Roboto -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+    <!-- MDB -->
+    <link rel="stylesheet" href="../../css/mdb.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+    .glassism{
+    background: rgba(200, 200, 200, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 0px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
+      @media (max-width:1440px) {
+        nav{
+          min-width: 40% !important;
+        }
+        .hello{
+          font-size:8rem !important;
+        }
+      }
+      @media (max-width:2240px) {
+        nav{
+          min-width: 25% !important;
+        }
+        .hello{
+          font-size:8rem !important;
+        }
+      }
+      @media (max-width:850px) {
+        nav{
+          min-width: 75% !important;
+        }
+        .hello{
+          font-size:8rem !important;
+        }
+        .blog_img .img{
+          height: 30vh !important;
+        }
+      }
+      @media (max-width:600px) {
+        nav{
+          min-width: 75%;
+        }
+        .hello{
+          font-size:xx-large !important;
+        }
+        .featured, .recent, .featured2{
+          font-size: 10vw !important;
+        }
+        .works, .photos, .blogs{
+          font-size: 5vw !important;
+        }
+        .blog_img .img{
+          height: 30vh !important;
+        }
+      }
+      .work_img .img{
+          cursor: pointer;
+        }
+      .blog_img .img{
+          cursor: pointer;
+        }
+      .lightbox img{
+        transition: 2s;
+      }
+      .lightbox img:hover{
+        box-shadow: 0px -1px 10px 0px rgba(255,255,255,1);
+        transform: scale(1.05);
+      }
+section .btn{
+  transition: 0.5s;
+}
+section .btn:hover{
+  transform: translateY(-15px) !important;
+}
+.title {
+  font-weight: 600;
+  display: flex;
+}
+.next::before {
+  content: "";
+  background-color: rgba(160, 52, 50, 1);
+  opacity: 1;
+  height: 4px;
+  width: 80%;
+  margin-top: 20px;
+  margin-right: 1rem;
+}
+    </style>
+  </head>
+  <body style="overflow-x:hidden; font-family: 'Abhaya Libre', serif; background-color: rgba(29, 34, 42, 1);
+  ">
+    <div id="smooth-wrapper" style="overflow-x: hidden;">
+      <div id="smooth-content" style="overflow-x: hidden;">
+    <!-- Start your project here-->
+    <!-- Sidenav -->
+<nav
+id="sidenav-1"
+class="sidenav glassism text-wrap"
+style="font-family: 'Poppins', sans-serif;"
+data-mdb-hidden="true"
+>
+<div class="row flex-column flex-sm-row">
+  <div class="col-lg-4 col-sm-12 d-flex justify-content-start justify-content-lg-center">
+    <div class="shadow-1-strong mb-4 rounded-2" style="background-image:url('https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg'); background-repeat: no-repeat; background-position-x: center; background-position-y: top; background-size: cover; height: 100px;width: 100px;">
+    </div>
+  </div>
+  <div class="col-lg col-sm-12">
+    <div class="text-capitalize fs-1 text-wrap"><span class="text-capitalize fw-bold text-white">tobi</span>&nbsp;<span class="text-capitalize fw-bold" style="color: rgb(213, 26, 23);">simmon</span></div>
+      <span class="text-capitalize text-white opacity-80 fs-3" style="line-height: 100%;">founder & ceo</span>
+  </div>
+</div>
+  <hr class="mt-0 py-2 text-white" />
+<ul class="sidenav-menu">
+  <li class="sidenav-item my-2">
+    <a class="sidenav-link" href="works.html">
+      <i class="fas fa-briefcase fa-2x me-3 text-primary"></i><span class="text-white fs-4">Works</span></a
+    >
+  </li>
+  <li class="sidenav-item my-2">
+    <a class="sidenav-link" href="gallery.html">
+      <i class="fas fa-image fa-2x me-3" style="color: rgb(178, 67, 178);"></i><span class="text-white fs-4">Photos</span></a
+    >
+  </li>
+  <li class="sidenav-item my-2">
+    <a class="sidenav-link" href="blog.html">
+      <i class="fas fa-blog fa-2x me-3" style="color: rgb(240,106,53);"></i><span class="text-white fs-4">Blogs</span></a
+    >
+  </li>
+  <li class="sidenav-item pt-3">
+    <span class="sidenav-subheading text-white opacity-80 fs-6">Social</span>
+    <a class="sidenav-link my-2" href="">
+      <i class="fab fa-linkedin fa-2x me-3" style="color: rgb(1,119,181);"></i><span class="text-white fs-4">Linkedin</span></a
+    >
+  </li>
+  <li class="sidenav-item">
+    <a class="sidenav-link my-2" href="">
+      <img src="img/instagram.png" alt="" height="25px" width="25px" class="me-3"><span class="text-white fs-4">Instagram</span></a
+    >
+  </li>
+  <li class="sidenav-item">
+    <a class="sidenav-link my-2" href="">
+      <i class="fab fa-facebook-square fa-2x me-3" style="color: rgb(72,103,170);"></i><span class="text-white fs-4">Facebook</span></a
+    >
+  </li>
+</ul>
+</nav>
+<!-- Sidenav -->
+
+<!-- Toggler -->
+<button
+data-mdb-toggle="sidenav"
+data-mdb-target="#sidenav-1"
+class="btn position-absolute shadow-0"
+aria-controls="#sidenav-1"
+aria-haspopup="true"
+style="z-index: 1;"
+>
+<i class="fas fa-bars fa-2x" style="color: rgba(160, 52, 50, 1);
+;"></i>
+</button>
+<!-- Toggler -->
+<!-- 1st section -->
+    <div class="container-fluid g-0" style="font-family: 'Poppins', sans-serif;">
+        <div class="row flex-column-reverse flex-md-row">
+            <div class="col-lg-6">
+                <div class="container g-5">
+                    <p class="text-uppercase fw-bold hello" style="font-family: 'Poppins', sans-serif; font-size: 20rem; color: rgba(57, 62, 70, 1);
+                    margin-top: 10%;">hello</p>
+                    <h1 class="text-white text-capitalize fw-bold">i'm</h1>
+                    <div class="name"><span class="text-capitalize fs-1 fw-bold" style="color: white; text-underline-offset: 0.5em;">tobi</span>&nbsp; &nbsp;<span class="text-capitalize fs-1 fw-bold" style="color: rgba(160, 52, 50, 1);">simmon</span></div>
+                    <hr style="position: relative; border: none; height: 5px; background: rgba(160, 52, 50, 1); opacity: 1; width: 5vw;">
+                    <p class="text-capitalize text-white fs-1 fw-lighter designation" style="line-height: 100%;">founder & ceo</p><br>
+                    <p class="text-capitalize text-white fs-4 fw-light mb-5 about" >About Tobi Simmon..........</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="shadow-1-strong mb-4 profile_img" style="background-image:url('https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg'); background-repeat: no-repeat; background-position-x: center; background-position-y: top; background-size: cover; height: 75vh; width: 100%; border-bottom-left-radius: 50px;">
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- 1st section end -->
+    <!-- 2nd section -->
+    <div class="container-fluid g-0">
+      <div class="row" style="font-family: 'Poppins', sans-serif;">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <span class="text-capitalize fw-bold featured" style="font-family: 'Poppins', sans-serif; font-size: 10rem; color: rgba(57, 62, 70, 1);
+                    ">featured</span>
+                    <span class="position-absolute text-capitalize fw-bold works" style="color: white; font-size: 6rem; margin-top: 3.5rem;">works</span>
+        </div>
+        <div class="container-fluid g-5">
+            <div class="row work_img">
+                <div class="col-lg-4 py-3 work_details gs_reveal">
+                  <div class="img img-fluid rounded-6 mb-3 position-relative" style="background-image:url('img/Rectangle\ 63.png'); background-repeat: no-repeat; background-size: cover; height: 50vh; width: 100%; background-position-x: center; background-position-y: top;">
+                    <div class="position-absolute bottom-0 text-start w-100" style="min-height: 15%; background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                      <p class="text-capitalize fw-bold text-white fs-1 mx-3 mb-4 lh-sm">work title</p>
+                      <p class="text-capitalize text-white fs-5 mx-3" style="font-size: 400;">description...</p>
+                  </div>
+                  </div>                    
+                </div>
+                <div class="col-lg-4 position-relative py-3 work_details gs_reveal">
+                  <div class="img img-fluid rounded-6 mb-3 position-relative" style="background-image:url('img/Rectangle\ 64.png'); background-repeat: no-repeat; background-size: cover; height: 50vh; width: 100%; background-position-x: center; background-position-y: top;">
+                    <div class="position-absolute bottom-0 text-start w-100" style="min-height: 15%; background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                      <p class="text-capitalize fw-bold text-white fs-1 mx-3 mb-4 lh-sm">work title</p>
+                      <p class="text-capitalize text-white fs-5 mx-3" style="font-size: 400;">description...</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 position-relative py-3 work_details gs_reveal">
+                  <div class="img img-fluid rounded-6 mb-3 position-relative" style="background-image:url('img/Rectangle\ 65.png'); background-repeat: no-repeat; background-size: cover; height: 50vh; width: 100%; background-position-x: center; background-position-y: top;">
+                    <div class="position-absolute bottom-0 text-start w-100" style="min-height: 15%; background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                      <p class="text-capitalize fw-bold text-white fs-1 mx-3 mb-4 lh-sm">work title</p>
+                      <p class="text-capitalize text-white fs-5 mx-3" style="font-size: 400;">description...</p>
+                  </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href=""><p class="text-capitalize text-decoration-underline fs-4 my-5 text-white" style="text-underline-offset: 8px;">view all</p></a>
+              </div>
+        </div>
+    </div>
+    </div>
+    <!-- 2nd section end -->
+    <!-- 3rd section -->
+    <div class="row" style="font-family: 'Poppins', sans-serif;">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <span class="text-capitalize fw-bold recent" style="font-family: 'Poppins', sans-serif; font-size: 10rem; color: rgba(57, 62, 70, 1);
+                    ">recent</span>
+                    <span class="position-absolute text-capitalize fw-bold photos" style="color: white; font-size: 6rem; margin-top: 3.5rem;">photos</span>
+        </div>
+    </div>
+    <div class="container-fluid g-0 mt-5">
+        <div class="row lightbox">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 photo gs_reveal">
+                <img src="img/Rectangle 67.png" class="img-fluid rounded-9 w-100" style="height: 45vh;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 photo gs_reveal">
+                <img src="img/Rectangle 68.png" class="img-fluid rounded-9 w-100" style="height: 45vh;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 photo gs_reveal">
+                <img src="img/Rectangle 72 (1).png" class="img-fluid rounded-9 w-100" style="height: 45vh;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 photo gs_reveal">
+                <img src="img/Rectangle 72 (2).png" class="img-fluid rounded-9 w-100" style="height: 45vh;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 photo gs_reveal">
+                <img src="img/Rectangle 72.png" class="img-fluid rounded-9 w-100" style="height: 45vh;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 photo gs_reveal">
+                <img src="img/Rectangle 72 (1).png" class="img-fluid rounded-9 w-100" style="height: 45vh;">
+            </div>
+        </div>
+        <div class="text-center">
+            <a href=""><p class="text-capitalize text-decoration-underline fs-4 my-5 text-white" style="text-underline-offset: 8px;">view all</p></a>
+        </div>
+    </div>
+    <!-- 3rd section end -->
+    <!-- 4th section -->
+    <div class="row" style="font-family: 'Poppins', sans-serif;">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <span class="text-capitalize fw-bold featured2" style="font-family: 'Poppins', sans-serif; font-size: 10rem; color: rgba(57, 62, 70, 1);
+                    ">featured</span>
+                    <span class="position-absolute text-capitalize fw-bold blogs" style="color: white; font-size: 6rem; margin-top: 3.5rem;">blogs</span>
+        </div>
+    </div>
+    <div class="container-fluid g-0 mt-5">
+      <div class="row blog_img">
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3 position-relative blog gs_reveal">
+            <div class="img img-fluid rounded-9 mb-3 position-relative" style="background-image:url('img/Rectangle\ 65.png'); background-repeat: no-repeat; background-size: cover; height: 50vh; width: 100%; background-position-x: center; background-position-y: top;">
+              <div class="position-absolute bottom-0 text-start w-100" style="min-height: 15%; background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                <p class="text-capitalize fw-bold text-white fs-1 mx-3 mb-4 lh-sm">blog title</p>
+                <p class="text-capitalize text-white fs-5 mx-3" style="font-size: 400;">description...</p>
+            </div>
+            </div>  
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3 position-relative blog gs_reveal">
+            <div class="img img-fluid rounded-9 mb-3 position-relative" style="background-image:url('img/Rectangle\ 63.png'); background-repeat: no-repeat; background-size: cover; height: 50vh; width: 100%; background-position-x: center; background-position-y: top;">
+              <div class="position-absolute bottom-0 text-start w-100" style="min-height: 15%; background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                <p class="text-capitalize fw-bold text-white fs-1 mx-3 mb-4 lh-sm">blog title</p>
+                <p class="text-capitalize text-white fs-5 mx-3" style="font-size: 400;">description...</p>
+            </div>
+            </div> 
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3 position-relative blog gs_reveal">
+            <div class="img img-fluid rounded-9 mb-3 position-relative" style="background-image:url('img/Rectangle\ 64.png'); background-repeat: no-repeat; background-size: cover; height: 50vh; width: 100%; background-position-x: center; background-position-y: top;">
+              <div class="position-absolute bottom-0 text-start w-100" style="min-height: 15%; background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                <p class="text-capitalize fw-bold text-white fs-1 mx-3 mb-4 lh-sm">blog title</p>
+                <p class="text-capitalize text-white fs-5 mx-3" style="font-size: 400;">description...</p>
+            </div>
+            </div> 
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3 position-relative blog gs_reveal">
+            <div class="img img-fluid rounded-9 mb-3 position-relative" style="background-image:url('img/Rectangle\ 72\ \(1\).png'); background-repeat: no-repeat; background-size: cover; height: 50vh; width: 100%; background-position-x: center; background-position-y: top;">
+              <div class="position-absolute bottom-0 text-start w-100" style="min-height: 15%; background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                <p class="text-capitalize fw-bold text-white fs-1 mx-3 mb-4 lh-sm">blog title</p>
+                <p class="text-capitalize text-white fs-5 mx-3" style="font-size: 400;">description...</p>
+            </div>
+            </div> 
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3 position-relative blog gs_reveal">
+            <div class="img img-fluid rounded-9 mb-3 position-relative" style="background-image:url('img/Rectangle\ 72\ \(2\).png'); background-repeat: no-repeat; background-size: cover; height: 50vh; width: 100%; background-position-x: center; background-position-y: top;">
+              <div class="position-absolute bottom-0 text-start w-100" style="min-height: 15%; background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                <p class="text-capitalize fw-bold text-white fs-1 mx-3 mb-4 lh-sm">blog title</p>
+                <p class="text-capitalize text-white fs-5 mx-3" style="font-size: 400;">description...</p>
+            </div>
+            </div> 
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3 position-relative blog gs_reveal">
+            <div class="img img-fluid rounded-9 mb-3 position-relative" style="background-image:url('img/Rectangle\ 67.png'); background-repeat: no-repeat; background-size: cover; height: 50vh; width: 100%; background-position-x: center; background-position-y: top;">
+              <div class="position-absolute bottom-0 text-start w-100" style="min-height: 15%; background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                <p class="text-capitalize fw-bold text-white fs-1 mx-3 mb-4 lh-sm">blog title</p>
+                <p class="text-capitalize text-white fs-5 mx-3" style="font-size: 400;">description...</p>
+            </div>
+            </div> 
+          </div>
+      </div>
+     </div>
+    <div class="text-center">
+        <a href=""><p class="text-capitalize text-decoration-underline fs-4 my-5 text-white" style="text-underline-offset: 8px;">view all</p></a>
+      </div>
+    <!-- 4th section end -->
+    <!-- footer code start -->
+    <!-- for smartphone -->
+    <footer class="container-fluid text-white text-center d-block d-sm-none" style="font-family: 'Roboto'; background-color: rgba(0, 0, 0, 0.2);">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 p-3">
+            <!-- Grid container -->
+    <!-- Section: Social media -->
+    <section>
+       <!-- Linkedin -->
+       <a class="btn  btn-floating m-1" href="#!" role="button"
+       ><i class="fab fa-linkedin fa-2x text-white" style="background-color: rgba(57, 62, 70, 1); -webkit-clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+       clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);"></i
+     ></a>
+        <!-- Instagram -->
+        <a class="btn btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram fa-2x text-white" style="background-color: rgba(57, 62, 70, 1); -webkit-clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+        clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);"></i
+      ></a>
+      <!-- Facebook -->
+      <a class="btn btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-square fa-2x text-white" style="background-color: rgba(57, 62, 70, 1); -webkit-clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+        clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <!-- Copyright -->
+    <div class="fw-light mt-3 fs-6">
+      © 2023, Designed By <a class="text-white" href="https://wooble.org/">Wooble</a>
+    </div>
+        </div>
+      </div>
+    </footer>
+      <!-- for desktop -->
+    <footer class="container-fluid text-white text-end d-none d-sm-block" style="font-family: 'Roboto'; background-color: rgba(0, 0, 0, 0.2);">
+      <div class="row d-flex justify-content-between">
+        <div class="col-12 title next text-lg-end text-sm-center p-3">
+            <!-- Grid container -->
+    <!-- Section: Social media -->
+    <section>
+       <!-- Linkedin -->
+       <a class="btn  btn-floating m-1" href="#!" role="button"
+       ><i class="fab fa-linkedin fa-2x text-white" style="background-color: rgba(57, 62, 70, 1); -webkit-clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+       clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);"></i
+     ></a>
+        <!-- Instagram -->
+        <a class="btn btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram fa-2x text-white" style="background-color: rgba(57, 62, 70, 1); -webkit-clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+        clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);"></i
+      ></a>
+      <!-- Facebook -->
+      <a class="btn btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-square fa-2x text-white" style="background-color: rgba(57, 62, 70, 1); -webkit-clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+        clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <!-- Copyright -->
+    <span class="text-lg-end text-sm-center fw-light pe-3 mt-2 fs-6">
+      © 2023, Designed By <a class="text-white" href="https://wooble.org/">Wooble</a>
+    </span>
+        </div>
+      </div>
+    </footer>
+    <!-- footer code end -->
+    <!-- End your project here-->
+      </div>
+    </div>
+    <!-- MDB -->
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
+    <!-- Gsap -->
+    <script src="../../gsap/minified/gsap.min.js"></script>
+    <script src="../../gsap/minified/ScrollTrigger.min.js"></script>
+    <script src="../../gsap/minified/ScrollSmoother.min.js"></script>
+    <script src="../../gsap/minified/SplitText.min.js"></script>
+    <!-- gsap Script -->
+    <script>
+      gsap.registerPlugin(SplitText, ScrollTrigger, ScrollSmoother, gsap);
+      // text animation
+      $('.hello').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='_text3'>$&</span>"));
+});
+var $text5 = $(".hello span"),
+    tl_5 = new TimelineMax({repeat:0});
+
+tl_5.staggerFrom($text5, 0.5, {alpha: 0, x: 40, ease: Power1.easeOut}, 0.2,'+=1.2');
+  // text animation end
+
+  gsap.from(".profile_img", {x: "100%",y:"-100%", ease: "power2.out", duration: 2});
+
+  gsap.from(".featured", {scale: 0,y:"-50%", duration: 5, scrollTrigger: {trigger: ".featured",start: "top 100%",end: "+=60%", markers:false, scrub : true,}});
+
+  gsap.from(".recent", {scale: 0,y:"-50%", duration: 5, scrollTrigger: {trigger: ".recent",start: "top 100%",end: "+=60%", markers:false, scrub : true,}});
+
+  gsap.from(".featured2", {scale: 0,y:"-50%", duration: 5, scrollTrigger: {trigger: ".featured2",start: "top 100%",end: "+=60%", markers:false, scrub : true,}});
+
+  gsap.from(".works", {opacity: 0, scrollTrigger: {trigger: ".works",start: "top 100%",end: "+=60%", markers:false, scrub : true,}})
+
+  gsap.from(".photos", {opacity: 0, scrollTrigger: {trigger: ".photos",start: "top 100%",end: "+=60%", markers:false, scrub : true,}})
+
+  gsap.from(".blogs", {opacity: 0, scrollTrigger: {trigger: ".blogs",start: "top 100%",end: "+=60%", markers:false, scrub : true,}})
+
+  gsap.from(".name", {x: "-100%",opacity:0, duration: 2, delay: 0.8});
+
+  gsap.from(".designation", {x: "-100%",opacity:0, duration: 2, delay: 1.2});
+
+  gsap.from(".about", {x: "-100%",opacity:0, duration: 2, delay: 1.5});
+
+
+  function animateFrom(elem, direction) {
+  direction = direction || 1;
+  var x = 0,
+      y = direction * 100;
+  if(elem.classList.contains("work_details")) {
+    x = 0;
+    y = "50%";
+  } else if (elem.classList.contains("photo")) {
+    x = 100;
+    y = 0;
+  }
+  else if (elem.classList.contains("blog")) {
+    x = -100;
+    y = 0;
+  }
+  elem.style.transform = "translate(" + x + "px, " + y + "px)";
+  elem.style.opacity = "0";
+  gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+    duration: 1.25, 
+    x: 0,
+    y: 0, 
+    autoAlpha: 1, 
+    ease: "expo", 
+    overwrite: "auto"
+  });
+}
+
+function hide(elem) {
+  gsap.set(elem, {autoAlpha: 0});
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  gsap.registerPlugin(ScrollTrigger);
+  
+  gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+    hide(elem);
+    
+    ScrollTrigger.create({
+      trigger: elem,
+      markers: false,
+      onEnter: function() { animateFrom(elem) }, 
+      onEnterBack: function() { animateFrom(elem, -1) },
+      onLeave: function() { hide(elem) }
+    });
+  });
+});
+    </script>
+
+<script>
+  let smoother = ScrollSmoother.create({ 
+  wrapper:"#smooth-wrapper",
+  content:"#smooth-content",
+  smooth:0,
+  })
+</script>
+  </body>
+</html>

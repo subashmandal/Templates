@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+          <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PZBV6NB');</script>
+      <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Talent-Hub</title>
+    <!-- Wooble icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+   <!-- Google Fonts Ubuntu -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+   <!-- Google Fonts Roboto -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css" />
+    <!-- flipster carousal card -->
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+    <!-- google jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+    .glassism{
+    background: rgba(200, 200, 200, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    }
+      @media (max-width: 800px) {
+        .title{
+          font-size: 4rem !important;
+        }
+      }
+      @media (max-width: 450px) {
+        .title{
+          font-size: 2.5rem !important;
+        }
+      }
+      .title {
+  animation: blur 5s ease-in-out infinite;
+}
+      @keyframes blur {
+  0%, 100% {
+    text-shadow: -0px 0px 0 rgba(0,0,0,.2);
+  }
+  50% {
+    text-shadow: -10px 10px 0 rgba(0,0,0,.2);
+  }
+}
+      .hero{
+            width: 100%;
+            /* height: 100vh; */
+            background: #000;
+            overflow: hidden;
+        }
+        .hero .carousel{
+            width: 180px;
+            margin: 70px auto 0;
+            overflow: visible;
+        }
+
+        .gradient_border{
+            border-image: linear-gradient(120deg, white, black, transparent, white) 30;
+            border-width: 1.5px;
+            border-style: solid;
+            transition: 1s;
+        }
+        .gradient_border:hover{
+          transform: scale(1.015);
+          box-shadow: 0px 0px 14px white;
+        }
+        .email_line {
+            display: flex;
+            flex-direction: row;
+            font-size: smaller;
+            color: #FFFFFF;
+            font-weight: lighter;
+        }
+        .email_line:before,
+        .email_line:after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid white;
+            margin: auto;
+        }
+    input:focus {
+        outline: none;
+    }
+    ::placeholder {
+      padding-left: 5px;
+        color: white;
+        font-weight: lighter;
+        opacity: 1; /* Firefox */
+    } 
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: white;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: white;
+    }
+    .search{
+      width: 30vw;
+    }
+    @media (max-width:420px) {
+      .search{
+        width: 80%;
+      } 
+    }
+   body::-webkit-scrollbar {
+    display: none;
+    }
+
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .social a{
+  transition: 0.5s !important;
+}
+.social a:hover{
+  background-color: #01B3C6 !important;
+  transform: scale(1.3);
+  transform: translateY(-10px);
+}
+.button_su{
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  border-radius: 50px;
+}
+.su_button_circle{
+  border-radius: 1000px;
+  position: absolute;
+  pointer-events: none;
+}
+.button_su_inner{
+    display: inline-block;
+    background: white;
+    color: #002366;
+    transition: 400ms;
+    text-decoration: none;
+    z-index: 100000;
+}
+.button_su_inner:hover{
+  color: white !important;
+}
+.button_text_container{
+   position:relative;
+   z-index: 10000;
+}
+.explode-circle {
+   animation: explode 0.5s forwards;
+}
+
+.desplode-circle{
+   animation: desplode 0.5s forwards;
+}
+
+@keyframes explode {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: rgba(42, 53, 80,0.2);
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: rgba(1, 179, 198, 0.8);
+  }
+}
+
+@keyframes desplode {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: rgba(1, 179, 198, 0.8);
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: rgba(129, 80, 108,0.6);
+  }
+}
+.create_hover:hover, .create_hover:focus{
+  background: linear-gradient(270deg, #01B3C6 -12.51%, #002366 136.14%) !important;
+}
+.ready_anim{
+    animation: anim 2s;
+}
+
+@keyframes anim{
+    from{
+        letter-spacing: 0.8em;
+        filter: blur(5px);
+        opacity: 0;
+    }to{
+        letter-spacing: 0.1em;
+        filter: blur(0);
+        opacity: 1px;
+    }
+}
+    </style>
+  </head>
+  <body style="overflow-x:hidden;">
+    <!-- Start your project here-->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZBV6NB"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="smooth-wrapper" style="overflow-x: hidden !important;">
+  <div id="smooth-content" style="overflow-x: hidden !important;">
+    <!-- section-1 -->
+    <div class="position-relative" style="font-family: 'Ubuntu', sans-serif; background: linear-gradient(180deg, #01B3C6 0%, #306FB2 100%); padding-bottom: 10%;">
+
+        <img src="img/talent_img_1.svg" alt="talent_img_1" srcset="" class="position-absolute bottom-0 start-0 img-fluid d-none d-sm-block" data-lag="0.2" style="margin-bottom: -4rem; margin-left: -2rem; max-width: 35vw;">
+
+        <img src="img/talent_img_2.svg" alt="talent_img_2" srcset="" class="position-absolute bottom-0 end-0 img-fluid d-none d-sm-block" data-lag="0.2" style="margin-bottom: -6rem; margin-right: -0.5rem; max-width: 35vw;">
+
+        <a href="../../">
+            <div class="ms-4 pt-4">
+                <img src="img/wooble_logo_1.svg" alt="Wooble Logo" class="src img-fluid" loading="lazy" style="width: 48px;">
+            <span class="fs-2 fw-bold text-white" style="color:#002366;">Wooble</span>
+            </div>
+         </a>
+         <div class=" text-center flex-column py-5">
+
+                <p class="fw-bold text-uppercase fs-2 ready_anim" style="color: #0E0E48; letter-spacing: 0.1em;">Are You Ready ?</p>
+                <p class="fw-bold text-capitalize text-light lh-1 my-5 title" style="font-size: 5.5rem;">Be A Part Of<br><span class="fw-bold text-capitalize" style="color: #0E0E48;">Next Big Thing.</span></p>
+                
+                <a href="" target="_blank"><button type="button" class="btn btn-rounded text-light my-5 magnet_effects" style="background: #0E0E48; letter-spacing: 0.1em;">CREATE YOUR PORTFOLIO!</button></a>
+
+                <div class="d-flex justify-content-center input-group my-5">
+                    <span class="input-group-text border-0 border-bottom" id="search-addon"><i class="fas fa-search text-light"></i></span>
+                    <input type="text" placeholder="Search..." class="bg-transparent text-light fw-normal border-0 border-bottom search" id="search" value="">
+                </div>
+             <div class=" text-center" style="display:none;" id="profession">
+              <div class="container my-5">
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light" target="Graphic_Designer">Graphic Designer</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light" target="Accountant">Accountant</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light" target="Actor">Actor</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">air traffic controller</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">Architect</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">Artist</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">Dentist</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">Developer</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">Doctor</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">Economist</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">choreographer</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">Data Scientist</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">Fashion Designer</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">Human Resource</button></a>
+                <a href="#"><button type="button" class="btn border-1 border-light border btn-rounded text-light text-capitalize m-1" data-mdb-ripple-color="light">Journalist</button></a>
+            </div>
+            <!-- Graphics Designer -->
+            <div class="container target" id="div_Graphic_Designer" style="display: none; overflow-x: hidden;">
+              <div class="row justify-content-center">
+                <!-- Card-1 start-->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+    </a>
+  </div>
+
+  <div style="position:relative; margin-top:-30px;">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+    <h5 class="text-black mt-2">Charlie2</h5>
+    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+    <div class="row mb-6">
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+      </div>
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- card 2 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+    </a>
+  </div>
+
+  <div style="position:relative; margin-top:-30px;">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+    <h5 class="text-black mt-2">Charlie</h5>
+    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+    <div class="row mb-6">
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+      </div>
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card-3 start-->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div style="position:relative; margin-top:-30px;">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                  <h5 class="text-black mt-2">Charlie</h5>
+                  <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                  <div class="row mb-6">
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                    </div>
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                    </div>
+                  </div>
+                </div>
+</div>
+<!-- card 4 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div style="position:relative; margin-top:-30px;">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                  <h5 class="text-black mt-2">Charlie</h5>
+                  <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                  <div class="row mb-6">
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                    </div>
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                    </div>
+                  </div>
+                </div>
+</div>
+<!-- card 5 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
+                  </div>
+                
+                  <div style="position:relative; margin-top:-30px;">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                    <h5 class="text-black mt-2">Charlie</h5>
+                    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                    <div class="row mb-6">
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                      </div>
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                      </div>
+                    </div>
+                  </div>
+  </div>
+  <!-- card 6 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
+                  </div>
+                
+                  <div style="position:relative; margin-top:-30px;">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                    <h5 class="text-black mt-2">Charlie</h5>
+                    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                    <div class="row mb-6">
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                      </div>
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                      </div>
+                    </div>
+                  </div>
+  </div>
+              </div>
+            </div>
+            <!-- Accountant -->
+            <div class="container target" id="div_Accountant" style="display: none; overflow-x: hidden;">
+              <div class="row justify-content-center">
+                <!-- Card-1 start-->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+    </a>
+  </div>
+
+  <div style="position:relative; margin-top:-30px;">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+    <h5 class="text-black mt-2">Accountant</h5>
+    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+    <div class="row mb-6">
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+      </div>
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- card 2 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+    </a>
+  </div>
+
+  <div style="position:relative; margin-top:-30px;">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+    <h5 class="text-black mt-2">Accountant</h5>
+    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+    <div class="row mb-6">
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+      </div>
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card-3 start-->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div style="position:relative; margin-top:-30px;">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                  <h5 class="text-black mt-2">Accountant</h5>
+                  <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                  <div class="row mb-6">
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                    </div>
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                    </div>
+                  </div>
+                </div>
+</div>
+<!-- card 4 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div style="position:relative; margin-top:-30px;">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                  <h5 class="text-black mt-2">Accountant</h5>
+                  <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                  <div class="row mb-6">
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                    </div>
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                    </div>
+                  </div>
+                </div>
+</div>
+<!-- card 5 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
+                  </div>
+                
+                  <div style="position:relative; margin-top:-30px;">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                    <h5 class="text-black mt-2">Accountant</h5>
+                    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                    <div class="row mb-6">
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                      </div>
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                      </div>
+                    </div>
+                  </div>
+  </div>
+  <!-- card 6 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
+                  </div>
+                
+                  <div style="position:relative; margin-top:-30px;">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                    <h5 class="text-black mt-2">Accountant</h5>
+                    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                    <div class="row mb-6">
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                      </div>
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Actor -->
+            <div class="container target" id="div_Actor" style="display: none; overflow-x: hidden;">
+              <div class="row justify-content-center">
+                <!-- Card-1 start-->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+    </a>
+  </div>
+
+  <div style="position:relative; margin-top:-30px;">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+    <h5 class="text-black mt-2">Actor</h5>
+    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+    <div class="row mb-6">
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+      </div>
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- card 2 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+    </a>
+  </div>
+
+  <div style="position:relative; margin-top:-30px;">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+    <h5 class="text-black mt-2">Actor</h5>
+    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+    <div class="row mb-6">
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+      </div>
+      <div class="col">
+        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card-3 start-->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div style="position:relative; margin-top:-30px;">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                  <h5 class="text-black mt-2">Actor</h5>
+                  <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                  <div class="row mb-6">
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                    </div>
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                    </div>
+                  </div>
+                </div>
+</div>
+<!-- card 4 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div style="position:relative; margin-top:-30px;">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                  <h5 class="text-black mt-2">Actor</h5>
+                  <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                  <div class="row mb-6">
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                    </div>
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                    </div>
+                  </div>
+                </div>
+</div>
+<!-- card 5 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
+                  </div>
+                
+                  <div style="position:relative; margin-top:-30px;">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                    <h5 class="text-black mt-2">Actor</h5>
+                    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                    <div class="row mb-6">
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                      </div>
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                      </div>
+                    </div>
+                  </div>
+  </div>
+  <!-- card 6 start -->
+<div class="col-md-3 text-center m-2 border border-1 rounded-3" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
+                  </div>
+                
+                  <div style="position:relative; margin-top:-30px;">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                    <h5 class="text-black mt-2">Actor</h5>
+                    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                    <div class="row mb-6">
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                      </div>
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-sm-block" style="padding-bottom: 200px;"></div>
+             </div>
+         </div>
+    </div>
+    <div class="bg-black">
+        <div class="container position-relative text-center pt-5">
+            <p class="text-white fs-1 fw-bold py-4">Top Profession</p>
+            <img src="img/el_1.png" alt="" class="position-absolute top-0 end-0 d-none d-lg-block d-md-block" style="max-width: 10vw;">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
+                    <a href=""><p class="text-light fw-lighter text-start">Graphic Designer</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">accountant</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">actor</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">air traffic controller</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">architect</p></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 text-center">
+                    <a href=""><p class="text-light fw-lighter text-start">artist</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">dentist</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">developer</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">doctor</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">economist</p></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 text-center">
+                    <a href=""><p class="text-light fw-lighter text-start">Choreographer</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">Data Scientist</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">Fashion Designer</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">Human Resources</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">Journalist</p></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 text-center">
+                    <a href=""><p class="text-light fw-lighter text-start">Marketing Analyst</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">Performance Artist</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">Reporter</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">Writer</p></a>
+                    <a href=""><p class="text-light fw-lighter text-start">Visual Designer</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hot drop creators -->
+    <div class="bg-black pt-5 g-0">
+        <div class="container position-relative text-center g-0">
+            <p class="text-white fs-1 fw-bold pt-4 " style="line-height:90%; background: -webkit-linear-gradient(270deg, #FFFFFF 20%, #606060 80%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-reflect: below 0px linear-gradient(transparent,#00000040 );">Hot Drop Creators</p>
+            <img src="img/el_2.png" alt="" class="position-absolute top-0 start-0 translate-middle-y d-none d-lg-block d-md-block" style="max-width: 10vw;">
+            <!-- flipster card -->
+            <div class="hero">
+              <div class="carousel g-0">
+                  <ul>
+                    <!-- card-1 -->
+                      <li>
+                        <div class=" text-center gradient_border mb-5" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div style="position:relative; margin-top:-30px;">
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                          <h5 class="text-black mt-2">Jack</h5>
+                          <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                          <div class="row mb-6">
+                            <div class="col">
+                              <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                            </div>
+                            <div class="col">
+                              <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- card-2 -->
+                    <li>
+                      <div class=" text-center gradient_border mb-5" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+                      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                        </a>
+                      </div>
+                    
+                      <div style="position:relative; margin-top:-30px;">
+                          <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                        <h5 class="text-black mt-2">Jay</h5>
+                        <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                        <div class="row mb-6">
+                          <div class="col">
+                            <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                          </div>
+                          <div class="col">
+                            <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- card-3 -->
+                  <li>
+                    <div class=" text-center gradient_border mb-5" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                      </a>
+                    </div>
+                  
+                    <div style="position:relative; margin-top:-30px;">
+                        <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                      <h5 class="text-black mt-2">Natalia</h5>
+                      <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                      <div class="row mb-6">
+                        <div class="col">
+                          <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                        </div>
+                        <div class="col">
+                          <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- card-4 -->
+                <li>
+                  <div class=" text-center gradient_border mb-5" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
+                  </div>
+                
+                  <div style="position:relative; margin-top:-30px;">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                    <h5 class="text-black mt-2">Rey</h5>
+                    <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                    <div class="row mb-6">
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                      </div>
+                      <div class="col">
+                        <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- card-5 -->
+              <li>
+                <div class=" text-center gradient_border mb-5" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 1) -6.39%, rgba(143, 143, 143, 1) 112.17%);">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="border border-2 border-light rounded-7" style="width: 95%; margin-top: 3%;"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div style="position:relative; margin-top:-30px;">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid shadow-5-strong" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 2px solid white; border-bottom: none; border-left: none; border-right: none;"/>
+                  <h5 class="text-black mt-2">John</h5>
+                  <p class="text-black fw-lighter m-3">I am a professional digital art creator.</p>
+                  <div class="row mb-6">
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong  bg-black">View</button></a>
+                    </div>
+                    <div class="col">
+                      <a href=""><button type="button" class="btn text-light shadow-5-strong btn-outline-black">Message</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+                  
+                  </ul>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- featured portfolio section -->
+    <div class="pt-5" style="background: linear-gradient(180deg, #000000 0%, #002366 100%);">
+        <div class="container position-relative text-center">
+            <p class="text-white fs-1 fw-bold py-4">Featured Portfolio</p>
+            <img src="img/el_3.png" alt="" class="position-absolute top-0 end-0 translate-middle-y d-none d-lg-block d-md-block" style="max-width: 10vw;">
+          <!-- carousel card start -->
+            <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel" data-mdb-touch="true" data-mdb-interval="9000000" data-mdb-keyboard="true" data-mdb-pause="hover" data-mdb-wrap="false" data-mdb-slide="false">
+              <div class="carousel-inner">
+              <!-- 1st carousel start -->
+              <div class="carousel-item active">
+            <div class="row justify-content-between">
+                <div class="col-md-4 col-sm-12">
+                    <div class="text-center gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="mt-2">
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                          <h5 class="text-light mt-2">Subash</h5>
+                          <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                          <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                          <p class="email_line my-3">Subash***@wooble.org</p>
+                          <div class="row">
+                            <div class="col">
+                                <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class=" text-center  gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="mt-2">
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                          <h5 class="text-light mt-2">Subash</h5>
+                          <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                          <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                          <p class="email_line my-3">Subash@wooble.org</p>
+                          <div class="row">
+                            <div class="col">
+                                <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class=" text-center  gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="mt-2">
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                          <h5 class="text-light mt-2">Subash</h5>
+                          <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                          <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                          <p class="email_line my-3">Subash@wooble.org</p>
+                          <div class="row">
+                            <div class="col">
+                                <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                            </div>
+                            <div class="col">
+                              <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class=" text-center  gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="mt-2">
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                          <h5 class="text-light mt-2">Subash</h5>
+                          <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                          <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                          <p class="email_line my-3">Subash@wooble.org</p>
+                          <div class="row">
+                            <div class="col">
+                                <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class=" text-center  gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="mt-2">
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                          <h5 class="text-light mt-2">Subash</h5>
+                          <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                          <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                          <p class="email_line my-3">Subash@wooble.org</p>
+                          <div class="row">
+                            <div class="col">
+                                <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class=" text-center  gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                          </a>
+                        </div>
+                      
+                        <div class="mt-2">
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                          <h5 class="text-light mt-2">Subash</h5>
+                          <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                          <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                          <p class="email_line my-3">Subash@wooble.org</p>
+                          <div class="row">
+                            <div class="col">
+                                <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </div>
+            <!-- 1st carousel end -->
+            <!-- 2nd carousel start -->
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                  <div class="col-md-4 col-sm-12">
+                      <div class="text-center gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                            <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                          </div>
+                        
+                          <div class="mt-2">
+                              <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                            <h5 class="text-light mt-2">Charlie</h5>
+                            <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                            <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                            <p class="email_line my-3">Subash***@wooble.org</p>
+                            <div class="row">
+                              <div class="col">
+                                  <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                              </div>
+                              <div class="col">
+                                  <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <div class=" text-center  gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                            <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                          </div>
+                        
+                          <div class="mt-2">
+                              <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                            <h5 class="text-light mt-2">Charlie</h5>
+                            <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                            <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                            <p class="email_line my-3">Subash@wooble.org</p>
+                            <div class="row">
+                              <div class="col">
+                                  <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                              </div>
+                              <div class="col">
+                                  <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <div class=" text-center  gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                            <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                          </div>
+                        
+                          <div class="mt-2">
+                              <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                            <h5 class="text-light mt-2">Charlie</h5>
+                            <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                            <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                            <p class="email_line my-3">Subash@wooble.org</p>
+                            <div class="row">
+                              <div class="col">
+                                  <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                              </div>
+                              <div class="col">
+                                <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <div class=" text-center  gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                            <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                          </div>
+                        
+                          <div class="mt-2">
+                              <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                            <h5 class="text-light mt-2">Charlie</h5>
+                            <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                            <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                            <p class="email_line my-3">Subash@wooble.org</p>
+                            <div class="row">
+                              <div class="col">
+                                  <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                              </div>
+                              <div class="col">
+                                  <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <div class=" text-center  gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                            <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                          </div>
+                        
+                          <div class="mt-2">
+                              <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                            <h5 class="text-light mt-2">Charlie</h5>
+                            <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                            <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                            <p class="email_line my-3">Subash@wooble.org</p>
+                            <div class="row">
+                              <div class="col">
+                                  <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                              </div>
+                              <div class="col">
+                                  <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <div class=" text-center  gradient_border m-lg-2 my-2" style="background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.35) -6.39%, rgba(143, 143, 143, 0.35) 112.17%);">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                            <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                          </div>
+                        
+                          <div class="mt-2">
+                              <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-fluid" style="border-radius: 50%; width:70px; height:70px; background-color: white; border: 1px solid white;"/>
+                            <h5 class="text-light mt-2">Charlie</h5>
+                            <p class="text-light fw-lighter" style="font-size:medium;">Developer</p>
+                            <a href=""><button type="button" class="btn text-light shadow-5-strong " style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">Message</button></a>
+                            <p class="email_line my-3">Subash@wooble.org</p>
+                            <div class="row">
+                              <div class="col">
+                                  <p class="text-light fw-lighter"><i class="flag flag-india"></i>India</p>
+                              </div>
+                              <div class="col">
+                                  <p class="fw-lighter" style="color: #5CE962;">Available</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+              <!-- 2nd carousel end -->
+          </div>
+          <!-- carousel indicator start -->
+          <div class="carousel-indicators" style="bottom: 40px;">
+            <button
+              type="button"
+              data-mdb-target="#carouselExampleControls"
+              data-mdb-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#carouselExampleControls"
+              data-mdb-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <!-- carousel indicator end -->
+          <!-- button start -->
+          <div class="row">
+            <div class="col-7"></div>
+            <div class="col-sm-12" style="margin-top: 80px;">
+              <div class="row flex-row justify-content-around">
+                <button id="previous" class="title previous carousel-control-prev position-relative" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+                  <i class="fas fa-arrow-left me-2" style="font-size: 1.5rem;"></i><span class="text-white" style="font-size: 1.5rem;">Previous</span>
+                </button>
+                <button id="next" class="title next carousel-control-next position-relative" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+                  <span class="text-white" style="font-size: 1.5rem;">Next</span><i class="fas fa-arrow-right ms-2" style="font-size: 1.5rem;"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- button end -->
+          </div>
+          <!-- carousel code end -->
+        </div>
+    </div>
+    <!-- challenge section -->
+    <div class="pt-5" style="background: linear-gradient(0deg, #000000 0%, #002366 100%);">
+      <div class="container">
+        <div class="text-center" >
+          <p class="text-white fs-1 fw-bold pt-4" style="font-family: 'Ubuntu', sans-serif; background: -webkit-linear-gradient(181.33deg, #FFFFFF 1.13%, rgba(255, 255, 255, 0) 201.71%);
+          -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Conquest</p>
+          <p class="text-white fs-4 fw-bold py-2" style="font-family: 'Ubuntu', sans-serif;">Talent Hub's Challenge Season 1: Timeline</p>
+        </div>
+        <div>
+          <!-- challenge 1 -->
+          <div class="glassism p-4">
+            <a href=""><h4 class="text-start fw-bold pb-4 lh-sm" style="color: rgba(148, 216, 255, 1); letter-spacing: 0.1rem; ">Task 1 - Executive Summary Submission</h4></a>
+            <div class="bg-transparent border text-white border-white p-2 d-inline rounded-4"><i class="fas fa-user me-2"></i>67</div>
+            <div class="bg-danger border text-white text-uppercase border-white p-2 d-inline rounded-4">live</div>
+            <div class="text-white text-capitalize p-2 d-inline"><span id="task1_end" style="letter-spacing: 0.1rem;"></span></div>
+            <p class="text-white text-start mt-4 pb-4" style="font-size: 1.2rem;">Teams need to submit their pitch in a 1-slider PPT (.pdf format). At this stage, you need to keep it short and simple to attract our attention!</p>
+            <div class="row justify-content-around">
+              <div class="col-6 d-flex justify-content-start border-end">
+                <p class="text-white"><span class="opacity-70">Start Date:</span><br>
+                  06 Feb 23, 09:00 PM IST</p>
+              </div>
+              <div class="col-6 d-flex justify-content-center">
+                <p class="text-white text-start"><span class="opacity-70">End Date:</span> <br> 25 Feb 23, 09:00 PM IST</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- challenge 2 -->
+          <div class="glassism p-4">
+            <a href=""><h4 class="text-start fw-bold pb-4 lh-sm" style="color: rgba(148, 216, 255, 1); letter-spacing: 0.1rem; ">Task 2 - Executive Summary Submission</h4></a>
+            <div class="bg-transparent border text-white border-white p-2 d-inline rounded-4"><i class="fas fa-user me-2"></i>89</div>
+            <div class="bg-success border text-white text-uppercase border-white p-2 d-inline rounded-4">register</div>
+            <p class="text-white text-start mt-4 pb-4" style="font-size: 1.2rem;">Teams need to submit their pitch in a 1-slider PPT (.pdf format). At this stage, you need to keep it short and simple to attract our attention!</p>
+            <div class="row justify-content-around">
+              <div class="col-6 d-flex justify-content-start border-end">
+                <p class="text-white"><span class="opacity-70">Start Date:</span><br>
+                  06 Feb 23, 09:00 PM IST</p>
+              </div>
+              <div class="col-6 d-flex justify-content-center">
+                <p class="text-white text-start"><span class="opacity-70">End Date:</span> <br> 06 Feb 23, 09:00 PM IST</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- challenge 3 -->
+          <div class="glassism p-4">
+            <a href=""><h4 class="text-start fw-bold pb-4 lh-sm" style="color: rgba(148, 216, 255, 1); letter-spacing: 0.1rem; ">Task 3 - Executive Summary Submission</h4></a>
+            <div class="bg-transparent border text-white border-white p-2 d-inline rounded-4"><i class="fas fa-user me-2"></i>154</div>
+            <div class="bg-success border text-white text-uppercase border-white p-2 d-inline rounded-4">register</div> 
+            <p class="text-white text-start mt-4 pb-4" style="font-size: 1.2rem;">Teams need to submit their pitch in a 1-slider PPT (.pdf format). At this stage, you need to keep it short and simple to attract our attention!</p>
+            <div class="row justify-content-around">
+              <div class="col-6 d-flex justify-content-start border-end">
+                <p class="text-white"><span class="opacity-70">Start Date:</span><br>
+                  06 Feb 23, 09:00 PM IST</p>
+              </div>
+              <div class="col-6 d-flex justify-content-center">
+                <p class="text-white text-start"><span class="opacity-70">End Date:</span> <br> 06 Feb 23, 09:00 PM IST</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    
+    <!-- section-5 -->
+    <div class="text-center py-5" style="background: linear-gradient(112.62deg, #016C97 29.4%, #0038ED 105.15%);">
+        <p class="text-white fs-1 fw-bold">The rest is up to you.</p>
+
+      <div class="button_su">
+        <span class="su_button_circle"></span>
+        <a href="#" class="button_su_inner px-4 py-2">
+          <span class="button_text_container fs-5 text-capitalize">Enroll Now!</span>
+        </a>
+      </div>
+    </div>
+    <!-- section-6 -->
+    <div class="pt-5" style="background: linear-gradient(0deg, #002366 -66.86%, #01B3C6 99.88%);">
+            <div class="text-center py-5 container shadow-5-strong rounded-9">
+              <h1 class="text-light mb-4 text-uppercase">Never Miss search hub</h1>
+              <p class="text-white-50 fw-lighter lh-1" style="font-size:medium;">Sign up your E-mail address and never miss anything. <br> We will update you once per week!</p>
+              <input type="email" placeholder="E-Mail address" class="my-2 fs-3 bg-transparent border rounded-4 text-white fw-lighter me-2">
+              <a href=""><button type="button" class="btn btn-lg my-2 text-light border shadow-5-strong create_hover" style="background: linear-gradient(142.41deg, #01B3C6 -12.51%, #002366 136.14%);">CREATE</button></a>
+            </div>
+            <div class="text-center mt-5 social">
+                  <!-- facebook -->
+                  <a class="btn text-white btn-sm btn-floating mx-2" style="background-color: white;" href="https://www.facebook.com/theWooble" target="_blank" role="button">
+                    <i class="fab fa-facebook-f fa-lg" style="color:#002366;"></i>
+                  </a>
+                  <!-- Youtube -->
+                  <a class="btn text-white btn-sm btn-floating mx-2" style="background-color: white;" href="https://www.youtube.com/channel/UC8LFjk9ArbwJf1f4pkloXzQ" target="_blank" role="button">
+                    <i class="fab fa-youtube fa-lg" style="color:#002366;"></i>
+                  </a>
+                  <!-- instagram -->
+                  <a class="btn text-white btn-sm btn-floating mx-2" style="background-color: white;" href="https://www.instagram.com/wooble_org/" target="_blank" role="button">
+                    <i class="fab fa-instagram fa-lg" style="color:#002366;"></i>
+                  </a>
+                  <!-- linkedin -->
+                  <a class="btn text-white btn-sm btn-floating mx-2" style="background-color: white;" href="https://www.linkedin.com/company/wooble-org/" target="_blank" role="button">
+                    <i class="fab fa-linkedin-in fa-lg" style="color:#002366;"></i>
+                  </a>
+            </div>
+            <div class="text-center py-3 mx-3">
+                <p class="text-white fw-lighter">This is a serious business no jokes footer. &copy; <u><a href="" class="text-white">Wooble pvt ltd.</a></u> <u><a href="" class="text-white">Help</a></u> <u><a href="" class="text-white">Signup!</a></u> <u><a href="" class="text-white">Terms & condition</a></u> <u><a href="" class="text-white">Privacy Policy</a></u></p>
+            </div>
+</div></div>
+    </div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    <script type="text/javascript" src="../gsap/minified/gsap.min.js"></script>
+    <script type="text/javascript" src="../gsap/minified/ScrollSmoother.min.js"></script>
+    <script type="text/javascript" src="../gsap/minified/ScrollTrigger.min.js"></script>
+    <!-- button magnet animation -->
+    <script>
+      var hoverMouse = function($el) {
+    $el.each(function() {
+    var $self = $(this);
+    var hover = false;
+    var offsetHoverMax = $self.attr("offset-hover-max") || 0.7;
+    var offsetHoverMin = $self.attr("offset-hover-min") || 0.5;
+
+    var attachEventsListener = function() {
+      $(window).on("mousemove", function(e) {
+        //
+        var hoverArea = hover ? offsetHoverMax : offsetHoverMin;
+
+        // cursor
+        var cursor = {
+          x: e.clientX,
+          y: e.clientY + $(window).scrollTop()
+        };
+
+        // size
+        var width = $self.outerWidth();
+        var height = $self.outerHeight();
+
+        // position
+        var offset = $self.offset();
+        var elPos = {
+          x: offset.left + width / 2,
+          y: offset.top + height / 2
+        };
+
+        // comparaison
+        var x = cursor.x - elPos.x;
+        var y = cursor.y - elPos.y;
+
+        // dist
+        var dist = Math.sqrt(x * x + y * y);
+
+        // mutex hover
+        var mutHover = false;
+
+        // anim
+        if (dist < width * hoverArea) {
+          mutHover = true;
+          if (!hover) {
+            hover = true;
+          }
+          onHover(x, y);
+        }
+
+        // reset
+        if (!mutHover && hover) {
+          onLeave();
+          hover = false;
+        }
+      });
+    };
+
+    var onHover = function(x, y) {
+      TweenMax.to($self, 0.4, {
+        x: x * 0.5,
+        y: y * 0.5,
+        rotation: x * 0.05,
+        ease: Power2.easeOut
+      });
+    };
+    var onLeave = function() {
+      TweenMax.to($self, 0.7, {
+        x: 0,
+        y: 0,
+        scale: 1,
+        rotation: 0,
+        ease: Elastic.easeOut.config(1.2, 0.4)
+      });
+    };
+
+    attachEventsListener();
+  });
+};
+
+hoverMouse($('.magnet_effects'));
+    </script>
+    <!-- Flipster scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+    <script>
+      $('.carousel').flipster({
+          style:'carousel',
+          spacing: -0.4,
+      });
+  </script>
+  <!-- timer script start-->
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("feb 25, 2023 21:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      document.getElementById("task1_end").innerHTML ="Ends In: "+ days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("task1_end").innerHTML = "Task End.";
+      }
+    }, 1000);
+    </script>
+  <!-- timer script end -->
+<!-- Custom Script -->
+  <script type="text/javascript">
+    let search = document.getElementById('search');
+    let profession = document.getElementById('profession');
+    search.addEventListener("click", function(event){
+      profession.style.display = "block";
+    });
+    jQuery(function(){
+    jQuery('.btn').click(function(){
+    jQuery('.target').hide();
+    jQuery('#div_'+$(this).attr('target')).show();
+
+    let designation =  $(this).attr('target').replace("_","  ");
+    document.getElementById("search").value=designation;
+})
+});
+// button hover animation start
+$( ".button_su_inner" ).mouseenter(function(e) {
+   var parentOffset = $(this).offset(); 
+  
+   var relX = e.pageX - parentOffset.left;
+   var relY = e.pageY - parentOffset.top;
+   $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+   $(this).prev(".su_button_circle").removeClass("desplode-circle");
+   $(this).prev(".su_button_circle").addClass("explode-circle");
+
+});
+
+$( ".button_su_inner" ).mouseleave(function(e) {
+
+     var parentOffset = $(this).offset(); 
+
+     var relX = e.pageX - parentOffset.left;
+     var relY = e.pageY - parentOffset.top;
+     $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+     $(this).prev(".su_button_circle").removeClass("explode-circle");
+     $(this).prev(".su_button_circle").addClass("desplode-circle");
+
+});
+// button hover animation end
+  </script>
+  <script>
+    let smoother = ScrollSmoother.create({ 
+    wrapper:"#smooth-wrapper",
+    content:"#smooth-content",
+    smooth:4,
+    effects: true
+    })
+  </script>
+  </body>
+</html>

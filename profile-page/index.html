@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZBV6NB');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Profile-page</title>
+    <!-- MDB icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <!-- ubuntu fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css" />
+    <style>
+        .notch {
+            position: relative;
+            top: 0;
+            left: 50%;
+            max-width: 60%;
+            height: 6px;
+            border-radius: 0 0 20px 20px;
+            transform: translateX(-50%);
+        }
+        .card_1 {
+            transition: transform .5s;
+            animation-duration: 2s;
+        }
+
+        .card_1:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .b_btn:hover, .b_btn:active, .b_btn:focus{
+            cursor: pointer;
+            background-color: #E4A11B !important;
+            color: white;
+        }
+        .p_card {
+            transition: transform .5s;
+            animation-duration: 2s;
+        }
+
+        .p_card:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+            background: rgba(42, 42, 52, 0.6) !important;
+        }
+        .toggle-wrapper {
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 35px;
+    box-shadow: 1px 1px 5px rgba(18, 18, 18, .3);
+    display: flex;
+    justify-content: flex-start;
+    margin: .5em 1.25em;
+    width: 3.5em;
+    min-width: 3.5em;
+}
+.toggle-dot {
+    background: linear-gradient(180deg, #4182FF 0%, #002366 100%);
+
+    box-shadow: 1px 1px 3px rgba(18, 18, 18, .3);
+    margin: 2px;
+    border-radius: 35px;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.thead{
+    background: rgba(42, 42, 52, 1);
+    color: rgba(163, 163, 163, 1);
+} 
+
+table th, table td {
+  padding: 10px;
+  text-align: center;
+}
+td{
+    color: white;
+}
+table th {
+  letter-spacing: .1em;
+  text-transform: capitalize;
+}
+
+.table_data::-webkit-scrollbar, .user_data::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+.table_data, .user_data, body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+    </style>
+
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2537691,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+</head>
+<body style="overflow-x:hidden;">
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZBV6NB"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Start your project here-->
+<!-- Sidenav -->
+<nav
+  id="sidenav-1"
+  class="sidenav w-75"
+  data-mdb-hidden="true"
+  style="background: rgba(66, 66, 79,1);"
+>
+<div class="px-3 position-relative" style="min-height: 95vh;">
+<div class="row mt-4">
+    <div class="d-flex align-items-center">
+        <div style="background-image: url('img/profile\ icon.png'); background-size: cover; background-repeat: no-repeat; background-position-x: center; background-position-y: center; min-width: 60px; min-height: 60px; border-radius: 100%; border: 1px solid white;"></div>
+    <h5 class="text-white ms-3 text-capitalize" style="font-family: 'Ubuntu', sans-serif; margin-right: 6vw;">user id</h5>
+    </div>
+</div>
+
+<div class="text-capitalize fs-6 mt-4" style="color: rgba(163, 163, 163, 1); font-family: 'Ubuntu', sans-serif;
+">welcome user id,<br> Here’s your Progress Bar!</div>
+<div class="my-3" style="max-height: 70vh; overflow-y: auto;">
+        <h6 class="text-white text-capitalize mt-4" style="font-family: 'Ubuntu', sans-serif;">Duration <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+            ">(33%)</span></h6>
+        <div class="progress rounded-9" style="height: 10px;">
+            <div class="progress-bar rounded-9" role="progressbar" style="width: 33%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h6 class="text-white text-capitalize mt-4" style="font-family: 'Ubuntu', sans-serif;">Works <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+            ">(50%)</span></h6>
+        <div class="progress rounded-9" style="height: 10px;">
+            <div class="progress-bar rounded-9" role="progressbar" style="width: 50%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h6 class="text-white text-capitalize mt-4" style="font-family: 'Ubuntu', sans-serif;">Blogs <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+            ">(40%)</span></h6>
+        <div class="progress rounded-9" style="height: 10px;">
+            <div class="progress-bar rounded-9" role="progressbar" style="width: 40%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h6 class="text-white text-capitalize mt-4" style="font-family: 'Ubuntu', sans-serif;">Gallery <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+            ">(70%)</span></h6>
+        <div class="progress rounded-9" style="height: 10px;">
+            <div class="progress-bar rounded-9" role="progressbar" style="width: 70%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h6 class="text-white text-capitalize mt-4" style="font-family: 'Ubuntu', sans-serif;">Video Storage <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+            ">(50%)</span></h6>
+        <div class="progress rounded-9" style="height: 10px;">
+            <div class="progress-bar rounded-9" role="progressbar" style="width: 50%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h6 class="text-white mt-3" style="font-family: 'Ubuntu', sans-serif;">Photo Storage <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+            ">(80%)</span></h6>
+        <div class="progress rounded-9" style="height: 10px;">
+            <div class="progress-bar rounded-9" role="progressbar" style="width: 80%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+</div>
+
+<div class="row my-3 px-3 w-100 position-absolute bottom-0">
+    <div class="d-flex align-items-center">
+        <div style="background-image: url('img/profile\ icon.png'); background-size: cover; background-repeat: no-repeat; background-position-x: center; background-position-y: center; min-width: 50px; min-height: 50px; border-radius: 100%; border: 1px solid white;"></div>
+    <div>
+        <div class="text-white ms-3 fs-5 text-capitalize" style="font-family: 'Ubuntu', sans-serif;">user name</div>
+        <p class="ms-3 fw-light text-wrap" style="font-family: 'Ubuntu', sans-serif; color: rgba(163, 163, 163, 1); line-height: 50%;
+        ">Username@gmail.com</p>
+    </div>
+    </div>
+</div>
+</div>
+</nav>
+<!-- Sidenav -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 d-none d-lg-block" style="background: rgb(28,28,36); border-right: 1px solid rgba(83, 83, 83, 1);">
+            <div class="my-5 mx-2 position-fixed user_data" style="max-height: 100%; max-width: 20vw; overflow-Y: auto; overflow-x: hidden;">
+                <div class="row position-relative">
+                    <div class="d-flex align-items-center">
+                        <div style="background-image: url('img/profile\ icon.png'); background-size: cover; background-repeat: no-repeat; background-position-x: center; background-position-y: center; min-width: 90px; min-height: 90px; border-radius: 100%; border: 1px solid white;"></div>
+                    <div class="text-white ms-3 text-capitalize text-wrap d-inline" style="font-family: 'Ubuntu', sans-serif; margin-right: 5vw; font-size: 1.5rem;">user id</div>
+                    <div class="position-absolute end-0"><i class="fas fa-caret-left fa-3x text-white"></i></div>
+                    </div>
+                </div>
+
+                <div class="text-capitalize mt-5" style="color: rgba(163, 163, 163, 1); font-family: 'Ubuntu', sans-serif; font-size: 1.5rem;
+                ">welcome user id,<br> Here’s your Progress Bar!</div>
+                <div class="my-5">
+                        <p class="text-white text-capitalize mt-4" style="font-family: 'Ubuntu', sans-serif; font-size: 1.2rem;">Duration <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+                            ">(33%)</span></p>
+                        <div class="progress rounded-9" style="height: 20px;">
+                            <div class="progress-bar rounded-9" role="progressbar" style="width: 33%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="text-white text-capitalize mt-4" style="font-family: 'Ubuntu', sans-serif; font-size: 1.2rem;">Works <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+                            ">(50%)</span></p>
+                        <div class="progress rounded-9" style="height: 20px;">
+                            <div class="progress-bar rounded-9" role="progressbar" style="width: 50%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="text-white text-capitalize mt-4" style="font-family: 'Ubuntu', sans-serif; font-size: 1.2rem;">Blogs <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+                            ">(40%)</span></p>
+                        <div class="progress rounded-9" style="height: 20px;">
+                            <div class="progress-bar rounded-9" role="progressbar" style="width: 40%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="text-white text-capitalize mt-4" style="font-family: 'Ubuntu', sans-serif; font-size: 1.2rem;">Gallery <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+                            ">(70%)</span></p>
+                        <div class="progress rounded-9" style="height: 20px;">
+                            <div class="progress-bar rounded-9" role="progressbar" style="width: 70%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="text-white text-capitalize mt-4" style="font-family: 'Ubuntu', sans-serif; font-size: 1.2rem;">Video Storage <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+                            ">(50%)</span></p>
+                        <div class="progress rounded-9" style="height: 20px;">
+                            <div class="progress-bar rounded-9" role="progressbar" style="width: 50%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="text-white text-capitalize mt-3" style="font-family: 'Ubuntu', sans-serif; font-size: 1.2rem;">Photo Storage <span class="fw-lighter" style="color: rgba(163, 163, 163, 1);
+                            ">(80%)</span></p>
+                        <div class="progress rounded-9" style="height: 20px;">
+                            <div class="progress-bar rounded-9" role="progressbar" style="width: 80%; background: linear-gradient(180deg, #002366 0%, #4182FF 100%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="d-flex align-items-center">
+                                <div style="background-image: url('img/profile\ icon.png'); background-size: cover; background-repeat: no-repeat; background-position-x: center; background-position-y: center; min-width: 90px; min-height: 90px; border-radius: 100%; border: 1px solid white;"></div>
+                            <div>
+                                <span class="text-white ms-3 text-capitalize text-wrap w-100" style="font-family: 'Ubuntu', sans-serif; font-size: 1.5vw;">user name</span>
+                                <div class="ms-3 fw-light" style="font-family: 'Ubuntu', sans-serif; margin-right: 6vw; color: rgba(163, 163, 163, 1); line-height: 20%; font-size: 1vw;
+                                ">Username@gmail.com</div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-9" style="background: rgb(31,32,40);">
+            <div class="m-lg-5 m-3">
+                    <!-- Toggler -->
+<button
+data-mdb-toggle="sidenav"
+data-mdb-target="#sidenav-1"
+class="btn d-block d-sm-block d-md-block d-lg-none shadow-0 mb-5"
+aria-controls="#sidenav-1"
+aria-haspopup="true"
+>
+<i class="fas fa-bars fa-2x" style="color: rgba(163, 163, 163, 1);"></i>
+</button>
+<!-- Toggler -->
+                <h1 class="text-capitalize text-white" style="font-family: 'Ubuntu', sans-serif;">my subscription</h1>
+                <h2 class="text-capitalize text-white mt-4" style="font-family: 'Ubuntu', sans-serif;">plan</h2>
+                <div class="row flex-column flex-sm-row d-flex justify-content-lg-between justify-content-center my-5 ">
+                    <div class="col-lg-3 col-md-5 col-sm-12 my-3 mx-1 rounded-9 card_1" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="zoom-in" data-mdb-animation-start="onLoad" data-mdb-animation-delay="100" style="background-color: #FCFAED; min-width: 21vw;">
+                        <h5 class="notch" style="background-color: #002366"></h5>
+                            <div class="m-3">
+                                <div class="text-start">
+                                    <img src="img/initial icon 12.54.58 PM.svg" alt="" style="height: 100px; width: 100px;" loading="lazy">
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <ul style="list-style: none; font-family: 'Ubuntu', sans-serif; color: rgba(62, 62, 62, 0.75); font-size: 13px; margin-left: -40px;">
+                                            <li>3 Months</li>
+                                            <li>2 Projects</li>
+                                            <li>5 Blogs</li>
+                                            <li>250 MB Photo Storage</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center justify-content-center"><p class="fw-semibold" style="color: #000000; font-size: 1.5rem;">&#8377;1,599/-</p></div>
+                                </div>
+                                <div class="row mt-4 d-flex align-items-center" style="font-family: 'Ubuntu', sans-serif;">
+                                    <div class="col-6 text-center"><button type="button" class="btn btn-outline-warning btn-rounded text-capitalize b_btn" data-mdb-ripple-color="dark">Buy Now</button></div>
+                                    <div class="col-6 text-center"><a href="">Learn More</a></div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-5 col-sm-12 my-3 mx-1 rounded-9 position-relative card_1" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="zoom-in" data-mdb-animation-start="onLoad" data-mdb-animation-delay="100" style="background-color: #002366; border: 5px solid rgba(65, 130, 255, 1); min-width: 21vw;">
+                        <img src="img/tick.png" alt="" class="p-2 position-absolute end-0 top-0" style="background-color: rgba(65, 130, 255, 1); border-radius: 100%; margin-top: -4%; margin-right: -4%;">
+                        <h5 class="notch" style="background: linear-gradient(96.97deg, #F79E0E 7.82%, #EEBD23 103.98%); z-index: 10; margin-top: -5px;"></h5>
+                            <div class="m-3">
+                                <div class="text-center">
+                                    <img src="img/maestro icon.svg" alt="" style="height: 130px; width: 130px; margin-top: -20px;" loading="lazy">
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <ul style="list-style: none; font-family: 'Ubuntu', sans-serif; color: white;
+                                        ; font-size: 13px; margin-left: -40px;">
+                                            <li>6 Months</li>
+                                            <li>5 Projects</li>
+                                            <li>10 Blogs</li>
+                                            <li>500 MB Photo Storage</li>
+                                            <li>100 MB Video Storage</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center justify-content-center"><p class="fw-semibold" style="background: -webkit-linear-gradient(180deg, #F79E0E 0%, #EEBD23 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 1.5rem;">&#8377;2,499/-</p></div>
+                                </div>
+                                <div class="row" style="font-family: 'Ubuntu', sans-serif;">
+                                    <div class="col-12 text-center"><button type="button" class="btn btn-outline-warning btn-rounded text-capitalize b_btn" data-mdb-ripple-color="dark">Recharge</button></div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-12 my-3 mx-1 rounded-9 card_1" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="zoom-in" data-mdb-animation-start="onLoad" data-mdb-animation-delay="100" style="background-color: #FCFAED; min-width: 21vw;">
+                        <h5 class="notch" style="background-color: #002366"></h5>
+                            <div class="m-3">
+                                <div class="text-start">
+                                    <img src="img/royal icon 12.54.58 PM.svg" alt="" style="height: 100px; width: 100px; padding: 0;" loading="lazy">
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <ul style="list-style: none; font-family: 'Ubuntu', sans-serif; color: rgba(62, 62, 62, 0.75); font-size: 13px; margin-left: -40px;">
+                                            <li>365 Days</li>
+                                            <li>Unlimited Projects</li>
+                                            <li>Unlimited Blogs</li>
+                                            <li>1 GB Photo Storage</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center justify-content-center"><p class="fw-semibold" style="color: #000000; font-size: 1.5rem;">&#8377;4,999/-</p></div>
+                                </div>
+                                <div class="row d-flex align-items-center mt-4" style="font-family: 'Ubuntu', sans-serif;">
+                                    <div class="col-6 text-center"><button type="button" class="btn btn-outline-warning btn-rounded text-capitalize b_btn" data-mdb-ripple-color="dark">Upgrade</button></div>
+                                    <div class="col-6 text-center"><a href="">Learn More</a></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <h1 class="text-white mt-5" style="font-family: 'Ubuntu', sans-serif;">Enable auto renew</h1>
+                <div class="row">
+                    <div class="col-10">
+                <div class="mt-4 fs-4" style="font-family: 'Ubuntu', sans-serif; color: rgba(163, 163, 163, 1);
+                ">This option: if checked, will renew your Wooble subscription, if the current plan expires. However, this might prevent you from</div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                        <div id="toggle-Switch" class="toggle-wrapper">
+                            <div class="toggle-dot" style="transition: background-color 1s;"></div>
+                          </div>
+                    </div>
+                </div>
+                <h1 class="text-white mt-5" style="font-family: 'Ubuntu', sans-serif;">Payment method</h1>
+                <div class="row mt-5 d-flex justify-content-between">
+                    <div class="col-lg-3 col-md-3 col-sm-12 my-4 border border-1 rounded-9 position-relative p_card" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="fade-in-up" data-mdb-animation-start="onScroll" >
+                        <div class="m-3" style="height: 200px;">
+                            <p class="fw-semibold" style="color:rgba(163, 163, 163, 1);"> Credit Card</p>
+                            <div class="position-absolute bottom-0 end-0 m-3"><i class="fas fa-minus-circle fa-2x"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 my-4 border border-1 rounded-9 position-relative p_card" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="fade-in-up" data-mdb-animation-start="onScroll" >
+                        <div class="m-3" style="height: 200px;">
+                            <p class="fw-semibold" style="color:rgba(163, 163, 163, 1);"> Debit Card</p>
+                            <div class="position-absolute bottom-0 end-0 m-3"><i class="fas fa-minus-circle fa-2x"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 my-4 border border-1 rounded-9 position-relative p_card" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="fade-in-up" data-mdb-animation-start="onScroll"  style="background: rgba(42, 42, 52, 1);
+                    ">
+                        <div class="m-3" style="height: 200px;">
+                            <div class="position-absolute top-50 start-50 translate-middle"><i class="fas fa-plus-circle fa-4x"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-white mt-5" style="font-family: 'Ubuntu', sans-serif;">Billing History</h1>
+                <div class="mt-5 table_data" style="overflow-x:auto; scrollbar-width: none;">
+                <table>
+                    <thead>
+                      <tr class="thead text-uppercase rounded-7">
+                        <th scope="col">DATE</th>
+                        <th scope="col">DETAILS</th>
+                        <th scope="col">AMOUNT</th>
+                        <th scope="col">DOWNLOAD</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td >08/02/2023</td>
+                        <td >Maestro Plan, 6 Months</td>
+                        <td >₹2,499</td>
+                        <td ><a href="">Invoice 08 Feb 23</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Section: Links  -->
+<!-- End your project here-->
+
+<!-- MDB -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript">
+    var ToggleSwitch = document.querySelector('#toggle-Switch');
+    var toggleswitchIsOn = false;
+
+ToggleSwitch.addEventListener('click', function() {
+    if (toggleswitchIsOn === false) {
+        ToggleSwitch.style.justifyContent = 'flex-end';
+        toggleswitchIsOn = true;
+    } else {
+        ToggleSwitch.style.justifyContent = 'flex-start';
+        toggleswitchIsOn = false;
+    }   
+});
+</script>
+</body>
+</html>

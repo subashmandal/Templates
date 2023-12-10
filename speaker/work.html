@@ -1,0 +1,553 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Gallery</title>
+    <!-- Wooble icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+   <!-- Google Fonts Inknut Antiqua -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;600&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+   <!-- Google Fonts Roboto -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+    <!-- MDB -->
+    <link rel="stylesheet" href="../../css/mdb.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        @media (max-width:2240px){
+
+        }
+      @media (max-width:1440px) {
+
+      }
+      @media (max-width:850px) {
+        .w_img{
+          height: 400px !important;
+        }
+        .scroll{
+          color: white !important;
+        }
+        .fa-arrow-down{
+          color: white !important;
+        }
+      }
+      @media (max-width:600px) {
+        .w_img{
+          height: 250px !important;
+        }
+        .scroll{
+          color: white !important;
+        }
+        .fa-arrow-down{
+          color: white !important;
+        }
+      }
+      .scroll_down{
+  -webkit-animation: pulse 1s ease infinite;
+  -moz-animation: pulse 1s ease infinite;
+  -ms-animation: pulse 1s ease infinite;
+  -o-animation: pulse 1s ease infinite;
+  animation: pulse 1s ease infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+ @-moz-keyframes pulse {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+@-o-keyframes pulse {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+ @-ms-keyframes  pulse {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+      /* link underline animation  */
+      .hua {
+  display: inline-block;
+  position: relative;
+}
+.hua:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hua:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* link underline animation end */
+/* cursor design */
+body{
+  cursor: none;
+}
+.cursor{
+  z-index: 10;
+}
+.small {
+  height: 10px;
+  width: 10px;
+  background-color: #6C90B6;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 5px #6C90B6) drop-shadow(0 0 20px #6C90B6);
+
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: height 0.2s, width 0.2s;
+}
+.big {
+  height: 50px;
+  width: 50px;
+  border: 3px solid #6C90B6;
+  border-radius: 100px;
+  filter: drop-shadow(0 0 5px #6C90B6) drop-shadow(0 0 20px #6C90B6);
+
+  position: fixed;
+  pointer-events: none;
+  transform: translate(calc(-50%), -50%);
+  transition: height 0.5s, width 0.5s, filter 0.5s;
+}
+
+/* REQUIRED / some styling is necessary for hover effect */
+.hover__big {
+  height: 100px;
+  width: 100px;
+  filter: drop-shadow(0 0 5px #6C90B6) drop-shadow(0 0 20px #6C90B6) drop-shadow(0 0 40px #6C90B6);
+  
+  transition: height 0.5s, width 0.5s, filter 0.5s;
+}
+
+/* REQUIRED / some styling is necessary for hover effect */
+.hover__small {
+  height: 8px;
+  width: 8px;
+  transition: height 0.2s, width 0.2s;
+}
+.img__fill{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: #6C90B6;
+  opacity: 0.7;
+  z-index: 10;
+  
+  transition: height 0.5s, width 0.5s, filter 0.5s;
+}
+/* cursor design */
+    </style>
+  </head>
+  <body style="overflow-x:hidden !important; background-color: rgb(255, 255, 255);">
+    <div class="cursor small"></div>
+    <div class="cursor big"></div>
+    <div id="smooth-wrapper" style="overflow-x: hidden !important;">
+      <div id="smooth-content" style="overflow-x: hidden !important;">
+    <!-- Start your project here-->
+    <div class="container-fluid g-0">
+      <!-- Sidenav -->
+<nav
+id="sidenav-1"
+class="sidenav"
+style="background: #01337D;"
+data-mdb-hidden="true"
+>
+<ul class="sidenav-menu">
+  <li class="sidenav-item my-2">
+    <a class="sidenav-link" href="index.html">
+      <i class="fas fa-user-tie fa-2x me-3" style="color: #6C90B6;"></i><span class="text-white fs-4">About Me</span></a
+    >
+  </li>
+  <li class="sidenav-item my-2">
+    <a class="sidenav-link" href="blog.html">
+      <i class="fas fa-blog fa-2x me-3" style="color: #6C90B6;"></i><span class="text-white fs-4">Blogs</span></a
+    >
+  </li>
+  <li class="sidenav-item my-2">
+    <a class="sidenav-link" href="gallery.html">
+      <i class="fas fa-image fa-2x me-3" style="color: #6C90B6;"></i><span class="text-white fs-4">Gallery</span></a
+    >
+  </li>
+  <li class="sidenav-item my-2">
+    <a class="sidenav-link" href="work.html">
+      <i class="fas fa-briefcase fa-2x me-3" style="color: #6C90B6;"></i><span class="text-white fs-4">Works</span></a
+    >
+  </li>
+  <li class="sidenav-item pt-3">
+    <span class="sidenav-subheading text-white opacity-80 fs-6">Social</span>
+    <a class="sidenav-link my-2" href="">
+      <i class="fab fa-linkedin fa-2x me-3" style="color: #6C90B6;"></i><span class="text-white fs-4">Linkedin</span></a
+    >
+  </li>
+  <li class="sidenav-item">
+    <a class="sidenav-link my-2" href="">
+      <i class="fab fa-instagram fa-2x me-3" style="color: #6C90B6;"></i><span class="text-white fs-4">Instagram</span></a
+    >
+  </li>
+  <li class="sidenav-item">
+    <a class="sidenav-link my-2" href="">
+      <i class="fab fa-facebook-square fa-2x me-3" style="color: #6C90B6;"></i><span class="text-white fs-4">Facebook</span></a
+    >
+  </li>
+  <li class="sidenav-item">
+    <a class="sidenav-link my-2" href="">
+      <i class="fab fa-twitter fa-2x me-3" style="color: #6C90B6;"></i><span class="text-white fs-4">Twitter</span></a
+    >
+  </li>
+  <li class="sidenav-item">
+    <a class="sidenav-link my-2" href="">
+      <i class="fab fa-github fa-2x me-3" style="color: #6C90B6;"></i><span class="text-white fs-4">Facebook</span></a
+    >
+  </li>
+</ul>
+</nav>
+<!-- Sidenav -->
+
+<!-- Toggler -->
+<button
+data-mdb-toggle="sidenav"
+data-mdb-target="#sidenav-1"
+style="z-index: 10;"
+class="btn shadow-0 position-absolute m-2 d-block d-lg-none"
+aria-controls="#sidenav-1"
+aria-haspopup="true"
+>
+<i class="fas fa-bars fa-2x"></i>
+</button>
+<!-- Toggler -->
+            <div class="row g-0">
+                <div class="col-lg-4">
+                    <div class="row position-sticky sticky-top g-0" style="z-index: -1;">
+                        <div class="col"></div>
+                        <div class="col position-relative" style="height:25vh; width: 50%; background: #023F97;">
+                            <div class="position-absolute top-0 end-0">
+                                <h1 class="number m-4" style="font-family: 'Inknut Antiqua', serif; color: #6C90B6; font-size: 5rem;">04</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                      <div class="position-fixed top-50 start-0 d-none d-lg-block">
+                        <ul class="fs-4  underlineBar" style="list-style-type: none; font-family: 'Inknut Antiqua', serif;">
+                          <li class="mb-4">
+                            <a href="index.html" class="text-black text-capitalize hua">About me</a>
+                          </li>
+                          <li class="mb-4">
+                            <a href="blog.html" class="text-black text-capitalize hua">Blogs</a>
+                          </li>
+                          <li class="mb-4">
+                            <a href="gallery.html" class="text-black text-capitalize hua">Gallery</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="work.html" class="text-black text-capitalize hua">works</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="position-fixed bottom-0 m-5 text-center scroll_down d-none d-lg-block">
+                        <p class="fs-3 scroll" style="color: #888888; font-family: 'Inknut Antiqua', serif;">scroll</p>
+                        <i class="fas fa-arrow-down fa-2x" style="color: #01337D;"></i>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 gx-sm-1" style="font-family: 'Inknut Antiqua', serif; overflow-x: hidden;">
+                  <!-- 1st work row -->
+                  <div class="row  d-flex justify-content-around" style="background: #01337D;">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                      <div class="w_img img-fluid gs_reveal gs_reveal_fromRight m-5" style="background-image:url('img/img1.png'); background-repeat: no-repeat; background-position-x: center; background-position-y: top; background-size: cover; height: 300px; width: 80%;">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 d-flex align-items-center">
+                      <div class="my-5 gs_reveal gs_reveal_fromRight">
+                        <p class="text-white fs-5 fw-light lh-lg mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ipsam sunt! Iusto necessitatibus quo reiciendis non architecto rem ad unde ut quidem nihil eos, dolores ea aliquam molestias iste placeat accusantium?</p>
+                        <div class="d-flex justify-content-center">
+                          <a href=""><button type="button" class="btn text-white text-capitalize fs-5 my-4" style="background: #001B3E; font-family: 'Inknut Antiqua', serif;">View</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2nd work row -->
+                  <div class="row  d-flex justify-content-around" style="background: #011B3E;">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                      <div class="w_img img-fluid gs_reveal gs_reveal_fromRight m-5" style="background-image:url('img/img2.png'); background-repeat: no-repeat; background-position-x: center; background-position-y: top; background-size: cover; height: 300px; width: 80%;">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 d-flex align-items-center">
+                      <div class="my-5 gs_reveal gs_reveal_fromRight">
+                        <p class="text-white fs-5 fw-light lh-lg mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ipsam sunt! Iusto necessitatibus quo reiciendis non architecto rem ad unde ut quidem nihil eos, dolores ea aliquam molestias iste placeat accusantium?</p>
+                        <div class="d-flex justify-content-center">
+                          <a href=""><button type="button" class="btn text-white text-capitalize fs-5 my-4" style="background: #01337D; font-family: 'Inknut Antiqua', serif;">View</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3rd work row -->
+                  <div class="row  d-flex justify-content-around" style="background: #01337D;">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                      <div class="w_img img-fluid gs_reveal gs_reveal_fromRight m-5" style="background-image:url('img/img1.png'); background-repeat: no-repeat; background-position-x: center; background-position-y: top; background-size: cover; height: 300px; width: 80%;">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 d-flex align-items-center">
+                      <div class="my-5 gs_reveal gs_reveal_fromRight">
+                        <p class="text-white fs-5 fw-light lh-lg mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ipsam sunt! Iusto necessitatibus quo reiciendis non architecto rem ad unde ut quidem nihil eos, dolores ea aliquam molestias iste placeat accusantium?</p>
+                        <div class="d-flex justify-content-center">
+                          <a href=""><button type="button" class="btn text-white text-capitalize fs-5 my-4" style="background: #001B3E; font-family: 'Inknut Antiqua', serif;">View</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4th work row -->
+                  <div class="row  d-flex justify-content-around" style="background: #011B3E;">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                      <div class="w_img img-fluid gs_reveal gs_reveal_fromRight m-5" style="background-image:url('img/img2.png'); background-repeat: no-repeat; background-position-x: center; background-position-y: top; background-size: cover; height: 300px; width: 80%;">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 d-flex align-items-center">
+                      <div class="my-5 gs_reveal gs_reveal_fromRight">
+                        <p class="text-white fs-5 fw-light lh-lg mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ipsam sunt! Iusto necessitatibus quo reiciendis non architecto rem ad unde ut quidem nihil eos, dolores ea aliquam molestias iste placeat accusantium?</p>
+                        <div class="d-flex justify-content-center">
+                          <a href=""><button type="button" class="btn text-white text-capitalize fs-5 my-4" style="background: #01337D; font-family: 'Inknut Antiqua', serif;">View</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 5th work row -->
+                  <div class="row  d-flex justify-content-around" style="background: #01337D;">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                      <div class="w_img img-fluid gs_reveal gs_reveal_fromRight m-5" style="background-image:url('img/img1.png'); background-repeat: no-repeat; background-position-x: center; background-position-y: top; background-size: cover; height: 300px; width: 80%;">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 d-flex align-items-center">
+                      <div class="my-5 gs_reveal gs_reveal_fromRight">
+                        <p class="text-white fs-5 fw-light lh-lg mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ipsam sunt! Iusto necessitatibus quo reiciendis non architecto rem ad unde ut quidem nihil eos, dolores ea aliquam molestias iste placeat accusantium?</p>
+                        <div class="d-flex justify-content-center">
+                          <a href=""><button type="button" class="btn text-white text-capitalize fs-5 my-4" style="background: #001B3E; font-family: 'Inknut Antiqua', serif;">View</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6th work row -->
+                  <div class="row  d-flex justify-content-around" style="background: #011B3E;">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                      <div class="w_img img-fluid gs_reveal gs_reveal_fromRight m-5" style="background-image:url('img/img2.png'); background-repeat: no-repeat; background-position-x: center; background-position-y: top; background-size: cover; height: 300px; width: 80%;">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 d-flex align-items-center">
+                      <div class="my-5 gs_reveal gs_reveal_fromRight">
+                        <p class="text-white fs-5 fw-light lh-lg mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ipsam sunt! Iusto necessitatibus quo reiciendis non architecto rem ad unde ut quidem nihil eos, dolores ea aliquam molestias iste placeat accusantium?</p>
+                        <div class="d-flex justify-content-center">
+                          <a href=""><button type="button" class="btn text-white text-capitalize fs-5 my-4" style="background: #01337D; font-family: 'Inknut Antiqua', serif;">View</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+            </div>
+        </div>
+    <!-- End your project here-->
+      </div>
+    </div>
+    <!-- MDB -->
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
+    <!-- Gsap -->
+    <script src="../../gsap/minified/gsap.min.js"></script>
+    <script src="../../gsap/minified/ScrollTrigger.min.js"></script>
+    <script src="../../gsap/minified/ScrollSmoother.min.js"></script>
+    <script src="../../gsap/minified/SplitText.min.js"></script>
+    <!-- gsap Script -->
+    <script>
+      gsap.registerPlugin(SplitText, ScrollTrigger, ScrollSmoother, gsap);
+      
+      gsap.from('.hua', { opacity: 0, stagger: 0.5, x:-100, ease:"back", delay:1 }, '-=.8')
+
+      gsap.from(".number",{y:"-100%", opacity: 0, duration: 2});
+
+      gsap.to(".fa-arrow-down", {rotateX:-180 ,scrollTrigger: {trigger: "body",start: "top top",end: "max",scrub:true, markers:false}});
+
+      function animateFrom(elem, direction) {
+  direction = direction || 1;
+  var x = 0,
+      y = direction * 100;
+  if(elem.classList.contains("gs_reveal_fromLeft")) {
+    x = -100;
+    y = 0;
+  } else if (elem.classList.contains("gs_reveal_fromRight")) {
+    x = 100;
+    y = 0;
+  }
+  elem.style.transform = "translate(" + x + "px, " + y + "px)";
+  elem.style.opacity = "0";
+  gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+    duration: 1.25, 
+    x: 0,
+    y: 0, 
+    autoAlpha: 1, 
+    ease: "expo", 
+    overwrite: "auto"
+  });
+}
+
+function hide(elem) {
+  gsap.set(elem, {autoAlpha: 0});
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  gsap.registerPlugin(ScrollTrigger);
+  
+  gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+    hide(elem);
+    
+    ScrollTrigger.create({
+      trigger: elem,
+      markers: false,
+      onEnter: function() { animateFrom(elem) }, 
+      onEnterBack: function() { animateFrom(elem, -1) },
+      onLeave: function() { hide(elem) }
+    });
+  });
+});
+    </script>
+
+<script type="text/javascript">
+  // declares variables for big circle and small circle in cursor
+  var cursorBig = document.querySelector('.big');
+var cursorSmall = document.querySelector('.small');
+var button = document.querySelectorAll('button');
+var a = document.querySelectorAll('a');
+var img_fluid = document.querySelectorAll('.img-fluid');
+
+// positions the two circles in a desired placement
+document.addEventListener('mousemove', function(e){
+var x = e.clientX;
+var y = e.clientY;
+cursorBig.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+});
+
+document.addEventListener('mousemove', function(e){
+var x = e.clientX;
+var y = e.clientY;
+cursorSmall.style.left = x + 'px';
+cursorSmall.style.top = y + 'px';
+});
+
+// adds class when cursor clicks
+document.addEventListener('mousedown', function(){
+cursorBig.classList.add('click');
+cursorSmall.classList.add('hover__small')
+});
+
+// removes class when cursor stops clicking
+document.addEventListener('mouseup', function(){
+cursorBig.classList.remove('click')
+cursorSmall.classList.remove('hover__small')
+});
+
+// adds and removes class when mouse hovers and stops hovering
+button.forEach(item => {
+item.addEventListener('mouseover', () => {
+cursorBig.classList.add('hover__big');
+cursorSmall.classList.add('hover__small');
+});
+item.addEventListener('mouseleave', () => {
+cursorBig.classList.remove('hover__big');
+cursorSmall.classList.remove('hover__small');
+});
+})
+
+// adds and removes class when mouse hovers and stops hovering
+a.forEach(item => {
+item.addEventListener('mouseover', () => {
+cursorBig.classList.add('hover__big');
+cursorSmall.classList.add('hover__small');
+});
+item.addEventListener('mouseleave', () => {
+cursorBig.classList.remove('hover__big');
+cursorSmall.classList.remove('hover__small');
+});
+})
+
+// adds and removes class on image when mouse hovers and stops hovering
+img_fluid.forEach(item => {
+item.addEventListener('mouseover', () => {
+cursorBig.classList.add('img__fill');
+});
+item.addEventListener('mouseleave', () => {
+cursorBig.classList.remove('img__fill');
+});
+})
+</script>
+
+<script>
+  let smoother = ScrollSmoother.create({ 
+  wrapper:"#smooth-wrapper",
+  content:"#smooth-content",
+  smooth:0,
+  })
+</script>
+  </body>
+</html>

@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZBV6NB');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Wooble: Careers - Working environment with best exposure </title>
+    <meta name="description" content="Your life's works powered by our life's work. We provide a platform where you can build your own Digital Portfolio and share it via small customized link. Register now to know more">
+    <!-- Wooble icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://wooble.org/img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://wooble.org/img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://wooble.org/img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://wooble.org/img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://wooble.org/img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://wooble.org/img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://wooble.org/img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://wooble.org/img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://wooble.org/img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://wooble.org/img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://wooble.org/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://wooble.org/img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://wooble.org/img/icon/favicon-16x16.png">
+    <!-- ubuntu fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css" />
+    <style>
+        .wrapper {
+            width: 100vw;
+            margin-bottom: -3rem !important;
+            background-image: url('img/careers.webp');
+            background-size: cover;
+            background-position:center;
+            background-repeat:no-repeat;
+            /* -webkit-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.3)); */
+            /*opacity:0.7;*/
+            /*filter: blur(0.1px);*/
+        }
+
+        .quote-row {
+            margin: auto;
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+        }
+        .quote-column {
+            position: absolute;
+            padding: 0 !important;
+            overflow: hidden;
+            transition-property:top, left, right, bottom;
+            background: transparent;
+            box-shadow: none;
+            transition: .4s;
+        }
+        .col-active {
+            width: 33.33% !important;
+            transform: translate(-50%, -50%)!important;
+            top: 50%!important;
+            left: 50%!important;
+            bottom: unset!important;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+            border-radius: 1.3rem;
+            border: 1px solid rgba(255, 255, 255, 0.37);
+            overflow: hidden;
+            z-index:1;
+        }
+
+        .col-inner {
+            position: relative;
+            width: 100%;
+            max-width: 130px;
+            align-items: stretch;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .col-active .col-inner {
+            max-width: 100%;
+        }
+
+
+        .author-meta{
+            width: 100%;
+            position: relative;
+            border: none;
+        }
+        .col-active .author-meta{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+        }
+
+        .image-cover{
+            position: absolute;
+            width:100%;
+            float: left;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            border-radius: 100%;
+            z-index: 1;
+            cursor: pointer;
+        }
+        .col-active .image-cover{
+            position: relative;
+            width:30%;
+            max-width: 140px;
+            float: left;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            border-radius: 1.3rem 0rem 1.3rem 0rem;
+            z-index: 1;
+        }
+
+
+        .author-info{
+            width:70% ;
+            float: left;
+            padding: 10px;
+            overflow: hidden;
+            visibility: hidden;
+            text-align: left;
+        }
+        .col-active .author-info{
+            visibility: visible;
+        }
+
+        .author-info .author-name, .author-info .person-title{
+            transform: translate(-100%, 0%);
+            transition: .4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        }
+
+        .show .author-info .author-name{
+            transform: translate(0%, 0%);
+        }
+        .show .author-info .person-title{
+            transform: translate(0%, 0%);
+            transition-delay: .2s;
+        }
+
+        .person-name{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 21.7px;
+            color: #000;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .person-title{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+        }
+
+        .quote-wrapper{
+            position: relative;
+            width: 100%;
+            margin: auto;
+            color: #494949;
+            padding: 20px 15px;
+            text-align: center;
+            overflow: hidden;
+            visibility: hidden;
+            z-index: 0;
+        }
+        .col-active .quote-wrapper{
+            visibility: visible;
+        }
+
+        img {
+            object-fit: cover;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .box-text-inner {
+            width: 100%;
+            margin: auto;
+            color:#000;
+            height: 130px;
+            overflow-y: scroll;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none; /* Firefox */ 
+        }
+        .box-text-inner::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+        .quote-wrapper .quote-symbol{
+            font-size:14vw;
+            line-height: 1em;
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            z-index: 1;
+            transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+        }
+
+        .quote-wrapper .quote-symbol:first-child {
+            left: 0%;
+            text-align: right;
+        }
+
+        .quote-wrapper .quote-symbol:last-child {
+            right: 0%;
+            text-align: left;
+        }
+
+        .show .quote-wrapper .quote-symbol:first-child {
+            left: -50%;
+        }
+
+        .show .quote-wrapper .quote-symbol:last-child {
+            right: -50%;
+        }
+
+        /*--Arrow--*/
+        .arrows-wrap {
+            position: unset;
+        }
+
+        .arrow {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 80%;
+            background-color: #494949;
+            cursor: pointer;
+
+        }
+
+        .left-arrow {
+            float: left;
+            margin-top: 30px;
+            left: 30px;
+            background: transparent;
+            /* background-color: white; */
+            /* clip-path: polygon(40% 0%, 40% 20%, 100% 33%, 100% 67%, 40% 80%, 40% 100%, 0% 50%); */
+        }
+
+        .right-arrow {
+            float: right;
+            margin-top: 30px;
+            right: 30px;
+            background: transparent;
+            /* background-color: white;
+            clip-path: polygon(0 33%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 67%); */
+
+        }
+
+
+
+        @media (min-width:640px){
+            .col-active {
+                width: 75% !important;
+                height: unset!important;
+                transform: translate(-50%, -50%)!important;
+                top: 50%!important;
+                left: 50%!important;
+            }
+        }
+
+        @media (min-width:840px){
+            .col-active {
+                width: 50% !important;
+            }
+        }
+
+        @media (min-width:1080px){
+            .col-active {
+                width: 33.33% !important;
+            }
+            .para-1{
+                width:60% !important;
+            }
+        }
+
+        @media (max-width:640px){
+
+            .quote-column{
+                width: 90% !important;
+                top:50%;
+                position: absolute;
+                opacity: 0;
+                transform:translate(-50%, -50%)!important;
+                left: 50%;
+                height: auto !important;
+                z-index: 0;
+                transition: .5s all;
+            }
+
+            .col-active {
+                opacity: 1;
+                z-index: 1;
+            }
+
+            .col-inner {
+                max-width: 100%;
+            }
+            .author-meta{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+            }
+            .image-cover{
+                position: relative;
+                width:30%;
+                max-width: 140px;
+                float: left;
+                aspect-ratio: 1/1;
+                overflow: hidden;
+                border-radius: 1.3rem 0rem 1.3rem 0rem;
+                z-index: 1;
+            }
+            .quote-wrapper{
+                visibility: visible;
+            }
+
+
+            .quote-wrapper .quote-symbol{
+                font-size:34vh;
+            }
+
+        }
+        .anim{
+            transition: 4s;
+        }
+        .anim:hover{
+            border: 10px solid white;
+            
+        }
+        /* button moon animation */
+
+.con, .button, .moon,.sml, .button span{
+	position: absolute;
+}
+
+.con{
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom:0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.moon{
+	width: 85px;
+	height: 85px;
+	background: #eee;
+	border-radius: 50%;
+	left: 100px;
+	top:2px;
+	transition:all 1s ease-in-out;
+	z-index: 2;
+}
+.moon:before{
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 22px;
+	border-radius: 50%;
+	background: #ccc;
+    top: 25px;
+    left:12px;
+    box-shadow: 10px -20px 0 -4px #ccc, 4px 18px 0 -6px #ccc;
+}
+
+
+a:hover .moon{
+	left: 115px;
+	top: -15px;
+	box-shadow: 0px 0px 10px #f2f2f2;
+	transition: all 1s ease-in-out;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 150px;
+	height: 50px;
+	background: #173356 ;
+	box-shadow: 0px 0px 10px #fff;
+	border-radius: 50px;
+	z-index: 4;
+    top:45px;
+	transition: all 1s ease-in-out;
+   
+}
+a:hover .button{
+	transition: all 1s ease-in-out;
+	box-shadow: 0px 2px 18px #eee;
+}
+a:hover .star{
+	animation: twinkle 1s infinite;
+}
+.star{
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	background: #fff;
+	border-radius: 50%;
+	z-index: 2;
+	opacity: 0.1;
+	top: 5px;
+	left: 10px;
+	box-shadow: -30px 20px 0px rgb(255, 255, 255), 
+				40px 60px 0px rgb(255, 255, 255)
+				,-40px 60px 0px rgb(255, 255, 255),
+				80px 50px 0px rgb(255, 255, 255),
+				120px 20px 0px rgb(255, 255, 255),
+				110px 60px 0px rgb(255, 255, 255),
+				120px 5px 0px rgb(255, 255, 255),
+				150px 5px 0px rgb(255, 255, 255),
+				170px 25px 0px rgb(255, 255, 255),
+				30px -50px 0px rgb(255, 255, 255),
+				0px -30px 0px rgb(255, 255, 255),
+				-30px -44px 0px rgb(255, 255, 255),
+				140px 80px 0px rgb(255, 255, 255),
+				20px 90px 0px rgb(255, 255, 255),
+				40px 60px 0px rgb(249, 249, 249),
+				60px 20px 0px rgb(254, 254, 254),
+				80px 80px 0px rgb(255, 255, 255),
+				70px -20px 0px rgb(255, 255, 255);
+}
+@keyframes twinkle{
+	50%{
+		opacity: 1;
+	}
+}
+.button span{
+    font-weight:bold;
+	transition: all 1px ease-in-out;
+	background: -webkit-linear-gradient(#d9d9d9,  #cccccc);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+
+}
+
+
+    </style>
+
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2537691,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1048430763241995');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1048430763241995&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+
+</head>
+<body style="overflow-x: hidden;">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZBV6NB"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- Start your project here-->
+<header class="bg-light shadow" style="position:sticky; top:0; z-index: 1000;" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="pulse" data-mdb-animation-start="onLoad">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-0 container">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="https://wooble.org/img/wooble logo 1.svg" alt="Wooble Logo" class="src w-25" loading="lazy">
+                <small class="fs-1 fw-bold ls-wide" style="font-family: 'Ubuntu', sans-serif; color:#002366;">Wooble</small>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarRightAlignExample"
+                aria-controls="navbarRightAlignExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                <!-- Left links -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-family: 'Ubuntu', sans-serif;">
+                    <li class="nav-item text-center">
+                        <a class="nav-link fs-5 ls-wide text-black" href="../examples">Examples</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link fs-5 ls-wide text-black" href="../features">Features</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link fs-5 ls-wide text-black" href="../wooble-blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link fs-5 ls-wide text-black" href="https://app.wooble.org">Sign In</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link fs-5 ls-wide text-black" href="https://app.wooble.org"><button type="button" class="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="#002366" style="color: #002366;">View demo</button></a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="../onboarding/"><button type="button" class="btn btn-rounded text-white" style="background-color: #002366;">get started</button></a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="bg-black" style="font-family: 'Ubuntu', sans-serif; overflow-x: hidden;">
+    <div class="wrapper bg-black" id="wrapper">
+        <div class="container text-light text-center py-5">
+            <h1>Join the Future of Work</h1>
+            <div class="d-flex justify-content-center">
+                <p class="para-1 fw-lighter py-3">Wooble was started by independents who were tired of outdated networks that were blind to the needs of digital professionals. Join our global team and help build the future of work.</p>
+            </div>
+
+        <div class="quote-row">
+            <h1 style="margin-top: -450px;">Intern Experience</h1>
+            <div class="quote-column col-active show">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/arpita-gupta.webp">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Arpita Gupta</p></div>
+                            <div class="author-status"> <p class="person-title">Marketing Strategist</p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p>Hi, I am Arpita Gupta, I interned with “Wooble” as a marketing strategist. Being part of a wooble family is one of the biggest milestones of my life. This platform has given me  a unique identity by helping me to understand my own capabilities and add value to the organization, these three months have been full of new learnings, and more opportunities and provided me a lot of exposure. The friendly work culture helped me to cope with the new environment and motivated me to deliver my best. Wooble has made me more confident and resilient, each day was a new journey for me. Being an MBA student, I can relate to the product Wooble which gives us the platform to showcase our work, projects, and our entire career to our recruiters. Thank you to all the members of Wooble and Special Thanks to MR. Akash Jaiswal sir the founder and CEO of Wooble for making me a part of the Company and being the best inspiration ever.</p>
+                            <h6>THANK YOU WOOBLE!</h6>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-column">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/sunit-acharya.webp">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Sunit Acharya</p></div>
+                            <div class="author-status"> <p class="person-title"> Marketing Strategist </p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p>A Internship that redefined my experience, my knowledge and my work ethics. Such was my internship at Wooble. Under the able guidance of Mr. Akash Jaiswal, I learnt things which not only pushed me to strive to learn more but also to understand a scenario in a pragmatic way. Also the work culture at Wooble would encourage anyone to work with a jolly mind. A company image is known through the experience of their former interns or employees and, anyone can guess from my view that what kind of Company Wooble is.</p>
+                            <h6>Once a Woobler, forever a Woobler.</h6>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-column ">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/santanu-mishra.webp">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Santanu Mishra</p></div>
+                            <div class="author-status"> <p class="person-title"> Marketing Strategist </p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p>At first I would like to thank team Wooble and its founder Mr. Akash Jaiswal for making me a part of this amazing organization. The work culture, friendship, support, guidance; that I got in this short tenure was truly unforgettable. I may have left officially, but I will be glad if any help that I can do the team.</p>
+                            <h6>Thank you all once again for these beautiful memories  and all the best for your future endeavours.</h6>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-column">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/vipul-thakur.webp">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Vipul Kumar Thakur</p></div>
+                            <div class="author-status"> <p class="person-title"> Marketing Strategist </p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p>I would like to thank team wooble and Akash sir for making me a part of Wooble. My whole intership period was totally amazing, it for full of knowledge and new opportunities. The internship period was enjoyable and insightful. Working at Wooble is more like working in a family.</p>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-column">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/ashutosh-pattnaik.webp">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Ashutosh pattnaik</p></div>
+                            <div class="author-status"> <p class="person-title"> Marketing Strategist </p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p>Working at Wooble was really amazing, the experience was really great with the team, I got to know a lot of stuff and I'm  sure this company is going to rise and shine and will achieve great success in the near future.</p>
+                            <h6>Thankyou  Akash sir for making me a part of Wooble.</h6>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-column ">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/sunil-patra.webp">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Sunil Patra</p></div>
+                            <div class="author-status"> <p class="person-title"> Web Developer </p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p class="text-start">Hello Everyone,</p>
+                            <p style="text-align: justify; text-indent: 50px;">Honestly, I was very lucky to get Wooble as my first company . The exposure I got here made me confident of what I have to do in my engineering journey , I will always be thankful for this. I am thankful that I got an opportunity  to contribute to the revolutionary idea of the product. It feels great to be part of it . In Wooble, you get direct guidance and support from  the CEO.</p>
+                            <p style="text-align: justify;">I have joined wobble  as a frontend developer which  gave me an opportunity to work in  different areas of interest. Here, because of the comradery everyone work and grow together efficiently keeping the harmony of the company . I had an interaction with the CEO, and his  insights added value for my career journey.</p>
+                            <p style="text-align: justify;">Here everything is great at Wooble, One will get plenty of benefits as a growing individual. Working at wooble one  enjoys the work and because the environment is so lively and stress free one always gets over his limit of work. Apart from this, our thoughts and ideas are appreciated and valued more.</p>
+                            <h6>Thank You Wooble</h6>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-column">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/subham-mishra.webp">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Subham Mishra</p></div>
+                            <div class="author-status"> <p class="person-title"> Advertising & Marketing Strategist </p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p>For someone like who is new to corporate and professional life, Wooble is the best place to work in. The environment that it provides to newbies is really great. The friendly behavior from all the employees, especially from the founder/ceo sir is the best I found out here. Would definitely recommend people to work here. I had a wonderful time. </p>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-column">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/sonali panda.webp">
+                        </div>  
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Sonali Panda</p></div>
+                            <div class="author-status"> <p class="person-title"> PHP Developer </p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p>Hello, I am Sonali Panda being an engineering student I applied for Php developer. With the idea of the product, I was very stunned. I was eagerly waiting to join as a developer. But I didn't know that I'll gain knowledge of Marketing also. My period was small but it was completely worthful. From a time when I wasn't able to decide what to do in the future to the time when I can confidently say that I can do anything that's assigned to me regardless of domain. I wanted to take a moment to let you know how much I've enjoyed my time here- and you've played a part in that. Thank you so much Mr. Akash Jaiswal Sir and Ms. Gargi Rout Ma'am for giving me chance.</p>
+                            <p>Wooble has made me more confident and strong. The Work culture is so good that it felt like home. Today I may leave from here but wooble will always be in my heart.  Akash sir I've learned so much from your experience,advice, and guidance. I'll definitely miss all your quick 2 mins knowledgeable sessions. </p>
+                            <p>even though our time working together is coming to a close, I'd still love to keep in touch. Thank you so much ,once again, for leadership. know that I'm always wishing the best to you and the team!</p>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-column">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/siddhi-singh.webp">
+                        </div>  
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Siddhi Singh</p></div>
+                            <div class="author-status"> <p class="person-title"> Marketing Strategist </p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p>Hello, I am Siddhi Singh i interned with Wooble as a Marketing Strategist. I didn't plan on doing an internship but decided to take one because I wanted to do something productive over the summer vacation, but I am very glad that I ended up joining Wooble, it is one of the best experiences I have had in a while. I am very grateful for the things i learnt while working here and the people I got to meet. I am very happy that I got to work with a great team, they always help me and guide me whenever it is required.</p>
+                            <p>Special thanks to Akash sir, your dedication, work culture, always willing to learn is something that inspires me and i will try to adapt it too. Sir you told us that happiness is the most important thing to look for in life, whether it's your work place or life. You always made sure that all of us are always comfortable and happy, i look up to you. You are the best boss sir.</p>
+                            <h6>I am so glad to be a part of the wooble family.</h6>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-column">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/biswajit.webp">
+                        </div>  
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Biswajit Das</p></div>
+                            <div class="author-status"> <p class="person-title"> PHP Developer </p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p>It's been 180 days of internship, I am honored and privileged to be a part of Wooble Software Private limited. I have evolved skill wise. I am lucky to hava a great CEO Mr. Akash Jaiswal sir. Thank you for accelerating my learning.</p>
+                            <p>And also I would like to thank you Subash Mandal and Rakesh Kumar Sutar for continuous support and encouragement has helped me to reach my professional milestones.</p>
+                            <p>There are so many names to be mentioned Wooble is always a great place to work and develop your career and your personal life.</p>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-column">
+                <div class="col-inner">
+                    <div class="author-meta">
+                        <div class="box-image-inner image-cover">
+                            <img src="img/intern-pic/subash.webp">
+                        </div>  
+                        <div class="author-info">
+                            <div class="author-name"> <p class="person-name">Subash Mandal</p></div>
+                            <div class="author-status"> <p class="person-title"> PHP Developer </p></div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper">
+                        <div class="quote-symbol">❛</div>
+                        <div class="box-text-inner">
+                            <p>I want to take a moment to express my gratitude for the opportunity to complete a 6-month internship as a PHP developer at Wooble Software Private Limited. It has been an incredibly valuable experience that has allowed me to learn and grow both personally and professionally.</p>
+                            <p>During my time at Wooble Software, I have had the opportunity to work with CEO Mr. Akash sir. The guidance and mentorship provided by Akash sir have helped me to enhance my technical skills and gain practical knowledge of the software development industry.</p>
+                            <p>Once again, I would like to express my sincere appreciation to Mr.Akash Sir and the entire team at Wooble Software Private Limited. Thank you for believing in me and giving me the opportunity to learn and grow as a developer.</p>
+                        </div>
+                        <div class="quote-symbol">❜</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center text-white mt-5">
+            <h1>Let it surprise you</h1>
+
+            <div class="container py-4 d-flex justify-content-lg-around flex-sm-row flex-column" style="max-width: 45vw;">
+                <p class="px-1"><i class="fas fa-check-circle text-success me-2"></i>Best team</p>
+                <p class="px-1"><i class="fas fa-check-circle text-success me-2"></i>Best quality</p>
+                <p class="px-1"><i class="fas fa-check-circle text-success me-2"></i>Best experience</p>   
+            </div>
+
+                <div class="d-flex justify-content-center">
+                    <p class="para-1 fw-lighter py-1">We try to provide the best employee experience with exposure to all the aspects of a company. Making changes to the workspace is great. Making changes to your career is even better. We’re embracing change as we create a space that inspires and encourages our team members to elevate themselves, and their work.</p>
+                </div>
+                
+                <div class="d-flex justify-content-center">
+                    <p class="para-1 fw-lighter py-1">And we’re not stopping there. We’ve made it our goal to empower our people by simplifying their day-to-day tasks so they can focus on what matters most: moving the organization forward in a positive direction.</p>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- video Content section -->
+<div class="container-fluid text-light my-lg-5 py-lg-5 position-relative" style="background: linear-gradient(0deg, rgba(0,0,0,1) 90%, rgba(0,7,186,0.8) 100%); margin-bottom: -3rem !important;">
+    <img src="img/Group (3).png" alt="Group (3).png" class="img-fluid position-absolute bottom-0 start-0 d-none d-sm-block" style=" max-width:20vw;">
+    <img src="img/Group.png" alt="Group.png" class="img-fluid position-absolute bottom-0 end-0 d-none d-sm-block" style="max-width:10vw;">
+        <div class="row">
+        <div class="col-md-6 text-center mt-5 d-flex justify-content-center align-items-center">
+            <iframe style="z-index: 1;" width="560" height="315" src="https://www.youtube.com/embed/0I8Nwi7eUXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6 text-center d-flex align-items-center justify-content-center">
+            <div class="py-5">
+                <p class="fs-1">Let it surprise you</p>
+            <div class="d-flex justify-content-center">
+                <p class="px-2 fw-lighter py-3 w-75 d-none d-sm-block">We try to provide the best employee experience with exposure to all the aspects of a company. Making changes to the workspace is great. Making changes to your career is even better. We’re embracing change as we create a space that inspires and encourages our team members to elevate themselves, and their work.</p>
+                <p class="px-2 fw-lighter py-3 d-block d-sm-none">We try to provide the best employee experience with exposure to all the aspects of a company. Making changes to the workspace is great. Making changes to your career is even better. We’re embracing change as we create a space that inspires and encourages our team members to elevate themselves, and their work.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center py-5 position-relative bg-black" style="overflow-y: hidden; overflow-x: hidden;">
+    <div class="d-none d-sm-block" style="height: 150px;"></div>
+    <img src="img/Group (1).png" alt="Group (1).png" class="img-fluid position-absolute top-0 start-0 d-none d-sm-block" style=" max-width:10vw;" data-mdb-toggle="animation" data-mdb-animation="pulse" data-mdb-animation-start="onLoad" data-mdb-animation-delay="0" data-mdb-animation-duration="3000" data-mdb-animation-reverse="true" data-mdb-animation-repeat="true" data-mdb-animation-interval="0">
+    <img src="img/Group (2).png" alt="Group (2).png" class="img-fluid position-absolute top-0 end-0 d-none d-sm-block" style=" max-width:25vw;" data-mdb-toggle="animation" data-mdb-animation="pulse" data-mdb-animation-start="onLoad" data-mdb-animation-delay="0" data-mdb-animation-duration="3000" data-mdb-animation-reverse="true" data-mdb-animation-repeat="true" data-mdb-animation-interval="0">
+
+    <p class="text-white fs-1 fw-bold lh-1">Don’t see your dream job?</p>
+    <p class="text-white fs-3 fw-light lh-1">We can help make it happen. </p>
+    <a href="https://app.wooble.org/register/"><button type="button" class="btn fs-5 text-white text-capitalize btn-rounded mt-5" style="background: linear-gradient(180deg, #002366 0%, #306FB2 100%); border: 2px solid #02ADE8; box-shadow: inset 0.5px 0.5px 2px 2px white;">Hey, Wooble!</button></a>
+    
+    <div class="d-none d-sm-block" style="height: 150px;">
+
+    </div>
+</div>
+</div>
+
+<footer class="container-fluid text-white"  style="background: linear-gradient(270deg, #002366 0%, #306FB2 100%); font-family: 'Ubuntu', sans-serif;">
+    <div class="position-relative">
+        <img src="/wooble-img/4%20element.svg" alt="image miluni" class="src img-fluid d-none d-sm-block" style=" position: absolute; left:-15px; max-width:12vw;">
+
+        <img src="/wooble-img/2%20element.svg" alt="" class="src img-fluid d-none d-sm-block " style=" position: absolute; right: -10px; top:20px; max-width:7vw;">
+
+        <section class="container-fluid d-flex justify-content-center p-4">
+            <div class="row flex-column flex-sm-row text-center">
+
+                <div class="col-md-4 text-md-start lh-sm" style="z-index: 1;">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <span class="fs-1">Don't wait to begin<br><span style="font-size:3.2rem;">Be amazed</span><br>to login</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <!-- <a href="https://wooble.org/app/login/">
+                            <button type="button" class="btn btn-rounded text-white shadow border-top border-secondary fs-5 text-capitalize fw-bold anim" style="background: #002366;" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="pulse" data-mdb-animation-start="onScroll" data-mdb-animation-delay="1000">Try for free
+                            </button></a> -->
+
+                            <div class="con">
+                                <a href="https://wooble.org/app/login/">
+                                    <div class="button">
+                                <div class="star"></div>
+                                    <span>Try for free</span>
+                                    </div>
+                                    <div class="moon"></div>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4" style="z-index: 1;">
+                    <div class="d-flex align-items-center fs-4" style="height: 200px;">
+                        Fulfill your desire for a career that is fueled by passion. Give it a try right away for free.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <div class="text-center text-lg-start">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-md-end justify-content-center  p-4 border-bottom">
+            <div>
+                <a href="https://twitter.com/WoobleO" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a href="https://www.instagram.com/wooble_org/" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC8LFjk9ArbwJf1f4pkloXzQ" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-youtube fa-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/thewooble/" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://www.facebook.com/theWooble" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+            </div>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5" style="min-width: 75vw;">
+                <!-- Grid row -->
+                <div class="row flex-row mt-3">
+
+                    <!-- About -->
+                    <div class="col-md-3 col-lg-5 col-xl-3 mx-auto">
+                        <!-- Content -->
+                        <h6 class="text-capitalize fs-4">
+                            <img src="/wooble-img/wooble%20logo%202.svg" alt="" class="src img-fluid" style="width: 50px;">Wooble
+                        </h6>
+                        <p class="fw-lighter">
+                            At Wooble we believe in passion, progress and performance, Wooble's system is curated with passion, and latest technologv to boost user experience which will help individuals to capture their progress and to boost their career performance.
+                        </p>
+                    </div>
+
+                    <!-- Feature -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 fw-lighter">
+                        <!-- Links -->
+                        <h6 class="text-uppercase mb-4">
+                            Important Links
+                        </h6>
+                        <span class="my-5 lh-1">
+      <!--                <p>-->
+                            <!--                  <a href="examples" class="text-reset">Examples</a>-->
+                            <!--                </p>-->
+                      <p>
+                        <a href="../features" class="text-reset">Features</a>
+                      </p>
+                      <p>
+                        <a href="../pricing" class="text-reset">Pricing</a>
+                      </p>
+                      <p>
+                        <a href="https://app.wooble.org/login/" class="text-reset">Sign in</a>
+                      </p>
+                      </span>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 fw-lighter">
+                        <!-- Links -->
+                        <h6 class="text-uppercase mb-4">
+                            Company
+                        </h6>
+                        <span class="my-5 lh-1">
+                      <p>
+                        <a href="../about-us" class="text-reset">About us</a>
+                      </p>
+                            <!--                <p>-->
+                            <!--                  <a href="../events" class="text-reset">Events</a>-->
+                            <!--                </p>-->
+                            <!--                <p>-->
+                            <!--                  <a href="../careers" class="text-reset">Careers</a>-->
+                            <!--                </p>-->
+                            <!--                <p>-->
+                            <!--                  <a href="../help" class="text-reset">Help</a>-->
+                            <!--                </p>-->
+                    </span>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 fw-lighter">
+                        <!-- Links -->
+                        <h6 class="text-uppercase mb-4">Contact</h6>
+                        <span class=" lh-sm">
+                        <p onclick="map()" style="cursor:pointer;">
+                          <i class="fas fa-home me-3"></i>
+                          Bhubaneswar, Odisha 751024</p>
+                      <p onclick="gmail()" style="cursor:pointer;">
+                        <i class="fas fa-envelope me-3"></i>
+                        connect@wooble.org
+                      </p>
+                      <p  onclick="call()" style="cursor:pointer;">
+                        <i class="fas fa-phone me-3"></i>
+                        +91-8260303017
+                      </p>
+                      <p  onclick="whatsapp()" style="cursor:pointer;">
+                        <i class="fab fa-whatsapp me-3"></i>
+                        +91-8260303017
+                      </p>
+                      </span>
+                    </div>
+
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <hr class="text-white-50">
+        <div class="text-center p-4 fw-light">
+            © 2023 Wooble Software Private Limited. All Rights Reserved.
+        </div>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- End your project here-->
+<!-- MDB -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript">
+    let mobileWidth = 640;
+    let tabWidth = 1080;
+    let desWidth = 1220;
+    let pWidth, pHeight, screenWidth, screenHeight;
+    let childCol = document.getElementsByClassName("quote-column");
+    let ptransition = 3;
+    let activeShow = "col-active";
+    const arrowIcon = "<div class='arrow left-arrow ' onclick='arrowControl(-1)'><i class='fas fa-hand-point-left fa-2x'></i></div><div class='arrow right-arrow' onclick='arrowControl(1)'><i class='fas fa-hand-point-right fa-2x'></i></div>"
+    const ArrowParent = document.createElement("div");
+    ArrowParent.classList.add("arrows-wrap");
+    ArrowParent.innerHTML = arrowIcon;
+    let activeQuoteHeight = 400;
+    function arrowFunc() {
+
+    }
+
+    getElem();
+    function getElem() {
+        let hAndW;
+        let targetElem;
+        childCol[0].parentElement.style.minHeight = (childCol.length/2) * 140 + "px";// assign row element height
+        for (let i = 0; i < childCol.length; i++) {
+            targetElem = childCol[i];
+            pWidth = targetElem.parentElement.offsetWidth;
+            pHeight = targetElem.parentElement.offsetHeight;
+
+            //When viewing on desktop
+            if (screenWidth > tabWidth) {
+                hAndW = randomPos(60, (screenHeight / (childCol.length / 1.5))) + 'px';//Lets make the height and width variables randomly
+
+                // lets devide all the elements by less then 2 and positioning them left and right ont in the middle;
+                //this is for left side
+                if (i < childCol.length / 1.9) {
+                    targetElem.style.left = randomPos(100, targetElem.parentElement.offsetWidth / 3 - 100) + 'px'; // X position left
+                    targetElem.style.top = (targetElem.parentElement.offsetHeight / (childCol.length / 2)) * (i - 1) + 'px'; //Y position left
+                }
+                // this is for right side
+                else if (i > childCol.length / 1.9) {
+                    targetElem.style.right = randomPos(100, targetElem.parentElement.offsetWidth / 3 - 100) + 'px'; // X position right
+                    targetElem.style.left = 'auto'; // X position right
+                    targetElem.style.top = (targetElem.parentElement.offsetHeight / (childCol.length / 2)) * ((childCol.length - 1) - i) + 'px'; //Y position right
+                }
+            }
+
+            //When viewing on tab
+            if (screenWidth <= tabWidth && screenWidth >= mobileWidth) {
+                hAndW = randomPos(30, (screenHeight / (childCol.length / 1.5))) + 'px';
+                targetElem.parentElement.style.minHeight = "70vh";
+                targetElem.style.bottom = '0px'; //Y position
+                targetElem.style.left = (targetElem.parentElement.offsetWidth) / (childCol.length - 1) * (i - 1) + 'px'; // X position left
+                targetElem.style.zIndex = '100'; //Y position
+                targetElem.style.top = 'auto'; //Y position
+            }
+
+            //When viewing on mobile
+            if (screenWidth < mobileWidth) {
+                try {
+                    childCol[0].parentElement.appendChild(ArrowParent);// try insert arrow element for slide control
+                } catch (error) { }
+                targetElem.style.left = '50%'; // X position left
+                ArrowParent.style.display = "block";// When arrow added make them visible
+            }
+            else ArrowParent.style.display = "none";// otherwise hidden
+
+            //after all the work done lets sizing the element
+            targetElem.style.width = hAndW;
+            targetElem.style.height = hAndW;
+            //and the active one position default
+            if (i != 0) {
+                targetElem.addEventListener('click', quoteShow, false); //So we dont need click event on the active one
+            }
+            targetElem.classList.add("moves");
+        }
+        setTimeout(() => {
+            for (let i = 0; i < childCol.length; i++) {
+                //     targetElem.style.transition = "0s";
+            }
+        }, 2000);
+    }
+
+
+    let clickCheck = true, showClear;
+
+    let showClear2;
+    function quoteShow(evt) {
+        if (clickCheck) {
+            clickCheck = false;
+            clearTimeout(showClear2);
+            let activeQuote = document.getElementsByClassName(activeShow);
+            let aq;
+            for (let j = 0; j < activeQuote.length; j++) {
+                aq = activeQuote[j];
+                aq.classList.remove("show");
+                aq.style.transition="0.4s";
+            }
+            this.style.transition="0.4s";
+            setTimeout(() => {
+                aq.style.top = this.offsetTop + "px";
+                aq.style.left = this.offsetLeft + "px";
+                aq.style.width = this.offsetWidth + "px";
+                aq.style.height = this.offsetHeight + "px";
+                aq.addEventListener('click', quoteShow, false);
+                aq.classList.remove(activeShow);
+            }, 600);
+
+            setTimeout(() => {
+                this.classList.add(activeShow);
+                this.removeEventListener("click", quoteShow, false);
+            }, 1200);
+
+            showClear2 = setTimeout(() => {
+                this.classList.toggle("show");
+                aq.style.transition="";
+                this.style.transition="";
+                clickCheck = true;
+            }, 1800);
+        }
+    }
+
+    let arrowClicked = true;  nowActive = 0;
+
+
+    function arrowControl(val) {
+        // else nowActive += val;
+        if(arrowClicked){
+            arrowClicked = false;
+            for (let index = 0; index < childCol.length; index++) {
+                childCol[nowActive].classList.remove("show");
+                childCol[nowActive].style.transition=".4s";
+                childCol[nowActive].addEventListener('click', quoteShow, false);
+            }
+            setTimeout(() => {
+                for (let index = 0; index < childCol.length; index++) {
+                    childCol[index].classList.remove(activeShow);
+                }
+                nowActive += val;
+                if (nowActive > childCol.length - 1) nowActive = 0;
+                else if (nowActive < 0) nowActive = childCol.length - 1;
+            }, 600);
+
+            setTimeout(() => {
+                childCol[nowActive].classList.add(activeShow);
+                childCol[nowActive].removeEventListener("click", quoteShow, false);
+            },610);
+
+            setTimeout(() => {
+                childCol[nowActive].classList.toggle("show");
+                childCol[nowActive].style.transition="";
+                arrowClicked = true
+            }, 1800);
+        }
+    }
+
+    function randomPos(min, max) {
+        return ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function getScreenSize() {
+        screenWidth = window.innerWidth;
+        screenHeight = window.innerHeight;
+        getElem();
+    }
+
+    window.onresize = getScreenSize;
+    window.addEventListener('resize', getScreenSize);
+    window.addEventListener('load', function () {
+        getScreenSize();
+        getElem();
+    }, true);
+
+
+    //Flaoting animation class;
+    class MoveAnim {
+        constructor(max, tm) {
+            this.time = tm;
+            if(Math.random() > .5) this.uDVal = max; else this.uDVal = 0;
+            if(Math.random() > .5) this.lRVal = max; else this.lRVal = 0;
+            this.max = max;
+            if(Math.random() > .5) this.uD = false; else this.uD = true;
+            if(Math.random() > .5)  this.lR = false; else  this.lR = true;
+            this.upDown(this.max);
+            this.leftRight(this.max);
+            this.scale = .01;
+        }
+
+        upDown() {
+            setInterval(() => {
+                if (!this.uDVal) {
+                    if (this.uD >= this.max) {this.uDVal = true;}
+                    if (this.uD < this.max) {this.uD += this.scale;}
+                }
+                else if (this.uDVal) {
+                    if (this.uD <= -this.max) {this.uDVal = false;}
+                    if (this.uD >= -this.max) {this.uD -= this.scale;}
+                }
+                return this.uD;
+            },  this.time/1000);
+        }
+        leftRight() {
+            setInterval(() => {
+                if (!this.lRVal) {
+                    if (this.lR >= this.max) {this.lRVal = true;}
+                    if (this.lR < this.max) {this.lR += this.scale;}
+                }
+                else if (this.lRVal) {
+                    if (this.lR <= -this.max) { this.lRVal = false; }
+                    if (this.lR >= -this.max) {this.lR -= this.scale; }
+                }
+                return this.lR;
+            },  this.time/1000);
+        }
+
+        letMove(el, ud = false, lr = false) {
+
+            setInterval(() => {
+                if (ud === true && lr === false) {
+                    el.style.transform = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, " + 0 + "," + this.uD + ", 0, 1)";
+                }
+                else if (ud === false && lr === true) {
+                    el.style.transform = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, " + this.lR + "," + 0 + ", 0, 1)";
+                }
+                else {
+                    el.style.transform = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, " + this.lR + "," + this.uD + ", 0, 1)";
+                }
+
+
+            }, 1);
+        }
+
+        start(elem, ud, lr) {
+            this.letMove(elem, ud, lr);
+            this.upDown();
+            this.leftRight();
+        }
+    }
+
+    class ShowAnim {
+        constructor(mElem, dist, times) {
+            this.mElem = document.getElementsByClassName(mElem);
+            this.pElem = mElem.parentElement;
+            this.cElem = mElem.children;
+            this.count = 0;
+            this.max = dist;
+            this.min = 10;
+            this.times = times;
+            this.randomCount(this.max);
+        }
+        randomCount(max) {
+            return Math.floor(Math.random() * (max - this.min + 1)) + this.min;
+        }
+        show(ud, lr) {
+            for (this.count = 0; this.count < this.mElem.length; this.count++) {
+                this.moveanim = new MoveAnim(this.randomCount(this.max), this.times,);
+                this.moveanim.start(this.mElem[this.count], ud, lr);
+            }
+        }
+    }
+
+
+    let animShow = new ShowAnim("moves", 40, 2000);// Element, Max Distance, Times in milliseconds
+
+    //Start floating
+    animShow.show(true, false);// Up-Down, Left-Right;
+</script>
+</body>
+</html>

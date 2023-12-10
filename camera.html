@@ -1,0 +1,76 @@
+<head>
+   <style>
+       .camera {
+           width: 200px;
+           height: 200px;
+           position: relative;
+           border-radius: 50%;
+           background: linear-gradient(45deg, #ff0000, #ff00ff, #0000ff, #00ffff, #00ff00, #ffff00, #ff0000);
+           animation: gradient-animation 10s linear infinite;
+       }
+
+       @keyframes gradient-animation {
+           0% {
+               background-position: 0% 50%;
+           }
+           100% {
+               background-position: 100% 50%;
+           }
+       }
+
+       .camera-body {
+           width: 60%;
+           height: 60%;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           border-radius: 50%;
+           background-color: #000;
+       }
+
+       .camera-lens {
+           width: 30px;
+           height: 30px;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           border-radius: 50%;
+           background-color: #fff;
+       }
+
+       .camera-details {
+           width: 30px;
+           height: 100px;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           background-color: #fff;
+           transform-origin: center bottom;
+           animation: details-animation 3s linear infinite;
+       }
+
+       @keyframes details-animation {
+           0% {
+               transform: translate(-50%, -50%) rotate(0deg);
+           }
+           100% {
+               transform: translate(-50%, -50%) rotate(360deg);
+           }
+       }
+
+   </style>
+</head>
+<body>
+<div class="camera">
+    <div class="camera-body"></div>
+    <div class="camera-lens"></div>
+    <div class="camera-details"></div>
+</div>
+
+
+
+
+</body>

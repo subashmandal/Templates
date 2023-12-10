@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Gallery</title>
+    <!-- Wooble icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+   <!-- Google Fonts Ubuntu -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+   <!-- Google Fonts Roboto -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+    <!-- MDB -->
+    <link rel="stylesheet" href="../../css/mdb.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+      .nav-link:hover, .nav-link:focus, .nav-link:active{
+        color: black !important;
+      }
+      .img_grid:hover, .img_grid:focus, .img_grid:active{
+        background: rgba(200, 200, 200, 0.2) !important;
+        border: 0px solid rgba(255, 255, 255, 0.3) !important;
+        border-radius: 10px;
+      }
+@media (max-width:420px){
+      .any{
+        width: 100% !important;
+        padding-top:20px !important;
+        padding-bottom:20px !important;
+      }
+    }
+
+@media (max-width: 800px) {
+  .architect_img {
+    min-height: 300px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .architect_img {
+    min-height: 300px !important;
+  }
+}
+@media (max-width: 400px) {
+  .architect_img {
+    min-height: 300px !important;
+  }
+}
+.architect_img:hover{
+  filter: grayscale(0)!important;
+  cursor: pointer;
+}
+    </style>
+  </head>
+  <body style="overflow-x:hidden !important;">
+    <!-- Start your project here-->
+    <div id="smooth-wrapper" style="overflow-x: hidden !important;">
+      <div id="smooth-content" style="overflow-x: hidden !important;">
+    <header class="shadow-0" style="background: #5B4A1D;">
+      <nav class="navbar navbar-expand-lg navbar-light shadow-0 container">
+          <div class="container-fluid">
+              <a class="navbar-brand text-white" href="architect2.html">
+                  <small class="fw-bold ls-wide fs-5 name" style="font-family: 'Ubuntu', sans-serif;">Jay<br>Gosling</small>
+              </a>
+              <button
+                      class="navbar-toggler text-white"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#navbarRightAlignExample"
+                      aria-controls="navbarRightAlignExample"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+              >
+                  <i class="fas fa-bars"></i>
+              </button>
+              <!-- Collapsible wrapper -->
+              <div class="collapse navbar-collapse justify-content-center" id="navbarRightAlignExample">
+                  <!-- Left links -->
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-family: 'Ubuntu', sans-serif;">
+                    <li class="nav-item text-center">
+                        <a class="nav-link  ls-wide text-white" href="architect2.html">Home</a>
+                    </li>
+                      <li class="nav-item text-center">
+                          <a class="nav-link  ls-wide text-white" href="Work.html">Works</a>
+                      </li>
+                      <li class="nav-item text-center">
+                          <a class="nav-link ls-wide text-white" href="#">About me</a>
+                      </li>
+                      <li class="nav-item text-center">
+                          <a class="nav-link ls-wide text-white" href="blog.html">Blogs</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link ls-wide text-white" href="gallery.html">Gallery</a>
+                    </li>
+                  </ul>
+                  <!-- Left links -->
+              </div>
+          </div>
+      </nav>
+  </header>
+
+
+
+<div class="container-fluid text-center mt-5" style="font-family: Ubuntu;">
+        <!-- Photo Grid Gallery -->
+<div class="row" style="overflow-x: hidden;"> 
+    <div class="col-lg-4">
+      <div class="pb-2 m-2 img_grid1">
+        <div class="architect_img" style="background-image: url('img/Grey concrete building under the blue sky.png'); background-position: center; background-repeat: no-repeat; background-size: cover; filter:grayscale(1); min-height: 500px;"></div>
+      <div class="text-start ms-3">
+        <p>Category</p>
+        <h4 class="text-truncate col-8">Building</h4>
+      </div>
+      </div>
+      <div class="pb-2 m-2 img_grid2">
+        <div class="architect_img" style="background-image: url('img/Rectangle 2.png'); background-position: center; background-repeat: no-repeat; background-size: cover; filter:grayscale(1); min-height: 500px;"></div>
+      <div class="text-start ms-3">
+        <p>Category</p>
+        <h4 class="text-truncate col-8">Sunrise</h4>
+      </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4">
+      <div class="pb-2 m-2 img_grid3">
+        <div class="architect_img" style="background-image: url('img/Rectangle 3.png'); background-position: center; background-repeat: no-repeat; background-size: cover; filter:grayscale(1); min-height: 1080px;"></div>
+      <div class="text-start ms-3">
+        <p>Category</p>
+        <h4 class="text-truncate col-8">Vintage Building</h4>
+      </div>
+      </div>
+    </div> 
+     
+    <div class="col-lg-4">
+      <div class="pb-2 m-2 img_grid4">
+        <div class="architect_img" style="background-image: url('img/Rectangle 4.png'); background-position: center; background-repeat: no-repeat; background-size: cover; filter:grayscale(1); min-height: 500px;"></div>
+      <div class="text-start ms-3">
+        <p>Category</p>
+        <h4 class="text-truncate col-8">Appartment</h4>
+      </div>
+      </div>
+      <div class="pb-2 m-2 img_grid5">
+        <div class="architect_img" style="background-image: url('img/Rectangle 1.png'); background-position: center; background-repeat: no-repeat; background-size: cover; filter:grayscale(1); min-height: 500px;"></div>
+      <div class="text-start ms-3">
+        <p>Category</p>
+        <h4 class="text-truncate col-8">Corporate Building</h4>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="overflow-x: hidden;"> 
+    <div class="col-lg-4">
+      <div class="pb-2 m-2 img_grid6">
+        <div class="architect_img" style="background-image: url('img/Grey concrete building under the blue sky.png'); background-position: center; background-repeat: no-repeat; background-size: cover; filter:grayscale(1); min-height: 500px;"></div>
+      <div class="text-start ms-3">
+        <p>Category</p>
+        <h4 class="text-truncate col-8">Building</h4>
+      </div>
+      </div>
+      <div class="pb-2 m-2 img_grid7">
+        <div class="architect_img" style="background-image: url('img/Rectangle 2.png'); background-position: center; background-repeat: no-repeat; background-size: cover; filter:grayscale(1); min-height: 500px;"></div>
+      <div class="text-start ms-3">
+        <p>Category</p>
+        <h4 class="text-truncate col-8">Sunrise</h4>
+      </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4">
+      <div class="pb-2 m-2 img_grid8">
+        <div class="architect_img" style="background-image: url('img/Rectangle 3.png'); background-position: center; background-repeat: no-repeat; background-size: cover; filter:grayscale(1); min-height: 1080px;"></div>
+      <div class="text-start ms-3">
+        <p>Category</p>
+        <h4 class="text-truncate col-8">Vintage Building</h4>
+      </div>
+      </div>
+    </div> 
+     
+    <div class="col-lg-4">
+      <div class="pb-2 m-2 img_grid9">
+        <div class="architect_img" style="background-image: url('img/Rectangle 4.png'); background-position: center; background-repeat: no-repeat; background-size: cover; filter:grayscale(1); min-height: 500px;"></div>
+      <div class="text-start ms-3">
+        <p>Category</p>
+        <h4 class="text-truncate col-8">Appartment</h4>
+      </div>
+      </div>
+      <div class="pb-2 m-2 img_grid10">
+        <div class="architect_img" style="background-image: url('img/Rectangle 1.png'); background-position: center; background-repeat: no-repeat; background-size: cover; filter:grayscale(1); min-height: 500px;"></div>
+      <div class="text-start ms-3">
+        <p>Category</p>
+        <h4 class="text-truncate col-8">Corporate Building</h4>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="container-fluid text-white"  style="background: #5B4A1D; font-family: 'Ubuntu', sans-serif;">
+
+    <div class="text-center text-lg-start">
+        <!-- Section: Social media -->
+        <div class="row flex-sm-row flex-column">
+            <div class="col py-lg-4 py-2">
+                <p>Copywrite goes to - <a href="wooble.org" class="text-white">Wooble.org</a></p>
+            </div>
+                <div class="col d-flex justify-content-md-end justify-content-center  p-4 border-bottom">
+                    <a href="https://twitter.com/WoobleO" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com/wooble_org/" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC8LFjk9ArbwJf1f4pkloXzQ" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/thewooble/" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://www.facebook.com/theWooble" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                </div>
+        </div>
+    </div>
+</footer>
+</div></div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
+    <!-- Gsap -->
+    <script src="../../gsap/minified/gsap.min.js"></script>
+    <script src="../../gsap/minified/ScrollTrigger.min.js"></script>
+    <script src="../../gsap//minified/MotionPathPlugin.min.js"></script>
+    <script src="../../gsap/minified/DrawSVGPlugin.min.js"></script>
+    <script src="../../gsap/minified/ScrollSmoother.min.js"></script>
+    <script src="../../gsap/minified/SplitText.min.js"></script>
+    <!-- gsap Script -->
+<script type="text/javascript">
+  gsap.registerPlugin(SplitText, ScrollTrigger, ScrollSmoother, DrawSVGPlugin, MotionPathPlugin, gsap);
+  gsap.from('.name', { opacity: 0, stagger: 0.3, x:0, y:-100});
+  gsap.from('.nav-link', { opacity: 0, stagger: 0.3, x:0, y:-100});
+
+  gsap.from(".img_grid1", {opacity: 0.7,scale:0.7,duration: 5,scrollTrigger:{trigger:".img_grid1",start: "top 100%",end: "+=25%",markers: false,scrub: true}});
+  gsap.from(".img_grid2", {opacity: 0.7,scale:0.7,duration: 5,scrollTrigger:{trigger:".img_grid2",start: "top 100%",end: "+=25%",markers: false,scrub: true}});
+  gsap.from(".img_grid3", {opacity: 0.7,scale:0.7,duration: 5,scrollTrigger:{trigger:".img_grid3",start: "top 100%",end: "+=25%",markers: false,scrub: true}});
+  gsap.from(".img_grid4", {opacity: 0.7,scale:0.7,duration: 5,scrollTrigger:{trigger:".img_grid4",start: "top 100%",end: "+=25%",markers: false,scrub: true}});
+  gsap.from(".img_grid5", {opacity: 0.7,scale:0.7,duration: 5,scrollTrigger:{trigger:".img_grid5",start: "top 100%",end: "+=25%",markers: false,scrub: true}});
+  gsap.from(".img_grid6", {opacity: 0.7,scale:0.7,duration: 5,scrollTrigger:{trigger:".img_grid6",start: "top 100%",end: "+=25%",markers: false,scrub: true}});
+  gsap.from(".img_grid7", {opacity: 0.7,scale:0.7,duration: 5,scrollTrigger:{trigger:".img_grid7",start: "top 100%",end: "+=25%",markers: false,scrub: true}});
+  gsap.from(".img_grid8", {opacity: 0.7,scale:0.7,duration: 5,scrollTrigger:{trigger:".img_grid8",start: "top 100%",end: "+=25%",markers: false,scrub: true}});
+  gsap.from(".img_grid9", {opacity: 0.7,scale:0.7,duration: 5,scrollTrigger:{trigger:".img_grid9",start: "top 100%",end: "+=25%",markers: false,scrub: true}});
+  gsap.from(".img_grid10", {opacity: 0.7,scale:0.7,duration: 5,scrollTrigger:{trigger:".img_grid10",start: "top 100%",end: "+=25%",markers: false,scrub: true}});
+
+</script>
+
+<script>
+  let smoother = ScrollSmoother.create({ 
+  wrapper:"#smooth-wrapper",
+  content:"#smooth-content",
+  smooth:0.5,
+  })
+</script>
+  </body>
+</html>

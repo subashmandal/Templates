@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>User Not Found</title>
+    <!-- Wooble icon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!--    <link rel="manifest" href="/site.webmanifest">-->
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- Google Fonts Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css" />
+
+    <style>
+        .img_1{
+            width: 25vw !important;
+        }
+        .text{
+            background: linear-gradient(180deg, #82C4EF 0%, #55BCFF 25%, #5FBEFC 39.06%, #4FB6FC 53.12%, #39A3EE 68.75%, #3B9DDF 89.06%);
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5vw;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .go_back{
+            font-size: 1vw;
+        }
+        @media (max-width: 991px) {
+            .img_1{
+                width: 100vw !important;
+            }
+            .text{
+                font-size:6vw !important;
+            }
+            .go_back{
+                font-size: medium !important;
+            }
+            .btn_img{
+                height:30px !important;
+            }
+        }
+        /* card slider end */
+    </style>
+</head>
+<body style="overflow-y: hidden; overflow-x: hidden;">
+<canvas id="stars"></canvas>
+        <!-- Start your project here-->
+        <div class="container-fluid m-0 p-0 g-0">
+            <div class="start-50 position-absolute top-50 translate-middle">
+                <div class="d-flex justify-content-center">
+                    <img src="img/404.png" class="img_1">
+                </div>
+                <p class="text">user not found!</p>
+                <div class="d-flex justify-content-center">
+                    <a href="http://wooble.org">
+                        <button class="btn btn-lg d-flex align-items-center btn-rounded d-flex justify-content-center" style="background: linear-gradient(180deg, #86CFFF 0%, #A6DCFF 50%, #7ACBFF 91.15%); width: 270px;">
+                        <img src="img/btn_img.png" class="img-fluid btn_img"> <span class="fw-bolder text-dark ms-3 go_back">Go Back!</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+<!-- End your project here-->
+<!-- MDB -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<script type="text/javascript">
+    // DOM selectors
+    const stars = document.getElementById('stars');
+    const starsCtx = stars.getContext('2d');
+    // const slider = document.querySelector(".slider input");
+    // const output = document.querySelector("#speed");
+
+    // global variables
+    let screen, starsElements, starsParams = { speed: 2, number: 300, extinction: 4 };
+
+    // run stars
+    setupStars();
+    updateStars();
+
+    // handle slider
+    output.innerHTML = slider.value;
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+        starsParams.speed = this.value;
+    };
+
+    // update stars on resize to keep them centered
+    window.onresize = function() {
+        setupStars();
+    };
+
+    // star constructor
+    function Star() {
+        this.x = Math.random() * stars.width;
+        this.y = Math.random() * stars.height;
+        this.z = Math.random() * stars.width;
+
+        this.move = function() {
+            this.z -= starsParams.speed;
+            if (this.z <= 0) {
+                this.z = stars.width;
+            }
+        };
+
+        this.show = function() {
+            let x, y, rad, opacity;
+            x = (this.x - screen.c[0]) * (stars.width / this.z);
+            x = x + screen.c[0];
+            y = (this.y - screen.c[1]) * (stars.width / this.z);
+            y = y + screen.c[1];
+            rad = stars.width / this.z;
+            opacity = (rad > starsParams.extinction) ? 1.5 * (2 - rad / starsParams.extinction) : 1;
+
+            starsCtx.beginPath();
+            starsCtx.fillStyle = "rgba(255, 255, 255, " + opacity + ")";
+            starsCtx.arc(x, y, rad, 0, Math.PI * 2);
+            starsCtx.fill();
+        }
+    }
+
+    // setup <canvas>, create all the starts
+    function setupStars() {
+        screen = {
+            w: window.innerWidth,
+            h: window.innerHeight,
+            c: [ window.innerWidth * 0.5, window.innerHeight * 0.5 ]
+        };
+        window.cancelAnimationFrame(updateStars);
+        stars.width = screen.w;
+        stars.height = screen.h;
+        starsElements = [];
+        for (let i = 0; i < starsParams.number; i++) {
+            starsElements[i] = new Star();
+        }
+    }
+
+    // redraw the frame
+    function updateStars() {
+        starsCtx.fillStyle = "black";
+        starsCtx.fillRect(0, 0, stars.width, stars.height);
+        starsElements.forEach(function (s) {
+            s.show();
+            s.move();
+        });
+        window.requestAnimationFrame(updateStars);
+    }
+</script>
+
+</body>
+</html>

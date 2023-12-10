@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wooble: About us - Know who we are and what we do at Wooble </title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://www.wooble.org",
+      "logo": "https://wooble.org/img/wooble_logo.png"
+    }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PZBV6NB');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="description"
+        content="Your life's works powered by our life's work. We provide a platform where you can build your own Digital Portfolio and share it via small customized link. Register now to know more">
+  <link rel="stylesheet" href="../plugins/css/multi-carousel.min.css">
+  <link rel="stylesheet" href="../css/mdb.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <!--    <link rel="manifest" href="https://wooble.org/img/icon/manifest.json">-->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+    @keyframes showTopText {
+      0% {
+        transform: translate3d(0, 100%, 0);
+      }
+      40%, 60% {
+        transform: translate3d(0, 50%, 0);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    @keyframes showBottomText {
+      0% {
+        transform: translate3d(0, -100%, 0);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+
+    .animated-title {
+      color: #222;
+      font-family: Ubuntu, Arial, sans-serif;
+      height: 90vmin;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vmin;
+    }
+
+    .animated-title > div {
+      height: 50%;
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+    }
+
+    .animated-title > div div {
+      font-size: 12vmin;
+      padding: 2vmin 0;
+      position: absolute;
+    }
+
+    .animated-title > div div span {
+      display: block;
+    }
+
+    .animated-title > div.text-top {
+      border-bottom: 1vmin solid #000;
+      top: 0;
+    }
+
+    .animated-title > div.text-top div {
+      animation: showTopText 1s;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+      bottom: 0;
+      transform: translate(0, 100%);
+    }
+
+    .animated-title > div.text-top div span:first-child {
+      color: #767676;
+    }
+
+    .animated-title > div.text-bottom {
+      bottom: 0;
+    }
+
+    .animated-title > div.text-bottom div {
+      animation: showBottomText 0.5s;
+      animation-delay: 1.75s;
+      animation-fill-mode: forwards;
+      top: 0;
+      transform: translate(0, -100%);
+    }
+
+    .star_wars {
+      background: radial-gradient(ellipse at bottom, #002366 0%, #040A31 100%);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      font-family: "Anton", sans-serif;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .night {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: rotateZ(90deg);
+    }
+
+    .shooting_star {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 2px;
+      background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
+      border-radius: 999px;
+      filter: drop-shadow(0 0 6px #699bff);
+      -webkit-animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+      animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+    }
+
+    .shooting_star::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 1px);
+      right: 0;
+      height: 2px;
+      background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+      transform: translateX(50%) rotateZ(45deg);
+      border-radius: 100%;
+      -webkit-animation: shining 3000ms ease-in-out infinite;
+      animation: shining 3000ms ease-in-out infinite;
+    }
+
+    .shooting_star::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 1px);
+      right: 0;
+      height: 2px;
+      background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+      transform: translateX(50%) rotateZ(45deg);
+      border-radius: 100%;
+      -webkit-animation: shining 3000ms ease-in-out infinite;
+      animation: shining 3000ms ease-in-out infinite;
+      transform: translateX(50%) rotateZ(-45deg);
+    }
+
+    .shooting_star:nth-child(1) {
+      top: calc(50% - 16px);
+      left: calc(50% - 227px);
+      -webkit-animation-delay: 8341ms;
+      animation-delay: 8341ms;
+    }
+
+    .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after {
+      -webkit-animation-delay: 8341ms;
+      animation-delay: 8341ms;
+    }
+
+    .shooting_star:nth-child(2) {
+      top: calc(50% - -146px);
+      left: calc(50% - 156px);
+      -webkit-animation-delay: 7769ms;
+      animation-delay: 7769ms;
+    }
+
+    .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after {
+      -webkit-animation-delay: 7769ms;
+      animation-delay: 7769ms;
+    }
+
+    .shooting_star:nth-child(3) {
+      top: calc(50% - 9px);
+      left: calc(50% - 236px);
+      -webkit-animation-delay: 2855ms;
+      animation-delay: 2855ms;
+    }
+
+    .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after {
+      -webkit-animation-delay: 2855ms;
+      animation-delay: 2855ms;
+    }
+
+    .shooting_star:nth-child(4) {
+      top: calc(50% - -92px);
+      left: calc(50% - 41px);
+      -webkit-animation-delay: 9813ms;
+      animation-delay: 9813ms;
+    }
+
+    .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after {
+      -webkit-animation-delay: 9813ms;
+      animation-delay: 9813ms;
+    }
+
+    .shooting_star:nth-child(5) {
+      top: calc(50% - -31px);
+      left: calc(50% - 66px);
+      -webkit-animation-delay: 1884ms;
+      animation-delay: 1884ms;
+    }
+
+    .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after {
+      -webkit-animation-delay: 1884ms;
+      animation-delay: 1884ms;
+    }
+
+    .shooting_star:nth-child(6) {
+      top: calc(50% - -65px);
+      left: calc(50% - 150px);
+      -webkit-animation-delay: 4149ms;
+      animation-delay: 4149ms;
+    }
+
+    .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after {
+      -webkit-animation-delay: 4149ms;
+      animation-delay: 4149ms;
+    }
+
+    .shooting_star:nth-child(7) {
+      top: calc(50% - 102px);
+      left: calc(50% - 48px);
+      -webkit-animation-delay: 2043ms;
+      animation-delay: 2043ms;
+    }
+
+    .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after {
+      -webkit-animation-delay: 2043ms;
+      animation-delay: 2043ms;
+    }
+
+    .shooting_star:nth-child(8) {
+      top: calc(50% - 3px);
+      left: calc(50% - 152px);
+      -webkit-animation-delay: 492ms;
+      animation-delay: 492ms;
+    }
+
+    .shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after {
+      -webkit-animation-delay: 492ms;
+      animation-delay: 492ms;
+    }
+
+    .shooting_star:nth-child(9) {
+      top: calc(50% - 63px);
+      left: calc(50% - 7px);
+      -webkit-animation-delay: 9097ms;
+      animation-delay: 9097ms;
+    }
+
+    .shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after {
+      -webkit-animation-delay: 9097ms;
+      animation-delay: 9097ms;
+    }
+
+    .shooting_star:nth-child(10) {
+      top: calc(50% - -106px);
+      left: calc(50% - 8px);
+      -webkit-animation-delay: 9654ms;
+      animation-delay: 9654ms;
+    }
+
+    .shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after {
+      -webkit-animation-delay: 9654ms;
+      animation-delay: 9654ms;
+    }
+
+    .shooting_star:nth-child(11) {
+      top: calc(50% - -37px);
+      left: calc(50% - 35px);
+      -webkit-animation-delay: 4143ms;
+      animation-delay: 4143ms;
+    }
+
+    .shooting_star:nth-child(11)::before, .shooting_star:nth-child(11)::after {
+      -webkit-animation-delay: 4143ms;
+      animation-delay: 4143ms;
+    }
+
+    .shooting_star:nth-child(12) {
+      top: calc(50% - -4px);
+      left: calc(50% - 197px);
+      -webkit-animation-delay: 3965ms;
+      animation-delay: 3965ms;
+    }
+
+    .shooting_star:nth-child(12)::before, .shooting_star:nth-child(12)::after {
+      -webkit-animation-delay: 3965ms;
+      animation-delay: 3965ms;
+    }
+
+    .shooting_star:nth-child(13) {
+      top: calc(50% - -187px);
+      left: calc(50% - 57px);
+      -webkit-animation-delay: 4514ms;
+      animation-delay: 4514ms;
+    }
+
+    .shooting_star:nth-child(13)::before, .shooting_star:nth-child(13)::after {
+      -webkit-animation-delay: 4514ms;
+      animation-delay: 4514ms;
+    }
+
+    .shooting_star:nth-child(14) {
+      top: calc(50% - -160px);
+      left: calc(50% - 169px);
+      -webkit-animation-delay: 1808ms;
+      animation-delay: 1808ms;
+    }
+
+    .shooting_star:nth-child(14)::before, .shooting_star:nth-child(14)::after {
+      -webkit-animation-delay: 1808ms;
+      animation-delay: 1808ms;
+    }
+
+    .shooting_star:nth-child(15) {
+      top: calc(50% - 84px);
+      left: calc(50% - 119px);
+      -webkit-animation-delay: 5948ms;
+      animation-delay: 5948ms;
+    }
+
+    .shooting_star:nth-child(15)::before, .shooting_star:nth-child(15)::after {
+      -webkit-animation-delay: 5948ms;
+      animation-delay: 5948ms;
+    }
+
+    .shooting_star:nth-child(16) {
+      top: calc(50% - -20px);
+      left: calc(50% - 248px);
+      -webkit-animation-delay: 6297ms;
+      animation-delay: 6297ms;
+    }
+
+    .shooting_star:nth-child(16)::before, .shooting_star:nth-child(16)::after {
+      -webkit-animation-delay: 6297ms;
+      animation-delay: 6297ms;
+    }
+
+    .shooting_star:nth-child(17) {
+      top: calc(50% - 92px);
+      left: calc(50% - 147px);
+      -webkit-animation-delay: 4102ms;
+      animation-delay: 4102ms;
+    }
+
+    .shooting_star:nth-child(17)::before, .shooting_star:nth-child(17)::after {
+      -webkit-animation-delay: 4102ms;
+      animation-delay: 4102ms;
+    }
+
+    .shooting_star:nth-child(18) {
+      top: calc(50% - -126px);
+      left: calc(50% - 168px);
+      -webkit-animation-delay: 9446ms;
+      animation-delay: 9446ms;
+    }
+
+    .shooting_star:nth-child(18)::before, .shooting_star:nth-child(18)::after {
+      -webkit-animation-delay: 9446ms;
+      animation-delay: 9446ms;
+    }
+
+    .shooting_star:nth-child(19) {
+      top: calc(50% - -61px);
+      left: calc(50% - 204px);
+      -webkit-animation-delay: 4274ms;
+      animation-delay: 4274ms;
+    }
+
+    .shooting_star:nth-child(19)::before, .shooting_star:nth-child(19)::after {
+      -webkit-animation-delay: 4274ms;
+      animation-delay: 4274ms;
+    }
+
+    .shooting_star:nth-child(20) {
+      top: calc(50% - -27px);
+      left: calc(50% - 228px);
+      -webkit-animation-delay: 7420ms;
+      animation-delay: 7420ms;
+    }
+
+    .shooting_star:nth-child(20)::before, .shooting_star:nth-child(20)::after {
+      -webkit-animation-delay: 7420ms;
+      animation-delay: 7420ms;
+    }
+
+
+    @-webkit-keyframes tail {
+      0% {
+        width: 0;
+      }
+      30% {
+        width: 100px;
+      }
+      100% {
+        width: 0;
+      }
+    }
+
+    @keyframes tail {
+      0% {
+        width: 0;
+      }
+      30% {
+        width: 100px;
+      }
+      100% {
+        width: 0;
+      }
+    }
+
+    @-webkit-keyframes shining {
+      0% {
+        width: 0;
+      }
+      50% {
+        width: 30px;
+      }
+      100% {
+        width: 0;
+      }
+    }
+
+    @keyframes shining {
+      0% {
+        width: 0;
+      }
+      50% {
+        width: 30px;
+      }
+      100% {
+        width: 0;
+      }
+    }
+
+    @-webkit-keyframes shooting {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(300px);
+      }
+    }
+
+    @keyframes shooting {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(300px);
+      }
+    }
+
+    @-webkit-keyframes sky {
+      0% {
+        transform: rotate(45deg);
+      }
+      100% {
+        transform: rotate(405deg);
+      }
+    }
+
+    @keyframes sky {
+      0% {
+        transform: rotate(45deg);
+      }
+      100% {
+        transform: rotate(405deg);
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-228873711-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-228873711-1');
+  </script>
+
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2537691,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1048430763241995');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+                 src="https://www.facebook.com/tr?id=1048430763241995&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+
+</head>
+
+<!--Modal: modalYT-->
+
+<!--Modal: modalYT-->
+<html lang="en">
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZBV6NB"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<header class="bg-light shadow" style="position:sticky; top:0; z-index: 100;" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="pulse" data-mdb-animation-start="onLoad">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-0 container">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../">
+        <img src="https://wooble.org/img/wooble logo 1.svg" alt="Wooble Logo" class="src w-25" loading="lazy">
+        <small class="fs-1 fw-bold ls-wide" style="font-family: 'Ubuntu', sans-serif; color:#002366;">Wooble</small>
+      </a>
+      <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarRightAlignExample"
+              aria-controls="navbarRightAlignExample"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <!-- Left links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-family: 'Ubuntu', sans-serif;">
+          <li class="nav-item text-center">
+            <a class="nav-link fs-5 ls-wide text-black" href="../examples">Examples</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fs-5 ls-wide text-black" href="../features">Features</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fs-5 ls-wide text-black" href="../wooble-blogs">Blogs</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fs-5 ls-wide text-black" href="https://app.wooble.org">Sign In</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fs-5 ls-wide text-black" href="https://app.wooble.org"><button type="button" class="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="#002366" style="color: #002366;">View demo</button></a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="../onboarding/"><button type="button" class="btn btn-rounded text-white" style="background-color: #002366;">get started</button></a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="hero_gradient pt-4 mt-1"
+     style="height: 100vh!important; width: 100vw;background-image: url('../img/about-us-bg.svg'); background-size: cover; background-position-x: 70%; background-position-y: 20%!important;">
+
+  <div class="animated-title" style="margin-top: 10vh;">
+    <div class="text-top">
+      <div>
+        <span>Your life’s </span>
+        <span>WORK</span>
+      </div>
+    </div>
+    <div class="text-bottom">
+      <div style="font-size: 42px">Powered by our life’s work</div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="star_wars">
+  <div class="night">
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+  </div>
+</div>
+
+<div>
+  <center>
+    <div style="margin-top: -60vh; height: 60vh; font-family: Ubuntu; opacity: 0.8; transition-timing-function: ease-in"
+         class="flex animation zoom-in">
+      <div class="r"><h1 class="text-white" style="font-size:10vmin!important;">Powered by technology,<br> Fueled
+        by Design</h1></div>
+    </div>
+  </center>
+</div>
+
+<div align="right" style="opacity: 20%; position: absolute; right: 0px; margin-right: auto; margin-top: -20vw">
+  <img src="https://wooble.org/img/vector.png" style="width: 10vw; min-width: 100px">
+</div>
+
+
+<div style="min-height: 100vh; background: radial-gradient(ellipse at top, #002366 0%, #040A31 100%); margin-top: -200px">
+
+  <div class="col-lg-12 text-center" style="min-height: 60vh">
+    <div class="container mt-1" style="max-width: 1000px">
+      <br><br><br><br><br><br>
+      <h1 class="text-center text-white">Our Core Values</h1>
+
+      <div class="row justify-content-center align-content-center m-4">
+        <div class="col animation zoom-in zoom_effect m-3 text-white"><img
+                onclick="show_video('Write your own blogs', 'https://www.youtube.com/embed/euCqAq6BRa4')"
+                src="https://wooble.org/img/core_values_1.png" width="100px"><h5>Integrity</h5></div>
+        <div class="col animation zoom-in zoom_effect m-3 text-white"><img
+                onclick="show_video('Show your projects', 'https://www.youtube.com/embed/euCqAq6BRa4')"
+                src="https://wooble.org/img/core_values_2.png" width="100px"><h5>Passion</h5></div>
+        <div class="col animation zoom-in zoom_effect m-3 text-white"><img
+                onclick="show_video('Customise designs according to your profession', 'https://www.youtube.com/embed/euCqAq6BRa4')"
+                src="https://wooble.org/img/core_values_3.png" width="100px"><h5>Team Work</h5></div>
+        <div class="col animation zoom-in zoom_effect m-3 text-white"><img
+                onclick="show_video('Ease of use', 'https://www.youtube.com/embed/euCqAq6BRa4')"
+                src="https://wooble.org/img/core_values_4.png" width="100px"><h5>Commitment</h5></div>
+        <div class="col animation zoom-in zoom_effect m-3 text-white"><img
+                onclick="show_video('Get your customised links', 'https://www.youtube.com/embed/euCqAq6BRa4')"
+                src="https://wooble.org/img/core_values_5.png" width="100px"><h5>Learning</h5></div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="flex container">
+    <div class="row text-center align-middle justify-content-center align-content-center">
+
+      <div class="col-lg-6 text-center" style="max-width: 620px; margin-top: 10%">
+        <h1 class="text-white">
+          Our Mission
+        </h1>
+        <h4 class="text-white"
+            style="font-size: 24px; font-weight: lighter; line-height:2; letter-spacing: 2px">
+         With the fast pacing Digital Transformation, We are creating a sustainable environment for everyone, Who wants to enhance their profession with the passion to have their presence with Digital Portfolio.
+        </h4>
+      </div>
+
+      <div class="col-lg-6 text-center" style="max-width: 620px;  margin-top: 10%">
+
+        <img src="https://wooble.org/img/Wooblers.png" width="100%">
+
+      </div>
+    </div>
+
+  </div>
+  <div align="left" style="opacity: 20%; position: absolute;">
+    <img src="https://wooble.org/img/vector.png" style="width: 20vw; min-width: 100px">
+  </div>
+  <br><br><br>
+
+  <div class="flex container">
+    <div class="row text-center align-middle justify-content-center align-content-center">
+
+      <div class="col-lg-6 text-center" style="max-width: 620px; margin-top: 5%">
+        <img src="https://wooble.org/img/students.png" width="100%">
+
+      </div>
+
+      <div class="col-lg-6 text-center" style="max-width: 620px;  margin-top: 2%">
+        <h1 class="text-white">
+          Our Vision
+        </h1>
+        <h4 class="text-white"
+            style="font-size: 24px; font-weight: lighter; line-height:2; letter-spacing: 3px">
+          To be the most Customer-Centric Company. Where customers thrive to create their digital imprint with one click Portfolio.
+        </h4>
+
+
+      </div>
+    </div>
+    <br><br><br><br>
+  </div>
+
+  <section class="text-muted" style="height: auto; background-color:rgb(7,20,69)">
+    <div class="container text-center text-md-start mt-5 border-0" style="min-width: 100vw;">
+      <!-- Grid row -->
+      <div class="row flex-row mt-3">
+
+        <!-- About -->
+        <hr style="color: white">
+        <div class="col-md-3 col-lg-5 col-xl-3 mx-auto">
+          <!-- Content -->
+          <h6 class="text-capitalize fs-4">
+            <img src="https://wooble.org/img/wooble logo 2.svg" alt="" class="src" style="height: 50px;">Wooble
+          </h6>
+          <p class="fw-lighter">
+            At Wooble we believe in passion, progress and performance, Wooble's system is curated with passion, and latest technologv to boost user experience which will help individuals to capture their progress and to boost their career performance.
+          </p>
+        </div>
+
+        <!-- Feature -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 fw-lighter">
+          <!-- Links -->
+          <h6 class="text-uppercase mb-4">
+            features
+          </h6>
+          <span class="my-5 lh-1">
+                <p>
+                  <a href="#!" class="text-reset">Why Wooble</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Resume</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Gallery</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Custom Links</a>
+                </p>
+                </span>
+        </div>
+
+        <!-- Company -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 fw-lighter">
+          <!-- Links -->
+          <h6 class="text-uppercase mb-4">
+            Company
+          </h6>
+          <span class="my-5 lh-1">
+                <p>
+                  <a href="../about-us" class="text-reset">About us</a>
+                </p>
+                        <p>
+                  <a href="../contact-us" class="text-reset">Contact us</a>
+                </p>
+                <p>
+                  <a href="../events" class="text-reset">Events</a>
+                </p>
+                <p>
+                  <a href="../careers" class="text-reset">Careers</a>
+                </p>
+                <p>
+                  <a href="../help" class="text-reset">Help</a>
+                </p>
+              </span>
+        </div>
+
+        <!-- Contact -->
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 pb-4 fw-lighter">
+          <!-- Links -->
+          <h6 class="text-uppercase mb-4">Contact</h6>
+          <span class=" lh-sm">
+                  <p onclick="map()" style="cursor:pointer;">
+                    <i class="fas fa-home me-3"></i>
+                    Bhubaneswar, Odisha 751024</p>
+                <p onclick="gmail()" style="cursor:pointer;">
+                  <i class="fas fa-envelope me-3"></i>
+                  connect@wooble.org
+                </p>
+                <p  onclick="call()" style="cursor:pointer;">
+                  <i class="fas fa-phone me-3"></i>
+                  +91-8260303017
+                </p>
+                <p  onclick="whatsapp()" style="cursor:pointer;">
+                  <i class="fab fa-whatsapp me-3"></i>
+                  +91-8260303017
+                </p>
+                </span>
+        </div>
+
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+
+</div>
+
+
+</div>
+
+
+
+<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "18f510436fd504084dd4e6d41745e410b4fdffe0f9b4a4a645b113c5be2d0671", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
+</body>
+
+<div>
+</div>
+<!-- End your project here-->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<script type="text/javascript" src="../plugins/js/multi-carousel.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript">
+  function show_video(title, link) {
+    document.getElementById('modal_video_title').innerText = title,
+            document.getElementById('my_video_iframe').src = link;
+    const myModalEl = document.getElementById('modal_for_tutorial_video')
+    const modal = new mdb.Modal(myModalEl)
+    modal.show()
+  }
+</script>
+
+</body>
+</html>

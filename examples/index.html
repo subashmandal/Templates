@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PZBV6NB');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Examples - Design Templates | Wooble</title>
+  <!-- MDB icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <!-- ubuntu fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <!-- Google Fonts Roboto -->
+  <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+  />
+  <!-- MDB -->
+  <link rel="stylesheet" href="../css/mdb.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+    @media (max-width:2240px){
+
+    }
+    @media (max-width:1450px) {
+      .d_video{
+        width: 780px !important;
+        top: -50px !important; 
+        transform: scaleY(1.4) !important;
+      }
+      .w_video{
+        width: 870px !important;
+        top: -30px !important; 
+      }
+    }
+    @media (max-width:1280px) {
+      .d_video{
+        width: 680px !important;
+        top: -90px !important; 
+        transform: scaleY(1.4) !important;
+      }
+      .w_video{
+        width: 870px !important;
+        top: -32px !important; 
+      }
+    }
+    @media (max-width:1024px) {
+      .d_video{
+        width: 560px !important;
+        top: -135px !important; 
+        transform: scaleY(1.4) !important;
+      }
+      .w_video{
+        width: 870px !important;
+        top: -32px !important; 
+      }
+    }
+    @media (max-width:850px) {
+      .d_video{
+        width: 650px !important;
+        top: -100px !important; 
+        transform: scaleY(1.4) !important;
+      }
+      .w_video{
+        width: 710px !important;
+        top: -90px !important; 
+      }
+    }
+    @media (max-width:600px) {
+      .d_video{
+        width: 470px !important;
+        top: -170px !important; 
+        transform: scaleY(1.4) !important;
+      }
+      .w_video{
+        width: 490px !important;
+        top: -170px !important; 
+      }
+    }
+    @media (max-width:500px) {
+      .d_video{
+        width: 300px !important;
+        top: -232px !important; 
+        transform: scaleY(1.4) !important;
+      }
+      .w_video{
+        width: 330px !important;
+        top: -228px !important; 
+      }
+    }
+    @media (max-width:370px) {
+      .d_video{
+        width: 270px !important;
+        top: -245px !important; 
+        transform: scaleY(1.4) !important;
+      }
+      .w_video{
+        width: 300px !important;
+        top: -240px !important; 
+      }
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    .br{
+      border:.1rem solid rgb(255, 0, 43);
+    }
+    section{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    section h2{
+      font-size: 6em;
+      color: #fff;
+      font-weight: 500;
+    }
+    .box{
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      padding: 100px;
+      text-align: center;
+    }
+    .box h2{
+      font-size: 3em;
+    }
+    .box .logo{
+      max-width: 300px;
+    }
+    .box2{
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      padding: 100px;
+      background: #000;
+    }
+  </style>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1048430763241995');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+                 src="https://www.facebook.com/tr?id=1048430763241995&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body style="overflow-x: hidden;">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZBV6NB"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="bg-light shadow" style="position:sticky; top:0; z-index: 100;" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="pulse" data-mdb-animation-start="onLoad">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-0 container">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../">
+        <img src="https://wooble.org/img/wooble logo 1.svg" alt="Wooble Logo" class="src w-25" loading="lazy">
+        <small class="fs-1 fw-bold ls-wide" style="font-family: 'Ubuntu', sans-serif; color:#002366;">Wooble</small>
+      </a>
+      <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarRightAlignExample"
+              aria-controls="navbarRightAlignExample"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <!-- Left links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-family: 'Ubuntu', sans-serif;">
+          <li class="nav-item text-center">
+            <a class="nav-link fs-5 ls-wide text-black" href="../examples">Exemplar</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fs-5 ls-wide text-black" href="../features">Features</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fs-5 ls-wide text-black" href="../wooble-blogs">Blogs</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fs-5 ls-wide text-black" href="https://app.wooble.org">Sign In</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link fs-5 ls-wide text-black" href="https://app.wooble.org"><button type="button" class="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="#002366" style="color: #002366;">View demo</button></a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="../onboarding/"><button type="button" class="btn btn-rounded text-white" style="background-color: #002366;">get started</button></a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Start your project here-->
+<!-- 1st section -->
+<div class="d-none d-sm-block">
+  <div style="min-height: 90vh;" class="d-flex align-items-center justify-content-center">
+    <div id="small" class="text-center">
+      <p style="font-size: 5em; line-height: 110%; font-family: 'Ubuntu', sans-serif; padding-top: 70px; color: black;">Build your online <br>portfolio with <br>Wooble.</p>
+      <div class="text-center" style="line-height: 100%;">
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif; padding-top: 20px;"><i class="fas fa-check"></i>&nbsp; Unlimited images & videos.</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif;"><i class="fas fa-check"></i>&nbsp; Unlimited layout possibilities.</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif;"><i class="fas fa-check"></i>&nbsp; Unlimited potential.</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif;"><i class="fas fa-check"></i>&nbsp; No coding needed.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- M view -->
+<div class="d-block d-sm-none">
+  <div style="min-height: 90vh;" class="d-flex align-items-center justify-content-center">
+    <div id="small" class="text-center">
+      <p style="font-size: 3em; line-height: 110%; font-family: 'Ubuntu', sans-serif; padding-top: 70px; color: black;">Build your online <br>portfolio with <br>Wooble.</p>
+      <div class="text-center" style="line-height: 100%;">
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif; padding-top: 20px;"><i class="fas fa-check"></i>&nbsp; Unlimited images & videos.</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif;"><i class="fas fa-check"></i>&nbsp; Unlimited layout possibilities.</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif;"><i class="fas fa-check"></i>&nbsp; Unlimited potential.</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif;"><i class="fas fa-check"></i>&nbsp; No coding needed.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 2nd section -->
+<div class="container-fluid" style="background:linear-gradient(90deg, rgba(238,186,204,1) 8%, rgba(48,111,178,1) 25%, rgba(0,35,102,1) 41%, rgba(0,35,102,1) 62%, rgba(48,111,178,1) 75%, rgba(238,186,204,1) 93%);">
+  <div>
+        <div class="inner2 position-relative d-flex justify-content-center">
+          <img src="img/mockupscreen.svg" alt="video goes here" loading="lazy" class="src img-fluid">
+          <video class="position-absolute w_video" height="700px" width="850px"  style="z-index: 10; top: -35px; transform: scaleY(1.2);"  loop autoplay muted>
+              <source src="img/show_video.webm" type="video/mp4">
+              <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+          </video>
+        </div>
+
+  <div class="justify-content-center d-flex inner4">
+    <p class="fs-1 text-center text-wrap text-light"
+       data-mdb-toggle="animation"
+       data-mdb-animation-reset="true"
+       data-mdb-animation="fade-in-up"
+       data-mdb-animation-start="onScroll"
+       data-mdb-animation-duration="2500"
+       data-mdb-animation-repeat="false">Wooble that serves millions of people who<br>wish to pursue their ambition with passion.</p>
+  </div>
+</div>
+<div style="background-color: #Eff0F5; overflow-x: hidden;">
+  <!-- 3rd div -->
+  <div class="container" style="padding-top: 6rem;">
+    <div class="row d-flex align-items-center flex-column-reverse flex-lg-row" style="min-height: 75vh;">
+      <div class="col-lg-4 my-5">
+        <p style="font-size: 3em; font-family: 'Ubuntu', sans-serif; line-height: 100%;">Made for<br> graphic <br> designers</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif; color: black">Animate your designs, if you are an artist, animator, user-interface designer, art and illustrator. Put together your best work with Wooble which provides:</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Colour palette</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Auto-image enhancer</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Fine designs</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Professional Templates</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Easy editing tools</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; And many more</p>
+        <a href="../designs/index.php?prof=Graphic Designer"><button type="button" class="btn text-white btn-lg text-capitalize btn-rounded fs-6" style="background: radial-gradient(50% 50% at 50% 50%, rgba(29, 64, 131, 0.83) 0%, #1D4083 100%);">✨ See more graphic designs ✨</button></a>
+      </div>
+      <div class="col-lg-8" data-aos="fade-right">
+        <div id="moon" class="position-relative d-flex justify-content-center">
+          <video class="position-absolute d_video" height="700px" width="750px"  style="z-index: 10; top: -55px; transform: scaleY(1.4);"  loop autoplay muted>
+            <source src="video/designer video.webm" type="video/webm">
+            <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+        </video>
+        <img class="src img-fluid" src="img/mockupscreen.svg"  alt="Moon" >
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 4th div -->
+  <div class="container">
+    <div class="row d-flex align-items-center" style="min-height: 75vh;">
+      <div class="col-lg-8" data-aos="fade-left">
+        <div id="moon2" class="position-relative d-flex justify-content-center">
+          <video class="position-absolute d_video" height="700px" width="750px"  style="z-index: 10; top: -55px; transform: scaleY(1.4);"  loop autoplay muted>
+            <source src="video/architects video.webm" type="video/webm">
+            <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+        </video>
+        <img class="src img-fluid" src="img/mockupscreen.svg"  alt="Moon2" >
+        </div>
+      </div>
+      <div class="col-lg-4 p-lg-5 my-5">
+        <p style="font-size: 3em; font-family: 'Ubuntu', sans-serif; line-height: 100%;">Made for <br>architects</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif; color: black">Craft the craftsmenship in you. If you are an architect who has a classic, gothic & modern style of work, retrofit your canvas with Wooble.</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Distinctive project section</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Fine designs</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Auto-image enhancer</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Custom logos</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Professional Templates</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; And many more</p>
+        <a href="../designs/index.php?prof=Architect"><button type="button" class="btn text-white btn-lg text-capitalize btn-rounded fs-6" style="background: radial-gradient(50% 50% at 50% 50%, rgba(29, 64, 131, 0.83) 0%, #1D4083 100%);">✨ See more architect designs ✨</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- 5rd div -->
+  <div class="container">
+    <div class="row d-flex align-items-center flex-column-reverse flex-lg-row" style="min-height: 75vh;">
+      <div class="col-lg-4 my-5">
+        <p style="font-size: 3em; font-family: 'Ubuntu', sans-serif; line-height: 100%;">Made for <br> speakers</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif; color: black">Orate out your persona and let your work speak in public. If you are a public speaker or orator, Wooble has got you covered.</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Well defined gallery with sliders</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Real time blog recite</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; SEO optimization</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Social media integration for greater connects</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Audio assist</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; And many more</p>
+        <a href="../designs/index.php?prof=Speaker"><button type="button" class="btn text-white btn-lg text-capitalize btn-rounded fs-6" style="background: radial-gradient(50% 50% at 50% 50%, rgba(29, 64, 131, 0.83) 0%, #1D4083 100%);">✨ See more speaker designs ✨</button></a>
+      </div>
+      <div class="col-lg-8" data-aos="fade-right">
+        <div id="moon3" class="position-relative d-flex justify-content-center">
+          <video class="position-absolute d_video" height="700px" width="750px"  style="z-index: 10; top: -55px; transform: scaleY(1.4);"  loop autoplay muted>
+            <source src="video//speaker video.webm" type="video/webm">
+            <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+        </video>
+        <img class="src img-fluid" src="img/mockupscreen.svg"  alt="Moon" >
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 6th div -->
+  <div class="container">
+    <div class="row d-flex align-items-center" style="min-height: 75vh;">
+      <div class="col-lg-8" data-aos="fade-left">
+        <div id="moon4" class="position-relative d-flex justify-content-center">
+          <video class="position-absolute d_video" height="700px" width="750px"  style="z-index: 10; top: -55px; transform: scaleY(1.4);"  loop autoplay muted>
+            <source src="video/standard video.webm" type="video/webm">
+            <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+        </video>
+        <img class="src img-fluid" src="img/mockupscreen.svg"  alt="Moon" >
+        </div>
+      </div>
+      <div class="col-lg-4 p-lg-5 my-5">
+        <p style="font-size: 3em; font-family: 'Ubuntu', sans-serif; line-height: 100%;">Made for <br> students for <br> foreign <br> universities</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif; color: black">If you want to chase your dreams and ambitions of studying abroad, draft your academics and achievements in Wooble.</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Distinctive project section</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Photo Titles and Captions</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; PDF & DOCx support</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Tablet friendly blogs</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Well defined gallery</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; And many more</p>
+        <a href="../designs/index.php?prof=student"><button type="button" class="btn text-white btn-lg text-capitalize btn-rounded fs-6" style="background: radial-gradient(50% 50% at 50% 50%, rgba(29, 64, 131, 0.83) 0%, #1D4083 100%);">✨ See more student designs ✨</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- 7rd div -->
+  <div class="container">
+    <div class="row d-flex align-items-center flex-column-reverse flex-lg-row" style="min-height: 75vh;">
+      <div class="col-lg-4 my-5">
+        <p style="font-size: 3em; font-family: 'Ubuntu', sans-serif; line-height: 100%;">Made for <br> standard <br> portfolio</p>
+        <p style="font-size: 1.5em; font-family: 'Nunito', sans-serif; color: black">Encapsulate  you journey, document your amazing experiences and potray youself to the world. Wooble is here for you.</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Professional Templates</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Gallery with Tile and Carousel view</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Tablet friendly blogs</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Photo Titles and captions</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Real time Blog recite</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; SEO optimization</p>
+        <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; And many more</p>
+        <a href="../designs/index.php"><button type="button" class="btn text-white btn-lg text-capitalize btn-rounded fs-6" style="background: radial-gradient(50% 50% at 50% 50%, rgba(29, 64, 131, 0.83) 0%, #1D4083 100%);">✨ See more standard designs ✨</button></a>
+      </div>
+      <div class="col-lg-8" data-aos="fade-right">
+        <div id="moon5" class="position-relative d-flex justify-content-center">
+          <video class="position-absolute d_video" height="700px" width="750px"  style="z-index: 10; top: -55px; transform: scaleY(1.4);"  loop autoplay muted>
+            <source src="video/student video.webm" type="video/webm">
+            <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+        </video>
+        <img class="src img-fluid" src="img/mockupscreen.svg"  alt="Moon" >
+        </div>
+      </div>
+    </div>
+    <!-- 8th Div -->
+    <div class="container pb-5">
+      <hr>
+      <div class="box" style="overflow-x: hidden;">
+        <h2 class="text1">Made for all creatives who want an</h2>
+        <h2 class="text2">easy, personalized way to launch </h2>
+        <h2 class="text3">their portfolio.</h2>
+        <img src="https://media.licdn.com/dms/image/C4D0BAQFRX-4NwQMseA/company-logo_200_200/0/1669425301830?e=2147483647&v=beta&t=yoap72kz5HS5SXxwHs120PFvuoijrsnOPkaEXiwnSzE" alt="" class="logo">
+      </div>
+      <div class="box2" style="min-height: 30vh;">
+        <div class="row">
+          <div class="col-lg-4" style="line-height:40%; font-size: 20px;">
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Colour palette</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Auto-image enhancer</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Fine designs</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Professional Templates</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Easy editing tools</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Distinctive project section</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Auto-image enhancer</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Video backgrounds</p>
+          </div>
+          <div class="col-lg-4" style="line-height:40%; font-size: 20px;">
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Custom logos</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Professional Templates</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Well defined gallery with sliders</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; SVG/Vector support</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Video thumbnails</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; GIF support</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Social buttons</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Video Galleries</p>
+          </div>
+          <div class="col-lg-4" style="line-height:40%; font-size: 20px;">
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Photo & video cropping</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Image optimization</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Drag & drop support</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Custom favicon</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Custom Portfolio Grids</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Color picker</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; Global styles</p>
+            <p><i class="fas fa-check" style="color: #2ad4c4;"></i> &nbsp; ...and more!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 9th div -->
+<div class="text-center" style="min-height: 75vh;">
+  <div class="position-relative" style="background-color: white;">
+    <a class="nav-link position-absolute top-0 start-50 translate-middle" href="#" style="padding-top: 40px; margin-top: -15px;"><button type="button" class="btn btn-primary btn-rounded fs-5 p-3">Start Your Free Trail</button></a>
+    <div class="text-center">
+      <p style="padding-top: 80px; font-size: 3em; font-family: 'Ubuntu', sans-serif;">More Wooble layout examples</p>
+    </div>
+  </div>
+</div>
+<!-- 10th div -->
+<div style="background:linear-gradient(90deg, rgba(238,186,204,1) 8%, rgba(48,111,178,1) 25%, rgba(0,35,102,1) 41%, rgba(0,35,102,1) 62%, rgba(48,111,178,1) 75%, rgba(238,186,204,1) 93%); min-height: 100vh;">
+  <div class="container">
+    <!-- <p style="font-size: 60px; color: white; text-align: center; padding-top: 80px; line-height: 90%;">Unlimited <br>Customizable Layouts</p> -->
+    <div class="text-center" >
+      <img class="src img-fluid" src="img/mockupscreen.svg" style="width: 1300px; margin-top: -140px;"  alt="" ><br>
+      <p style="font-size: 1.5em; color: aliceblue;">Portfolio by Kristi Tüvi﻿, Photographer → VISIT PORTFOLIO</p>
+      <br>
+      <p style="font-size: 30px; color: aliceblue;">The simple "masonry" portfolio layout lets all your images flow naturally. It's<br>a timeless choice perfect for lots of projects.</p>
+    </div>
+  </div>
+</div>
+<!-- 11th div -->
+<div class="text-center" style="min-height: 75vh;">
+</div>
+<!-- 12th div -->
+<div style="background:linear-gradient(90deg, rgba(238,186,204,1) 8%, rgba(48,111,178,1) 25%, rgba(0,35,102,1) 41%, rgba(0,35,102,1) 62%, rgba(48,111,178,1) 75%, rgba(238,186,204,1) 93%); min-height: 100vh;">
+  <div class="container">
+    <!-- <p style="font-size: 60px; color: white; text-align: center; padding-top: 80px; line-height: 90%;">Unlimited <br>Customizable Layouts</p> -->
+    <div class="text-center" >
+      <img class="src img-fluid" src="img/mockupscreen.svg" style="width: 1300px; margin-top: -140px;"  alt="" ><br>
+      <p style="font-size: 1.5em; color: aliceblue;">Portfolio by Daniel Lepik﻿, 3D Designer → VISIT PORTFOLIO</p>
+      <br>
+      <p class="p-4" style="font-size: 1rem; color: aliceblue;">Our "Lefty" navigation has been a classic for many years, but still it's one of<br>our favorites– especially combined with a clean portfolio grid. <br><br></p>
+    </div>
+  </div>
+</div>
+<!-- 13th div -->
+<div style="background-color: black; padding-top: 50px;" class="text-center">
+  <div style="min-height: 30vh;">
+    <p style="font-size: 4em; font-family: 'Maison Neue', sans-serif; color: white; line-height: 90%;">The possibilities are endless.<br><span>What are you going to make?</span></p>
+    <br>
+    <p style="font-size: 25px; color: white; text-align: center; line-height: 90%; padding-bottom: 30px;">No credit card required. Free trial.</p>
+    <a class="nav-link" href="#" style="padding-bottom: 40px;"><button type="button" class="btn btn-primary btn-rounded fs-5 p-3">Create Your Portfolio</button></a>
+  </div>
+</div>
+
+
+<section class="text-muted" style="height: auto">
+  <div class="container text-center text-md-start mt-5" style="min-width: 75vw;">
+    <!-- Grid row -->
+    <div class="row flex-row mt-3">
+
+      <!-- About -->
+      <hr style="color: white">
+      <div class="col-md-3 col-lg-5 col-xl-3 mx-auto">
+        <!-- Content -->
+        <h6 class="text-capitalize fs-4">
+          <img src="https://wooble.org/img/wooble logo 2.svg" alt="" class="src" style="height: 50px;">Wooble
+        </h6>
+        <p class="fw-lighter">
+          At Wooble we believe in passion, progress and performance, Wooble's system is curated with passion, and latest technologv to boost user experience which will help individuals to capture their progress and to boost their career performance.
+        </p>
+      </div>
+
+      <!-- Feature -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 fw-lighter">
+        <!-- Links -->
+        <h6 class="text-uppercase mb-4">
+          features
+        </h6>
+        <span class="my-5 lh-1">
+                <p>
+                  <a href="#!" class="text-reset">Why Wooble</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Resume</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Gallery</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Custom Links</a>
+                </p>
+                </span>
+      </div>
+
+      <!-- Company -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 fw-lighter">
+        <!-- Links -->
+        <h6 class="text-uppercase mb-4">
+          Company
+        </h6>
+        <span class="my-5 lh-1">
+                <p>
+                  <a href="../about-us" class="text-reset">About us</a>
+                </p>
+              <p>
+                  <a href="../contact-us" class="text-reset">Contact us</a>
+                </p>
+                <p>
+                  <a href="../events" class="text-reset">Events</a>
+                </p>
+                <p>
+                  <a href="../careers" class="text-reset">Careers</a>
+                </p>
+                <p>
+                  <a href="../help" class="text-reset">Help</a>
+                </p>
+              </span>
+      </div>
+
+      <!-- Contact -->
+
+      <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 pb-4 fw-lighter">
+        <!-- Links -->
+        <h6 class="text-uppercase mb-4">Contact</h6>
+        <span class=" lh-sm">
+                  <p onclick="map()" style="cursor:pointer;">
+                    <i class="fas fa-home me-3"></i>
+                    Bhubaneswar, Odisha 751024</p>
+                <p onclick="gmail()" style="cursor:pointer;">
+                  <i class="fas fa-envelope me-3"></i>
+                  connect@wooble.org
+                </p>
+                <p  onclick="call()" style="cursor:pointer;">
+                  <i class="fas fa-phone me-3"></i>
+                  +91-8260303017
+                </p>
+                <p  onclick="whatsapp()" style="cursor:pointer;">
+                  <i class="fab fa-whatsapp me-3"></i>
+                  +91-8260303017
+                </p>
+                </span>
+      </div>
+
+    </div>
+    <!-- Grid row -->
+  </div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="text-center p-4 text-muted" style="background-color:black">
+  © 2022 Wooble Software Private Limited. All Rights Reserved.
+</div>
+<!-- End your project here-->
+<!-- MDB -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<!-- aos script -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="text/javascript" src="../plugins/js/parallax.min.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 1000
+  });
+</script>
+<!-- <script type="text/javascript">
+   let moon = document.getElementById("moon");
+   let moon2 = document.getElementById("moon2");
+   let moon3 = document.getElementById("moon3");
+   let moon4 = document.getElementById("moon4");
+   let moon5 = document.getElementById("moon5");
+
+   window.addEventListener("scroll", function () {
+
+     let value = window.scrollY / moon.offsetTop;
+     let value1 = window.scrollY / moon.offsetTop *100;
+
+     console.log("value = "+value);
+     console.log("value1 = "+value1);
+
+   if(value>0.6){
+     let valuex = window.scrollY / moon.offsetTop;
+     console.log("valuex===   "+valuex);
+    m2 =  moon.style.left= valuex* 11  + "px";
+    console.log("m2=="+m2);
+   }
+   // if(value>0.9){
+   //   moon.style.left= "120px";
+   // }
+
+   if(value>1){
+     moon2.style.right=value1 + "px";
+   }
+   if(value>1.1){
+     moon2.style.right= "px";
+   }
+
+   if(value>1.6){
+     moon3.style.left= value1 + "px";
+   }
+   if(value>1.8){
+     moon3.style.left= "px";
+   }
+
+   if(value>0.6){
+     moon4.style.right= value1 + "px";
+   }
+   if(value>0.6){
+     moon4.style.right= "px";
+   }
+
+   if(value>0.6){
+     moon5.style.left= value1 + "px";
+   }
+   if(value>0.6){
+     moon5.style.left= "px";
+   }
+     //moon.style.transform= 'scale value * 100 + "px";
+     //moon.style.width= value * 1.05 + "px";
+     // console.log("moon2="+moon2);
+
+
+   });
+
+   </script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script type="text/javascript">
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".box",
+      start: "center center", //Animation start at this point
+      end: "bottom top", //Animation End at this point
+      markers:false,
+      scrub : true,
+      pin:true
+    }
+  })
+          .from(".text1",{x:'100vw'})
+          .from(".text2",{x:innerWidth*-1})
+          .from(".text3",{x:innerWidth*1})
+          .from(".logo",{
+            x:innerWidth*-1,
+            rotate:720
+          })
+
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".box2",
+      start: "center center", //Animation start at this point
+      end: "bottom top", //Animation End at this point
+      markers:false,
+      scrub : true,
+      pin:true
+    }
+  })
+          .from(".box2",{duration:1,opacity:0})
+</script>
+<script type="text/javascript">
+  const bg = document.getElementById('small');
+  window.addEventListener('scroll', function(){
+    bg.style.fontSize = 100 - window.pageYOffset/12+'%';
+    bg.style.opacity = 1 - window.pageYOffset/700+'';
+  })
+</script>
+
+</body>
+</html>
